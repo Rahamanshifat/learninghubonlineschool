@@ -1,267 +1,269 @@
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
-
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Learning Hub Online School - SSC, HSC, Admission & Job Preparation">
+    <meta name="keywords" content="SSC,HSC,Admission,Learning Hub,Bangladesh">
+    <meta name="author" content="Learning Hub">
 
-<meta charset="UTF-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learning Hub Online School</title>
 
-<title>Learning Hub Online School | Think Smart</title>
+    <!-- Tailwind -->
+    <script src="https://cdn.tailwindcss.com"></script>
 
-<meta name="description"
-content="Learning Hub Online School is Bangladesh's Premium Online Learning Platform for Class 5-12, University Admission and Job Preparation.">
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
 
-<meta name="keywords"
-content="Learning Hub, Online School, Admission, Job Math, HSC, SSC">
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
 
-<link rel="icon" href="assets/images/logo.png">
+    <style>
 
-<!-- Bootstrap -->
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Hind Siliguri',sans-serif;
+}
 
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
-rel="stylesheet">
+html{
+    scroll-behavior:smooth;
+}
 
-<!-- Font Awesome -->
+body{
+    background:#0f172a;
+    color:#fff;
+    overflow-x:hidden;
+}
 
-<link rel="stylesheet"
-href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+section{
+    padding:80px 20px;
+}
 
-<!-- Google Font -->
+.container{
+    max-width:1280px;
+    margin:auto;
+}
 
-<link rel="preconnect" href="https://fonts.googleapis.com">
+.gradient-text{
+    background:linear-gradient(90deg,#ff4d6d,#ffb703);
+    -webkit-background-clip:text;
+    -webkit-text-fill-color:transparent;
+}
 
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+.card-hover{
+    transition:.35s;
+}
 
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
-rel="stylesheet">
+.card-hover:hover{
+    transform:translateY(-10px);
+    box-shadow:0 20px 40px rgba(0,0,0,.35);
+}
 
-<link rel="stylesheet" href="assets/css/style.css">
+@keyframes fadeUp{
+    from{
+        opacity:0;
+        transform:translateY(40px);
+    }
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+}
 
+.fade-up{
+    animation:fadeUp .8s ease;
+}
+
+.nav-link:hover{
+    color:#ec4899;
+}
+
+.hero-bg{
+    background:
+    radial-gradient(circle at top left,#db2777 0%,transparent 30%),
+    radial-gradient(circle at bottom right,#7c3aed 0%,transparent 30%),
+    #0f172a;
+}
+
+.btn{
+    padding:14px 30px;
+    border-radius:10px;
+    transition:.3s;
+    font-weight:bold;
+}
+
+.btn-primary{
+    background:#db2777;
+}
+
+.btn-primary:hover{
+    background:#be185d;
+}
+
+.btn-outline{
+    border:2px solid #fff;
+}
+
+.btn-outline:hover{
+    background:#fff;
+    color:#000;
+}
+
+.stats-card{
+    background:#1e293b;
+    border-radius:20px;
+    padding:30px;
+    text-align:center;
+}
+
+.course-card{
+    background:#1e293b;
+    border-radius:20px;
+    overflow:hidden;
+}
+
+.course-card img{
+    width:100%;
+    height:220px;
+    object-fit:cover;
+}
+
+.badge{
+    background:#db2777;
+    padding:5px 12px;
+    border-radius:20px;
+    font-size:13px;
+}
+
+    </style>
 </head>
 
 <body>
 
-<!-- ===========================
-Navbar Start
-=========================== -->
+<!-- ================= NAVBAR ================= -->
 
-<nav class="navbar navbar-expand-lg navbar-light fixed-top">
+<header class="fixed top-0 left-0 w-full bg-slate-900/90 backdrop-blur-lg z-50 shadow-lg">
 
-<div class="container">
+<div class="container flex items-center justify-between py-5">
 
-<a class="navbar-brand" href="#">
-
-<img src="assets/images/logo.png"
-height="60">
-
-<span class="fw-bold ms-2">
-
+<h2 class="text-3xl font-bold gradient-text">
 Learning Hub
+</h2>
 
-</span>
+<nav class="hidden lg:flex items-center gap-8">
 
-</a>
+<a href="#" class="nav-link">Home</a>
 
-<button
-class="navbar-toggler"
-type="button"
-data-bs-toggle="collapse"
-data-bs-target="#navbar">
+<a href="#courses" class="nav-link">Courses</a>
 
-<span class="navbar-toggler-icon"></span>
+<a href="#features" class="nav-link">Features</a>
 
-</button>
+<a href="#mentors" class="nav-link">Mentors</a>
 
-<div class="collapse navbar-collapse"
-id="navbar">
+<a href="#pricing" class="nav-link">Pricing</a>
 
-<ul class="navbar-nav ms-auto">
-
-<li class="nav-item">
-
-<a class="nav-link active" href="#">Home</a>
-
-</li>
-
-<li class="nav-item">
-
-<a class="nav-link" href="#">Courses</a>
-
-</li>
-
-<li class="nav-item">
-
-<a class="nav-link" href="#">Admission</a>
-
-</li>
-
-<li class="nav-item">
-
-<a class="nav-link" href="#">Job Prep</a>
-
-</li>
-
-<li class="nav-item">
-
-<a class="nav-link" href="#">Mentors</a>
-
-</li>
-
-<li class="nav-item">
-
-<a class="nav-link" href="#">About</a>
-
-</li>
-
-<li class="nav-item">
-
-<a class="nav-link" href="#">Contact</a>
-
-</li>
-
-</ul>
-
-<a href="#"
-class="btn btn-primary ms-3">
-
-Enroll Now
-
-</a>
-
-</div>
-
-</div>
+<a href="#contact" class="nav-link">Contact</a>
 
 </nav>
 
-<!-- ===========================
-Navbar End
-=========================== -->
+<div class="flex gap-3">
 
-<!-- ===========================
-Hero Section
-=========================== -->
+<a href="#enroll"
+class="btn btn-primary">
+Enroll Now
+</a>
 
-<section class="hero">
+</div>
 
-<div class="container">
+</div>
 
-<div class="row align-items-center">
+</header>
 
-<div class="col-lg-6">
+<!-- HERO -->
+
+<section class="hero-bg min-h-screen flex items-center">
+
+<div class="container grid lg:grid-cols-2 gap-12 items-center">
+
+<div class="fade-up">
 
 <span class="badge">
-
-বাংলাদেশের অন্যতম সেরা Online School
-
+বাংলাদেশের অন্যতম সেরা অনলাইন স্কুল
 </span>
 
-<h1>
+<h1 class="text-6xl font-bold mt-6 leading-tight">
 
-Learn Smarter,
-
-Grow Faster.
+শেখা হোক <span class="gradient-text">আনন্দে</span>
 
 </h1>
 
-<p>
+<p class="text-gray-300 mt-8 text-xl">
 
-Learning Hub Online School provides premium online courses
-for
+SSC • HSC • Admission • Job Preparation
 
-Class 5-12,
-
-University Admission,
-
-Job Preparation,
-
-Science,
-
-Math,
-
-English
-
-and ICT.
+একটি প্ল্যাটফর্মেই সকল কোর্স।
 
 </p>
 
-<div class="hero-btn">
+<div class="flex gap-5 mt-10">
 
-<a href="#"
-class="btn btn-primary">
+<a href="#courses" class="btn btn-primary">
 
-Explore Courses
-
-</a>
-
-<a href="#"
-class="btn btn-outline-primary">
-
-Free Demo
+Start Learning
 
 </a>
 
-</div>
+<a href="#contact" class="btn btn-outline">
 
-<div class="hero-search mt-5">
+Free Class
 
-<div class="input-group">
-
-<input
-type="text"
-class="form-control"
-placeholder="Search Courses...">
-
-<button class="btn btn-primary">
-
-<i class="fa-solid fa-search"></i>
-
-</button>
+</a>
 
 </div>
 
-</div>
+<div class="grid grid-cols-2 lg:grid-cols-4 gap-5 mt-16">
 
-<div class="hero-stats mt-5">
+<div class="stats-card">
 
-<div class="row">
-
-<div class="col-4">
-
-<h2>5000+</h2>
+<h2 class="text-4xl font-bold text-pink-500">
+30K+
+</h2>
 
 <p>Students</p>
 
 </div>
 
-<div class="col-4">
+<div class="stats-card">
 
-<h2>25+</h2>
+<h2 class="text-4xl font-bold text-pink-500">
+50+
+</h2>
 
 <p>Courses</p>
 
 </div>
 
-<div class="col-4">
+<div class="stats-card">
 
-<h2>15+</h2>
+<h2 class="text-4xl font-bold text-pink-500">
+10+
+</h2>
 
 <p>Mentors</p>
 
 </div>
 
-</div>
+<div class="stats-card">
 
-</div>
+<h2 class="text-4xl font-bold text-pink-500">
+4.9★
+</h2>
 
-</div>
-
-<div class="col-lg-6 text-center">
-
-<img
-src="assets/images/hero.png"
-class="img-fluid hero-image">
+<p>Rating</p>
 
 </div>
 
@@ -269,108 +271,11 @@ class="img-fluid hero-image">
 
 </div>
 
-</section>
+<div>
 
-<!-- Hero End -->
-
-<!-- Bootstrap JS -->
-
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-
-</body>
-
-</html>
-<!-- =========================
-      COURSE CATEGORIES
-========================== -->
-
-<section class="py-5 bg-light">
-
-<div class="container">
-
-<div class="text-center mb-5">
-
-<h2 class="fw-bold">Browse Categories</h2>
-
-<p class="text-muted">
-Find the perfect course for your academic journey.
-</p>
-
-</div>
-
-<div class="row g-4">
-
-<div class="col-lg-3 col-md-6">
-
-<div class="card shadow border-0 h-100 text-center p-4">
-
-<i class="fa-solid fa-book-open fa-3x text-primary mb-3"></i>
-
-<h5>Class 5–8</h5>
-
-<p class="text-muted">
-
-Complete Academic Preparation
-
-</p>
-
-</div>
-
-</div>
-
-<div class="col-lg-3 col-md-6">
-
-<div class="card shadow border-0 h-100 text-center p-4">
-
-<i class="fa-solid fa-graduation-cap fa-3x text-success mb-3"></i>
-
-<h5>SSC & HSC</h5>
-
-<p class="text-muted">
-
-Board Exam Preparation
-
-</p>
-
-</div>
-
-</div>
-
-<div class="col-lg-3 col-md-6">
-
-<div class="card shadow border-0 h-100 text-center p-4">
-
-<i class="fa-solid fa-building-columns fa-3x text-danger mb-3"></i>
-
-<h5>University Admission</h5>
-
-<p class="text-muted">
-
-BUET, RUET, Medical & University
-
-</p>
-
-</div>
-
-</div>
-
-<div class="col-lg-3 col-md-6">
-
-<div class="card shadow border-0 h-100 text-center p-4">
-
-<i class="fa-solid fa-briefcase fa-3x text-warning mb-3"></i>
-
-<h5>Job Preparation</h5>
-
-<p class="text-muted">
-
-BCS & Job Math Preparation
-
-</p>
-
-</div>
-
-</div>
+<img src="assets/images/hero.png"
+alt="Learning Hub"
+class="w-full">
 
 </div>
 
@@ -378,65 +283,181 @@ BCS & Job Math Preparation
 
 </section>
 
-<!-- =========================
-      FEATURED COURSES
-========================== -->
+<!-- ================= FEATURES ================= -->
 
-<section class="py-5">
+<section id="features" class="bg-slate-900">
 
 <div class="container">
 
-<div class="text-center mb-5">
+<div class="text-center mb-16">
 
-<h2 class="fw-bold">
+<h2 class="text-5xl font-bold mb-4">
 
-Featured Courses
+🎯 একাডেমিক ব্যাচের শিক্ষার্থীরা পাচ্ছে
 
 </h2>
 
-<p>
+<p class="text-gray-400 text-lg">
 
-Most Popular Courses
+Live Classes, Masterbook, Recorded Videos & Unlimited Practice
 
 </p>
 
 </div>
 
-<div class="row g-4">
+<div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
 
-<div class="col-lg-4">
+<div class="bg-slate-800 rounded-2xl p-8 text-center card-hover">
 
-<div class="card border-0 shadow">
+<div class="text-6xl mb-5">
+📺
+</div>
 
-<img src="assets/images/course1.jpg"
-class="card-img-top">
+<h3 class="text-2xl font-bold mb-3">
 
-<div class="card-body">
+১০টি সাপ্তাহিক লাইভ ক্লাস
 
-<span class="badge bg-primary">
+</h3>
 
-Academic
+<p class="text-gray-400">
+
+শিক্ষকদের সাথে সরাসরি ইন্টারঅ্যাক্টিভ ক্লাস।
+
+</p>
+
+</div>
+
+<div class="bg-slate-800 rounded-2xl p-8 text-center card-hover">
+
+<div class="text-6xl mb-5">
+📚
+</div>
+
+<h3 class="text-2xl font-bold mb-3">
+
+প্রিন্টেড মাস্টারবুক
+
+</h3>
+
+<p class="text-gray-400">
+
+Premium Printed Book & Notes.
+
+</p>
+
+</div>
+
+<div class="bg-slate-800 rounded-2xl p-8 text-center card-hover">
+
+<div class="text-6xl mb-5">
+✅
+</div>
+
+<h3 class="text-2xl font-bold mb-3">
+
+Unlimited MCQ
+
+</h3>
+
+<p class="text-gray-400">
+
+অসংখ্য Practice Question ও Model Test.
+
+</p>
+
+</div>
+
+<div class="bg-slate-800 rounded-2xl p-8 text-center card-hover">
+
+<div class="text-6xl mb-5">
+🎬
+</div>
+
+<h3 class="text-2xl font-bold mb-3">
+
+Recorded Class
+
+</h3>
+
+<p class="text-gray-400">
+
+যেকোনো সময় ক্লাস দেখার সুবিধা।
+
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ================= COURSES ================= -->
+
+<section id="courses">
+
+<div class="container">
+
+<div class="text-center mb-16">
+
+<h2 class="text-5xl font-bold">
+
+📚 আমাদের জনপ্রিয় কোর্সসমূহ
+
+</h2>
+
+<p class="text-gray-400 mt-4">
+
+স্কুল, কলেজ, ভর্তি ও চাকরির পূর্ণাঙ্গ প্রস্তুতি
+
+</p>
+
+</div>
+
+<div class="grid lg:grid-cols-3 gap-8">
+
+<!-- Card -->
+
+<div class="course-card card-hover">
+
+<img src="assets/images/class6.jpg" alt="Class 6">
+
+<div class="p-6">
+
+<span class="badge">
+
+২০২৬
 
 </span>
 
-<h4 class="mt-3">
+<h3 class="text-3xl font-bold mt-4">
 
-SSC & HSC Complete Batch
+৬ষ্ঠ শ্রেণি
 
-</h4>
+</h3>
 
-<p>
+<p class="text-gray-400 mt-3">
 
-Math | Physics | Chemistry | Biology
+Math • Science • ICT • English • Bangla
 
 </p>
 
-<a href="#"
-class="btn btn-primary w-100">
+<div class="flex justify-between items-center mt-6">
 
-Enroll Now
+<span class="text-pink-500 text-2xl font-bold">
 
-</a>
+৳500
+
+</span>
+
+<button
+onclick="openCourseModal('class6')"
+class="btn btn-primary">
+
+View Details
+
+</button>
 
 </div>
 
@@ -444,79 +465,239 @@ Enroll Now
 
 </div>
 
-<div class="col-lg-4">
+<!-- Card -->
 
-<div class="card border-0 shadow">
+<div class="course-card card-hover">
 
-<img src="assets/images/course2.jpg"
-class="card-img-top">
+<img src="assets/images/class7.jpg" alt="Class 7">
 
-<div class="card-body">
+<div class="p-6">
 
-<span class="badge bg-success">
+<span class="badge">
+
+২০২৬
+
+</span>
+
+<h3 class="text-3xl font-bold mt-4">
+
+৭ম শ্রেণি
+
+</h3>
+
+<p class="text-gray-400 mt-3">
+
+Math • Science • ICT • English • Bangla
+
+</p>
+
+<div class="flex justify-between items-center mt-6">
+
+<span class="text-pink-500 text-2xl font-bold">
+
+৳500
+
+</span>
+
+<button
+onclick="openCourseModal('class7')"
+class="btn btn-primary">
+
+View Details
+
+</button>
+
+</div>
+
+</div>
+
+</div>
+
+<!-- Card -->
+
+<div class="course-card card-hover">
+
+<img src="assets/images/class8.jpg" alt="Class 8">
+
+<div class="p-6">
+
+<span class="badge">
+
+২০২৬
+
+</span>
+
+<h3 class="text-3xl font-bold mt-4">
+
+৮ম শ্রেণি
+
+</h3>
+
+<p class="text-gray-400 mt-3">
+
+Math • Science • ICT • English • Bangla
+
+</p>
+
+<div class="flex justify-between items-center mt-6">
+
+<span class="text-pink-500 text-2xl font-bold">
+
+৳500
+
+</span>
+
+<button
+onclick="openCourseModal('class8')"
+class="btn btn-primary">
+
+View Details
+
+</button>
+
+</div>
+
+</div>
+
+</div>
+
+<!-- SSC -->
+
+<div class="course-card card-hover">
+
+<img src="assets/images/ssc.jpg">
+
+<div class="p-6">
+
+<span class="badge bg-green-600">
+
+SSC 2026
+
+</span>
+
+<h3 class="text-3xl font-bold mt-4">
+
+SSC Final Batch
+
+</h3>
+
+<p class="text-gray-400 mt-3">
+
+Science • Business • Humanities
+
+</p>
+
+<div class="flex justify-between items-center mt-6">
+
+<span class="text-pink-500 text-2xl font-bold">
+
+৳4000
+
+</span>
+
+<button
+onclick="openCourseModal('ssc2026')"
+class="btn btn-primary">
+
+View Details
+
+</button>
+
+</div>
+
+</div>
+
+</div>
+
+<!-- HSC -->
+
+<div class="course-card card-hover">
+
+<img src="assets/images/hsc.jpg">
+
+<div class="p-6">
+
+<span class="badge">
+
+HSC 2026
+
+</span>
+
+<h3 class="text-3xl font-bold mt-4">
+
+HSC Final
+
+</h3>
+
+<p class="text-gray-400 mt-3">
+
+Science • Business • Humanities
+
+</p>
+
+<div class="flex justify-between items-center mt-6">
+
+<span class="text-pink-500 text-2xl font-bold">
+
+৳4500
+
+</span>
+
+<button
+onclick="openCourseModal('hsc2026')"
+class="btn btn-primary">
+
+View Details
+
+</button>
+
+</div>
+
+</div>
+
+</div>
+
+<!-- Admission -->
+
+<div class="course-card card-hover">
+
+<img src="assets/images/admission.jpg">
+
+<div class="p-6">
+
+<span class="badge">
 
 Admission
 
 </span>
 
-<h4 class="mt-3">
+<h3 class="text-3xl font-bold mt-4">
 
 University Admission
 
-</h4>
+</h3>
 
-<p>
+<p class="text-gray-400 mt-3">
 
-Engineering | Medical | University
+Engineering • Medical • University
 
 </p>
 
-<a href="#"
-class="btn btn-success w-100">
+<div class="flex justify-between items-center mt-6">
 
-Enroll Now
+<span class="text-pink-500 text-2xl font-bold">
 
-</a>
-
-</div>
-
-</div>
-
-</div>
-
-<div class="col-lg-4">
-
-<div class="card border-0 shadow">
-
-<img src="assets/images/course3.jpg"
-class="card-img-top">
-
-<div class="card-body">
-
-<span class="badge bg-danger">
-
-Job
+৳3000
 
 </span>
 
-<h4 class="mt-3">
+<button
+onclick="openCourseModal('varsity')"
+class="btn btn-primary">
 
-Job Math Complete Course
+View Details
 
-</h4>
-
-<p>
-
-Bank | BCS | Primary | NTRCA
-
-</p>
-
-<a href="#"
-class="btn btn-danger w-100">
-
-Enroll Now
-
-</a>
+</button>
 
 </div>
 
@@ -530,204 +711,77 @@ Enroll Now
 
 </section>
 
-<!-- =========================
-      WHY CHOOSE US
-========================== -->
+<!-- ================= MENTORS ================= -->
 
-<section class="py-5 bg-light">
+<section id="mentors" class="bg-slate-900 py-20">
 
 <div class="container">
 
-<div class="text-center mb-5">
+<div class="text-center mb-16">
 
-<h2 class="fw-bold">
+<h2 class="text-5xl font-bold">
 
-Why Choose Learning Hub?
+👨‍🏫 দেশসেরা শিক্ষক প্যানেল
 
 </h2>
 
-</div>
+<p class="text-gray-400 mt-4">
 
-<div class="row text-center">
-
-<div class="col-lg-3">
-
-<i class="fa-solid fa-video fa-3x text-primary mb-3"></i>
-
-<h5>Live Classes</h5>
-
-<p>
-
-Interactive online classes with mentors.
+Experienced Teachers From Top Universities
 
 </p>
 
 </div>
 
-<div class="col-lg-3">
+<div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
 
-<i class="fa-solid fa-file-pdf fa-3x text-danger mb-3"></i>
+<!-- Mentor -->
 
-<h5>Premium Notes</h5>
+<div class="bg-slate-800 rounded-2xl p-8 text-center card-hover">
 
-<p>
+<img src="assets/images/sonet.jpg"
+class="w-36 h-36 rounded-full mx-auto object-cover border-4 border-pink-500">
 
-Downloadable PDF notes.
+<h3 class="text-2xl font-bold mt-6">
+
+Sonet Vhaiya
+
+</h3>
+
+<p class="text-pink-500">
+
+B.Sc EEE — BUET
+
+</p>
+
+<p class="text-gray-400 mt-4">
+
+Expert Mathematics & Physics Instructor
 
 </p>
 
 </div>
 
-<div class="col-lg-3">
+<!-- Mentor -->
 
-<i class="fa-solid fa-award fa-3x text-success mb-3"></i>
+<div class="bg-slate-800 rounded-2xl p-8 text-center card-hover">
 
-<h5>Certificates</h5>
+<img src="assets/images/tusar.jpg"
+class="w-36 h-36 rounded-full mx-auto object-cover border-4 border-pink-500">
 
-<p>
+<h3 class="text-2xl font-bold mt-6">
 
-Earn certificates after completion.
+Tusar Vhaiya
 
-</p>
+</h3>
 
-</div>
+<p class="text-pink-500">
 
-<div class="col-lg-3">
-
-<i class="fa-solid fa-headset fa-3x text-warning mb-3"></i>
-
-<h5>24/7 Support</h5>
-
-<p>
-
-Always available for students.
+M.Sc Applied Chemistry — RU
 
 </p>
 
-</div>
-
-</div>
-
-</div>
-
-</section>
-
-<!-- =========================
-      COUNTER
-========================== -->
-
-<section class="py-5 text-white bg-primary">
-
-<div class="container">
-
-<div class="row text-center">
-
-<div class="col-md-3">
-
-<h2>10K+</h2>
-
-<p>Students</p>
-
-</div>
-
-<div class="col-md-3">
-
-<h2>35+</h2>
-
-<p>Courses</p>
-
-</div>
-
-<div class="col-md-3">
-
-<h2>15+</h2>
-
-<p>Expert Mentors</p>
-
-</div>
-
-<div class="col-md-3">
-
-<h2>98%</h2>
-
-<p>Success Rate</p>
-
-</div>
-
-</div>
-
-</div>
-
-</section>
-<!-- =========================
-        MENTORS SECTION
-========================== -->
-
-<section class="py-5">
-
-<div class="container">
-
-<div class="text-center mb-5">
-
-<h2 class="fw-bold">Meet Our Expert Mentors</h2>
-
-<p class="text-muted">
-
-Learn from Bangladesh's top educators.
-
-</p>
-
-</div>
-
-<div class="row g-4">
-
-<!-- Mentor 1 -->
-
-<div class="col-lg-4 col-md-6">
-
-<div class="card shadow border-0 text-center p-4 h-100">
-
-<img src="assets/images/mentors/sonet.jpg"
-class="rounded-circle mx-auto mb-3"
-width="120">
-
-<h4>Sonet Vhaiya</h4>
-
-<p class="text-primary fw-bold">
-
-B.Sc EEE, BUET
-
-</p>
-
-<p>
-
-Expert in Higher Mathematics & Physics
-
-</p>
-
-</div>
-
-</div>
-
-<!-- Mentor 2 -->
-
-<div class="col-lg-4 col-md-6">
-
-<div class="card shadow border-0 text-center p-4 h-100">
-
-<img src="assets/images/mentors/tusar.jpg"
-class="rounded-circle mx-auto mb-3"
-width="120">
-
-<h4>Tusar Vhaiya</h4>
-
-<p class="text-success fw-bold">
-
-M.Sc Applied Chemistry, RU
-
-</p>
-
-<p>
+<p class="text-gray-400 mt-4">
 
 Chemistry Specialist
 
@@ -735,111 +789,107 @@ Chemistry Specialist
 
 </div>
 
-</div>
+<!-- Mentor -->
 
-<!-- Mentor 3 -->
+<div class="bg-slate-800 rounded-2xl p-8 text-center card-hover">
 
-<div class="col-lg-4 col-md-6">
+<img src="assets/images/jihad.jpg"
+class="w-36 h-36 rounded-full mx-auto object-cover border-4 border-pink-500">
 
-<div class="card shadow border-0 text-center p-4 h-100">
+<h3 class="text-2xl font-bold mt-6">
 
-<img src="assets/images/mentors/jihad.jpg"
-class="rounded-circle mx-auto mb-3"
-width="120">
+Jihad Vhaiya
 
-<h4>Jihad Vhaiya</h4>
+</h3>
 
-<p class="text-danger fw-bold">
+<p class="text-pink-500">
 
-B.Sc Mechanical, RUET
-
-</p>
-
-<p>
-
-Engineering Admission Mentor
+B.Sc Mechanical — RUET
 
 </p>
 
-</div>
+<p class="text-gray-400 mt-4">
 
-</div>
-
-<!-- Mentor 4 -->
-
-<div class="col-lg-4 col-md-6">
-
-<div class="card shadow border-0 text-center p-4 h-100">
-
-<img src="assets/images/mentors/sujon.jpg"
-class="rounded-circle mx-auto mb-3"
-width="120">
-
-<h4>Sujon Vhaiya</h4>
-
-<p class="fw-bold text-warning">
-
-M.A English, RU
-
-</p>
-
-<p>
-
-English Language Expert
+Physics & Engineering Mentor
 
 </p>
 
 </div>
 
-</div>
+<!-- Mentor -->
 
-<!-- Mentor 5 -->
+<div class="bg-slate-800 rounded-2xl p-8 text-center card-hover">
 
-<div class="col-lg-4 col-md-6">
+<img src="assets/images/sujon.jpg"
+class="w-36 h-36 rounded-full mx-auto object-cover border-4 border-pink-500">
 
-<div class="card shadow border-0 text-center p-4 h-100">
+<h3 class="text-2xl font-bold mt-6">
 
-<img src="assets/images/mentors/musa.jpg"
-class="rounded-circle mx-auto mb-3"
-width="120">
+Sujon Vhaiya
 
-<h4>Musa Vhaiya</h4>
+</h3>
 
-<p class="fw-bold text-primary">
+<p class="text-pink-500">
 
-M.Sc Mathematics, RU & NU
-
-</p>
-
-<p>
-
-Advanced Mathematics Instructor
+M.A English — RU
 
 </p>
 
-</div>
+<p class="text-gray-400 mt-4">
 
-</div>
-
-<!-- Mentor 6 -->
-
-<div class="col-lg-4 col-md-6">
-
-<div class="card shadow border-0 text-center p-4 h-100">
-
-<img src="assets/images/mentors/sifat.jpg"
-class="rounded-circle mx-auto mb-3"
-width="120">
-
-<h4>Sifat Vhaiya</h4>
-
-<p class="fw-bold text-success">
-
-B.Sc Software Engineering, DIU
+English Language Instructor
 
 </p>
 
-<p>
+</div>
+
+<!-- Mentor -->
+
+<div class="bg-slate-800 rounded-2xl p-8 text-center card-hover">
+
+<img src="assets/images/musa.jpg"
+class="w-36 h-36 rounded-full mx-auto object-cover border-4 border-pink-500">
+
+<h3 class="text-2xl font-bold mt-6">
+
+Musa Vhaiya
+
+</h3>
+
+<p class="text-pink-500">
+
+M.Sc Mathematics — RU & NU
+
+</p>
+
+<p class="text-gray-400 mt-4">
+
+Higher Mathematics Expert
+
+</p>
+
+</div>
+
+<!-- Mentor -->
+
+<div class="bg-slate-800 rounded-2xl p-8 text-center card-hover">
+
+<img src="assets/images/sifat.jpg"
+class="w-36 h-36 rounded-full mx-auto object-cover border-4 border-pink-500">
+
+<h3 class="text-2xl font-bold mt-6">
+
+Sifat Vhaiya
+
+</h3>
+
+<p class="text-pink-500">
+
+B.Sc Software Engineering — DIU
+
+</p>
+
+<p class="text-gray-400 mt-4">
 
 ICT & Programming Mentor
 
@@ -851,200 +901,155 @@ ICT & Programming Mentor
 
 </div>
 
-</div>
-
 </section>
 
-<!-- =========================
-       TESTIMONIALS
-========================== -->
+<!-- ================= PRICING ================= -->
 
-<section class="py-5 bg-light">
+<section id="pricing" class="py-20">
 
 <div class="container">
 
-<div class="text-center mb-5">
+<div class="text-center mb-16">
 
-<h2 class="fw-bold">
+<h2 class="text-5xl font-bold">
 
-What Students Say
+💰 Pricing Plans
 
 </h2>
 
-</div>
+<p class="text-gray-400 mt-4">
 
-<div class="row">
-
-<div class="col-lg-4">
-
-<div class="card shadow border-0 p-4">
-
-★★★★★
-
-<p class="mt-3">
-
-Learning Hub helped me achieve my dream university.
+Choose Your Perfect Learning Package
 
 </p>
 
-<h5 class="mt-4">
-
-— Rahim Ahmed
-
-</h5>
-
 </div>
 
-</div>
+<div class="grid lg:grid-cols-3 gap-8">
 
-<div class="col-lg-4">
+<!-- Basic -->
 
-<div class="card shadow border-0 p-4">
+<div class="bg-slate-800 rounded-3xl p-10 card-hover">
 
-★★★★★
+<h3 class="text-3xl font-bold">
 
-<p class="mt-3">
+Basic
 
-Amazing mentors and excellent support.
+</h3>
 
-</p>
+<h2 class="text-5xl text-pink-500 font-bold my-6">
 
-<h5 class="mt-4">
-
-— Nusrat Jahan
-
-</h5>
-
-</div>
-
-</div>
-
-<div class="col-lg-4">
-
-<div class="card shadow border-0 p-4">
-
-★★★★★
-
-<p class="mt-3">
-
-Best platform for Job Math preparation.
-
-</p>
-
-<h5 class="mt-4">
-
-— Arif Hasan
-
-</h5>
-
-</div>
-
-</div>
-
-</div>
-
-</div>
-
-</section>
-
-<!-- =========================
-        FAQ
-========================== -->
-
-<section class="py-5">
-
-<div class="container">
-
-<div class="text-center mb-5">
-
-<h2 class="fw-bold">
-
-Frequently Asked Questions
+৳2000
 
 </h2>
 
-</div>
+<ul class="space-y-4 text-gray-300">
 
-<div class="accordion" id="faq">
+<li>✔ 2 Courses</li>
 
-<div class="accordion-item">
+<li>✔ Weekly Live Class</li>
 
-<h2 class="accordion-header">
+<li>✔ Recorded Video</li>
 
-<button class="accordion-button"
-data-bs-toggle="collapse"
-data-bs-target="#one">
+<li>✔ Notes</li>
 
-How do I enroll?
+<li>✔ Certificate</li>
+
+</ul>
+
+<button class="btn btn-primary w-full mt-10">
+
+Buy Now
 
 </button>
 
+</div>
+
+<!-- PRO -->
+
+<div class="bg-gradient-to-b from-pink-600 to-purple-700 rounded-3xl p-10 scale-105 shadow-2xl">
+
+<div class="text-center">
+
+<span class="bg-yellow-400 text-black px-4 py-2 rounded-full font-bold">
+
+POPULAR
+
+</span>
+
+</div>
+
+<h3 class="text-3xl font-bold mt-6">
+
+Pro
+
+</h3>
+
+<h2 class="text-5xl font-bold my-6">
+
+৳4500
+
 </h2>
 
-<div id="one"
-class="accordion-collapse collapse show">
+<ul class="space-y-4">
 
-<div class="accordion-body">
+<li>✔ Unlimited Courses</li>
 
-Click on the Enroll button and complete your registration.
+<li>✔ Daily Live Class</li>
 
-</div>
+<li>✔ Masterbook</li>
 
-</div>
+<li>✔ Personal Mentor</li>
 
-</div>
+<li>✔ Premium Support</li>
 
-<div class="accordion-item">
+<li>✔ Certificate</li>
 
-<h2 class="accordion-header">
+</ul>
 
-<button class="accordion-button collapsed"
-data-bs-toggle="collapse"
-data-bs-target="#two">
+<button class="bg-white text-pink-600 w-full py-4 rounded-xl mt-10 font-bold">
 
-Do you provide live classes?
+Buy Now
 
 </button>
 
+</div>
+
+<!-- Premium -->
+
+<div class="bg-slate-800 rounded-3xl p-10 card-hover">
+
+<h3 class="text-3xl font-bold">
+
+Premium
+
+</h3>
+
+<h2 class="text-5xl text-pink-500 font-bold my-6">
+
+৳8000
+
 </h2>
 
-<div id="two"
-class="accordion-collapse collapse">
+<ul class="space-y-4 text-gray-300">
 
-<div class="accordion-body">
+<li>✔ Everything in Pro</li>
 
-Yes, all premium batches include live interactive classes.
+<li>✔ Lifetime Access</li>
 
-</div>
+<li>✔ Interview Preparation</li>
 
-</div>
+<li>✔ Job Placement Support</li>
 
-</div>
+<li>✔ VIP Community</li>
 
-<div class="accordion-item">
+</ul>
 
-<h2 class="accordion-header">
+<button class="btn btn-primary w-full mt-10">
 
-<button class="accordion-button collapsed"
-data-bs-toggle="collapse"
-data-bs-target="#three">
-
-Can I watch recorded classes?
+Buy Now
 
 </button>
-
-</h2>
-
-<div id="three"
-class="accordion-collapse collapse">
-
-<div class="accordion-body">
-
-Yes. Every live class is recorded and available later.
-
-</div>
-
-</div>
 
 </div>
 
@@ -1054,63 +1059,489 @@ Yes. Every live class is recorded and available later.
 
 </section>
 
-<!-- =========================
-          FOOTER
-========================== -->
+<!-- ================= WHY CHOOSE US ================= -->
 
-<footer class="bg-dark text-white pt-5 pb-4">
+<section class="bg-slate-900 py-20">
 
 <div class="container">
 
-<div class="row">
+<div class="grid lg:grid-cols-4 gap-8">
 
-<div class="col-lg-4">
+<div class="bg-slate-800 rounded-2xl p-8 text-center">
 
-<h3>Learning Hub Online School</h3>
+<div class="text-6xl mb-5">
 
-<p>
+🎓
 
-Empowering students from Class 5 to University Admission and Job Preparation.
+</div>
+
+<h3 class="text-2xl font-bold">
+
+Expert Teachers
+
+</h3>
+
+</div>
+
+<div class="bg-slate-800 rounded-2xl p-8 text-center">
+
+<div class="text-6xl mb-5">
+
+📚
+
+</div>
+
+<h3 class="text-2xl font-bold">
+
+Premium Notes
+
+</h3>
+
+</div>
+
+<div class="bg-slate-800 rounded-2xl p-8 text-center">
+
+<div class="text-6xl mb-5">
+
+📺
+
+</div>
+
+<h3 class="text-2xl font-bold">
+
+Live Classes
+
+</h3>
+
+</div>
+
+<div class="bg-slate-800 rounded-2xl p-8 text-center">
+
+<div class="text-6xl mb-5">
+
+🏆
+
+</div>
+
+<h3 class="text-2xl font-bold">
+
+Best Results
+
+</h3>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+<!-- ================= TESTIMONIALS ================= -->
+
+<section class="py-20 bg-slate-800">
+
+<div class="container">
+
+<div class="text-center mb-16">
+
+<h2 class="text-5xl font-bold">
+
+⭐ শিক্ষার্থীরা যা বলছে
+
+</h2>
+
+<p class="text-gray-400 mt-4">
+
+আমাদের সফল শিক্ষার্থীদের অভিজ্ঞতা
 
 </p>
 
 </div>
 
-<div class="col-lg-4">
+<div class="grid lg:grid-cols-3 gap-8">
 
-<h5>Quick Links</h5>
+<!-- Review -->
 
-<ul class="list-unstyled">
+<div class="bg-slate-900 rounded-2xl p-8 card-hover">
 
-<li><a href="#" class="text-white">Home</a></li>
+<div class="flex items-center mb-5">
 
-<li><a href="#" class="text-white">Courses</a></li>
+<img src="assets/images/student1.jpg"
+class="w-16 h-16 rounded-full object-cover">
 
-<li><a href="#" class="text-white">Mentors</a></li>
+<div class="ml-4">
 
-<li><a href="#" class="text-white">Contact</a></li>
+<h3 class="font-bold text-xl">
+
+পূজা রানী দাস
+
+</h3>
+
+<p class="text-gray-400">
+
+The Roses Collectorate School
+
+</p>
+
+</div>
+
+</div>
+
+<div class="text-yellow-400 text-xl mb-4">
+
+★★★★★
+
+</div>
+
+<p class="text-gray-300">
+
+অনেক অভিজ্ঞ শিক্ষকদের কারণে আমার পরীক্ষার ফলাফল অনেক ভালো হয়েছে।
+
+</p>
+
+</div>
+
+<!-- Review -->
+
+<div class="bg-slate-900 rounded-2xl p-8 card-hover">
+
+<div class="flex items-center mb-5">
+
+<img src="assets/images/student2.jpg"
+class="w-16 h-16 rounded-full object-cover">
+
+<div class="ml-4">
+
+<h3 class="font-bold text-xl">
+
+তাওহিদুল রহমান
+
+</h3>
+
+<p class="text-gray-400">
+
+High School Student
+
+</p>
+
+</div>
+
+</div>
+
+<div class="text-yellow-400 text-xl mb-4">
+
+★★★★★
+
+</div>
+
+<p class="text-gray-300">
+
+আমি ৬ষ্ঠ শ্রেণি থেকে Learning Hub-এর সাথে আছি। এখানকার লাইভ ক্লাস অসাধারণ।
+
+</p>
+
+</div>
+
+<!-- Review -->
+
+<div class="bg-slate-900 rounded-2xl p-8 card-hover">
+
+<div class="flex items-center mb-5">
+
+<img src="assets/images/student3.jpg"
+class="w-16 h-16 rounded-full object-cover">
+
+<div class="ml-4">
+
+<h3 class="font-bold text-xl">
+
+নাসওয়ান
+
+</h3>
+
+<p class="text-gray-400">
+
+SSC Candidate
+
+</p>
+
+</div>
+
+</div>
+
+<div class="text-yellow-400 text-xl mb-4">
+
+★★★★★
+
+</div>
+
+<p class="text-gray-300">
+
+Recorded Class আর Premium Notes আমার প্রস্তুতিকে আরও সহজ করেছে।
+
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ================= FAQ ================= -->
+
+<section class="py-20">
+
+<div class="container">
+
+<div class="text-center mb-16">
+
+<h2 class="text-5xl font-bold">
+
+❓ সচরাচর জিজ্ঞাসা
+
+</h2>
+
+</div>
+
+<div class="space-y-6">
+
+<div class="bg-slate-800 rounded-xl p-6">
+
+<h3 class="text-2xl font-semibold">
+
+এই কোর্স কাদের জন্য?
+
+</h3>
+
+<p class="text-gray-400 mt-3">
+
+৫ম থেকে এইচএসসি, ভর্তি এবং চাকরি প্রস্তুতির শিক্ষার্থীদের জন্য।
+
+</p>
+
+</div>
+
+<div class="bg-slate-800 rounded-xl p-6">
+
+<h3 class="text-2xl font-semibold">
+
+লাইভ ক্লাস হবে?
+
+</h3>
+
+<p class="text-gray-400 mt-3">
+
+হ্যাঁ, প্রতি সপ্তাহে নির্ধারিত সময়ে লাইভ ক্লাস নেওয়া হবে।
+
+</p>
+
+</div>
+
+<div class="bg-slate-800 rounded-xl p-6">
+
+<h3 class="text-2xl font-semibold">
+
+রেকর্ডেড ক্লাস থাকবে?
+
+</h3>
+
+<p class="text-gray-400 mt-3">
+
+হ্যাঁ, প্রতিটি লাইভ ক্লাসের রেকর্ডিং দেওয়া হবে।
+
+</p>
+
+</div>
+
+<div class="bg-slate-800 rounded-xl p-6">
+
+<h3 class="text-2xl font-semibold">
+
+সার্টিফিকেট পাবো?
+
+</h3>
+
+<p class="text-gray-400 mt-3">
+
+সফলভাবে কোর্স সম্পন্ন করলে সার্টিফিকেট প্রদান করা হবে।
+
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ================= CONTACT ================= -->
+
+<section id="contact" class="py-20 bg-gradient-to-r from-pink-600 to-purple-700">
+
+<div class="container grid lg:grid-cols-2 gap-10">
+
+<div>
+
+<h2 class="text-5xl font-bold mb-8">
+
+📞 যোগাযোগ করুন
+
+</h2>
+
+<p class="text-xl">
+
+📱 01864-000208
+
+</p>
+
+<p class="text-xl mt-4">
+
+📧 learninghubinfo65@gmail.com
+
+</p>
+
+<p class="text-xl mt-4">
+
+📍 Motihar, Rajshahi
+
+</p>
+
+<div class="mt-10">
+
+<a href="https://wa.me/8801864000208"
+
+class="bg-green-500 px-8 py-4 rounded-xl inline-block font-bold hover:bg-green-600">
+
+WhatsApp Now
+
+</a>
+
+</div>
+
+</div>
+
+<div class="bg-white/10 backdrop-blur-lg rounded-2xl p-10">
+
+<h3 class="text-3xl font-bold mb-6">
+
+💳 bKash Payment
+
+</h3>
+
+<h2 class="text-5xl font-bold text-yellow-300">
+
+01864-000208
+
+</h2>
+
+<p class="mt-6">
+
+Payment করার পরে WhatsApp-এ Screenshot পাঠিয়ে দিন।
+
+</p>
+
+<a href="https://wa.me/8801864000208"
+
+class="bg-green-500 mt-8 inline-block px-8 py-4 rounded-xl font-bold">
+
+Send Screenshot
+
+</a>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ================= FOOTER ================= -->
+
+<footer class="bg-slate-950 py-12">
+
+<div class="container">
+
+<div class="grid lg:grid-cols-4 gap-10">
+
+<div>
+
+<h2 class="text-3xl font-bold gradient-text">
+
+Learning Hub
+
+</h2>
+
+<p class="text-gray-400 mt-4">
+
+Think Smart | SSC • HSC • Admission • Job Prep
+
+</p>
+
+</div>
+
+<div>
+
+<h3 class="text-2xl font-bold mb-4">
+
+Quick Links
+
+</h3>
+
+<ul class="space-y-3 text-gray-400">
+
+<li><a href="#">Home</a></li>
+
+<li><a href="#courses">Courses</a></li>
+
+<li><a href="#pricing">Pricing</a></li>
+
+<li><a href="#contact">Contact</a></li>
 
 </ul>
 
 </div>
 
-<div class="col-lg-4">
+<div>
 
-<h5>Contact</h5>
+<h3 class="text-2xl font-bold mb-4">
 
-<p><i class="fa-solid fa-phone"></i> +8801XXXXXXXXX</p>
+Contact
 
-<p><i class="fa-solid fa-envelope"></i> info@learninghub.com</p>
+</h3>
 
-<p><i class="fa-solid fa-location-dot"></i> Rajshahi, Bangladesh</p>
+<p class="text-gray-400">
 
-<div class="mt-3">
+01864-000208
 
-<a href="#" class="text-white me-3"><i class="fab fa-facebook fa-lg"></i></a>
+</p>
 
-<a href="#" class="text-white me-3"><i class="fab fa-youtube fa-lg"></i></a>
+<p class="text-gray-400 mt-2">
 
-<a href="#" class="text-white"><i class="fab fa-instagram fa-lg"></i></a>
+learninghubinfo65@gmail.com
+
+</p>
+
+</div>
+
+<div>
+
+<h3 class="text-2xl font-bold mb-4">
+
+Follow Us
+
+</h3>
+
+<div class="flex gap-5 text-3xl">
+
+<a href="#"><i class="fab fa-facebook"></i></a>
+
+<a href="#"><i class="fab fa-youtube"></i></a>
+
+<a href="#"><i class="fab fa-instagram"></i></a>
+
+<a href="#"><i class="fab fa-linkedin"></i></a>
 
 </div>
 
@@ -1118,11 +1549,9 @@ Empowering students from Class 5 to University Admission and Job Preparation.
 
 </div>
 
-<hr>
+<hr class="border-slate-700 my-10">
 
-<div class="text-center">
-
-<p class="mb-0">
+<p class="text-center text-gray-500">
 
 © 2026 Learning Hub Online School. All Rights Reserved.
 
@@ -1130,1558 +1559,517 @@ Empowering students from Class 5 to University Admission and Job Preparation.
 
 </div>
 
-</div>
-
 </footer>
-/* ==========================================================
-   Learning Hub Online School
-   Professional Style.css (Part 1)
-========================================================== */
+<!-- ================= COURSE MODAL ================= -->
 
-:root{
+<div id="courseModal"
+     class="fixed inset-0 bg-black/70 hidden items-center justify-center z-50">
 
---primary:#2563eb;
---secondary:#0f172a;
---light:#f8fafc;
---dark:#111827;
---gray:#64748b;
---success:#10b981;
---danger:#ef4444;
---warning:#f59e0b;
---radius:18px;
---shadow:0 15px 40px rgba(0,0,0,.08);
+    <div class="bg-slate-900 w-11/12 max-w-5xl rounded-2xl overflow-hidden shadow-2xl relative">
 
-}
+        <!-- Close Button -->
 
-*{
+        <button
+            onclick="closeCourseModal()"
+            class="absolute right-5 top-5 text-white text-3xl hover:text-pink-500">
 
-margin:0;
-padding:0;
-box-sizing:border-box;
+            &times;
 
-}
+        </button>
 
-html{
+        <!-- Header -->
 
-scroll-behavior:smooth;
+        <div class="bg-gradient-to-r from-pink-600 to-purple-700 p-8">
 
-}
+            <h2 id="modalTitle"
+                class="text-4xl font-bold">
 
-body{
+                Course Details
 
-font-family:'Poppins',sans-serif;
-background:#fff;
-color:#222;
-overflow-x:hidden;
+            </h2>
 
-}
+            <p class="text-white/80 mt-2">
 
-/* Scroll Bar */
+                ভর্তি হওয়ার আগে বিস্তারিত দেখে নিন
 
-::-webkit-scrollbar{
+            </p>
 
-width:10px;
+        </div>
 
-}
+        <!-- Body -->
 
-::-webkit-scrollbar-thumb{
+        <div
+            id="modalContent"
+            class="p-8 max-h-[70vh] overflow-y-auto">
 
-background:var(--primary);
-border-radius:20px;
+        </div>
 
-}
-
-/* Navbar */
-
-.navbar{
-
-background:#ffffff;
-box-shadow:0 5px 30px rgba(0,0,0,.05);
-padding:15px 0;
-transition:.3s;
-
-}
-
-.navbar-brand{
-
-font-size:26px;
-font-weight:700;
-
-}
-
-.nav-link{
-
-font-weight:500;
-margin-left:15px;
-color:#333 !important;
-transition:.3s;
-
-}
-
-.nav-link:hover{
-
-color:var(--primary)!important;
-
-}
-
-.btn-primary{
-
-background:var(--primary);
-border:none;
-padding:12px 28px;
-border-radius:50px;
-transition:.4s;
-
-}
-
-.btn-primary:hover{
-
-transform:translateY(-4px);
-
-box-shadow:0 15px 30px rgba(37,99,235,.3);
-
-}
-
-/* Hero */
-
-.hero{
-
-padding:170px 0 120px;
-
-background:
-
-linear-gradient(135deg,#eff6ff,#ffffff);
-
-position:relative;
-
-overflow:hidden;
-
-}
-
-.hero::before{
-
-content:"";
-
-position:absolute;
-
-width:700px;
-height:700px;
-
-background:#2563eb10;
-
-border-radius:50%;
-
-top:-250px;
-right:-180px;
-
-}
-
-.hero h1{
-
-font-size:58px;
-font-weight:800;
-line-height:1.2;
-
-margin:25px 0;
-
-}
-
-.hero p{
-
-font-size:18px;
-line-height:32px;
-
-color:#555;
-
-}
-
-.badge{
-
-background:#e0f2fe;
-color:#0369a1;
-padding:10px 20px;
-border-radius:50px;
-
-font-weight:600;
-
-}
-
-.hero-btn{
-
-margin-top:40px;
-
-}
-
-.hero-btn a{
-
-margin-right:15px;
-
-}
-
-.hero-search{
-
-margin-top:45px;
-
-}
-
-.hero-search input{
-
-height:60px;
-
-border-radius:50px 0 0 50px;
-
-padding-left:25px;
-
-border:none;
-
-box-shadow:var(--shadow);
-
-}
-
-.hero-search button{
-
-border-radius:0 50px 50px 0;
-
-}
-
-.hero-image{
-
-animation:float 4s ease-in-out infinite;
-
-max-width:100%;
-
-}
-
-/* Animation */
-
-@keyframes float{
-
-0%{
-
-transform:translateY(0);
-
-}
-
-50%{
-
-transform:translateY(-18px);
-
-}
-
-100%{
-
-transform:translateY(0);
-
-}
-
-}
-
-/* Stats */
-
-.hero-stats{
-
-margin-top:60px;
-
-}
-
-.hero-stats h2{
-
-font-size:42px;
-
-font-weight:700;
-
-color:var(--primary);
-
-}
-
-.hero-stats p{
-
-font-size:15px;
-
-}
-
-/* Sections */
-
-section{
-
-padding:90px 0;
-
-}
-
-section h2{
-
-font-size:42px;
-
-font-weight:700;
-
-margin-bottom:15px;
-
-}
-
-/* Cards */
-
-.card{
-
-border:none;
-
-border-radius:var(--radius);
-
-overflow:hidden;
-
-box-shadow:var(--shadow);
-
-transition:.4s;
-
-}
-
-.card:hover{
-
-transform:translateY(-12px);
-
-}
-
-.card img{
-
-height:230px;
-
-object-fit:cover;
-
-}
-
-.card-body{
-
-padding:30px;
-
-}
-
-.card h4{
-
-font-size:24px;
-
-font-weight:700;
-
-margin:20px 0;
-
-}
-
-/* Category */
-
-.category-card{
-
-padding:40px;
-
-text-align:center;
-
-background:#fff;
-
-border-radius:20px;
-
-box-shadow:var(--shadow);
-
-transition:.4s;
-
-}
-
-.category-card:hover{
-
-background:var(--primary);
-
-color:white;
-
-transform:translateY(-10px);
-
-}
-
-.category-card i{
-
-font-size:45px;
-
-margin-bottom:20px;
-
-}
-
-/* Mentor */
-
-.rounded-circle{
-
-border:6px solid white;
-
-box-shadow:var(--shadow);
-
-}
-
-/* Testimonials */
-
-.testimonial{
-
-padding:35px;
-
-background:white;
-
-border-radius:20px;
-
-box-shadow:var(--shadow);
-
-}
-
-.testimonial p{
-
-line-height:30px;
-
-color:#666;
-
-}
-
-/* FAQ */
-
-.accordion-button{
-
-font-weight:600;
-
-padding:22px;
-
-}
-
-.accordion-button:not(.collapsed){
-
-background:#eff6ff;
-
-color:var(--primary);
-
-}
-
-/* Footer */
-
-footer{
-
-background:#0f172a;
-
-}
-
-footer h3{
-
-font-weight:700;
-
-margin-bottom:20px;
-
-}
-
-footer a{
-
-text-decoration:none;
-
-transition:.3s;
-
-}
-
-footer a:hover{
-
-color:#60a5fa!important;
-
-padding-left:8px;
-
-}
-
-footer i{
-
-margin-right:8px;
-
-}
-
-/* Buttons */
-
-.btn{
-
-font-weight:600;
-
-}
-
-.btn-outline-primary{
-
-border-radius:50px;
-
-padding:12px 28px;
-
-}
-
-/* Responsive */
-
-@media(max-width:991px){
-
-.hero{
-
-text-align:center;
-
-padding-top:140px;
-
-}
-
-.hero h1{
-
-font-size:42px;
-
-}
-
-.hero-image{
-
-margin-top:50px;
-
-}
-
-.navbar-nav{
-
-text-align:center;
-
-margin-top:20px;
-
-}
-
-}
-
-@media(max-width:576px){
-
-.hero h1{
-
-font-size:34px;
-
-}
-
-section h2{
-
-font-size:30px;
-
-}
-
-.card{
-
-margin-bottom:20px;
-
-}
-
-}
-/* ==========================================
-   Premium Hover Effects
-========================================== */
-
-.card{
-    transition:all .35s ease;
-}
-
-.card:hover{
-    transform:translateY(-15px);
-    box-shadow:0 25px 60px rgba(0,0,0,.15);
-}
-
-.card img{
-    transition:.5s;
-}
-
-.card:hover img{
-    transform:scale(1.08);
-}
-
-/* ==========================
-   Category Cards
-========================== */
-
-.category-card{
-
-    background:white;
-    border-radius:20px;
-    padding:40px;
-    text-align:center;
-    overflow:hidden;
-    position:relative;
-    cursor:pointer;
-
-}
-
-.category-card::before{
-
-content:"";
-position:absolute;
-left:-100%;
-top:0;
-
-width:100%;
-height:100%;
-
-background:linear-gradient(
-45deg,
-#2563eb,
-#4f46e5
-);
-
-transition:.6s;
-
-z-index:0;
-
-}
-
-.category-card:hover::before{
-
-left:0;
-
-}
-
-.category-card *{
-
-position:relative;
-z-index:5;
-
-}
-
-.category-card:hover{
-
-color:white;
-
-}
-
-.category-card i{
-
-font-size:55px;
-margin-bottom:20px;
-
-transition:.5s;
-
-}
-
-.category-card:hover i{
-
-transform:rotateY(180deg);
-
-}
-
-/* ==========================
-Course Card
-========================== */
-
-.course-card{
-
-border-radius:25px;
-overflow:hidden;
-background:white;
-
-}
-
-.course-card img{
-
-height:240px;
-width:100%;
-object-fit:cover;
-
-}
-
-.course-card .price{
-
-font-size:24px;
-font-weight:700;
-color:#2563eb;
-
-}
-
-.course-card .old{
-
-text-decoration:line-through;
-color:#999;
-
-margin-left:10px;
-
-}
-
-/* Badge */
-
-.live{
-
-background:red;
-color:white;
-padding:8px 18px;
-border-radius:40px;
-
-font-size:13px;
-
-display:inline-block;
-
-}
-
-/* Rating */
-
-.rating{
-
-color:#ffc107;
-
-}
-
-/* ==========================
-Hero Image
-========================== */
-
-.hero-image{
-
-animation:float 5s infinite;
-
-filter:drop-shadow(
-0 30px 50px rgba(0,0,0,.2)
-);
-
-}
-
-@keyframes float{
-
-0%{
-
-transform:translateY(0);
-
-}
-
-50%{
-
-transform:translateY(-18px);
-
-}
-
-100%{
-
-transform:translateY(0);
-
-}
-
-}
-
-/* ==========================
-Buttons
-========================== */
-
-.btn-primary{
-
-background:#2563eb;
-border:none;
-
-}
-
-.btn-primary:hover{
-
-background:#1d4ed8;
-
-}
-
-/* ==========================
-Mentor Card
-========================== */
-
-.mentor-card{
-
-border-radius:20px;
-overflow:hidden;
-background:white;
-text-align:center;
-padding:30px;
-
-transition:.4s;
-
-}
-
-.mentor-card:hover{
-
-transform:translateY(-15px);
-
-}
-
-.mentor-card img{
-
-width:140px;
-height:140px;
-
-border-radius:50%;
-
-object-fit:cover;
-
-margin-bottom:20px;
-
-}
-
-/* Social */
-
-.social a{
-
-height:42px;
-width:42px;
-
-display:inline-flex;
-
-justify-content:center;
-
-align-items:center;
-
-border-radius:50%;
-
-background:#f4f4f4;
-
-margin:5px;
-
-transition:.4s;
-
-}
-
-.social a:hover{
-
-background:#2563eb;
-
-color:white;
-
-}
-
-/* ==========================
-Section Title
-========================== */
-
-.section-title{
-
-margin-bottom:60px;
-
-text-align:center;
-
-}
-
-.section-title h2{
-
-font-size:45px;
-
-font-weight:700;
-
-}
-
-.section-title p{
-
-color:#777;
-
-font-size:18px;
-
-}
-
-/* ==========================
-Feature Box
-========================== */
-
-.feature{
-
-padding:35px;
-
-background:white;
-
-border-radius:20px;
-
-text-align:center;
-
-transition:.4s;
-
-}
-
-.feature:hover{
-
-background:#2563eb;
-
-color:white;
-
-transform:translateY(-12px);
-
-}
-
-.feature i{
-
-font-size:55px;
-
-margin-bottom:25px;
-
-}
-
-/* ==========================
-Counter
-========================== */
-
-.counter{
-
-background:#2563eb;
-color:white;
-
-padding:80px 0;
-
-}
-
-.counter h2{
-
-font-size:55px;
-
-font-weight:700;
-
-}
-
-.counter p{
-
-font-size:18px;
-
-}
-
-/* ==========================
-Footer
-========================== */
-
-footer{
-
-background:#0f172a;
-
-}
-
-footer a{
-
-color:#ddd;
-
-}
-
-footer a:hover{
-
-color:white;
-
-}
-<!-- ===========================================
-            LIVE BATCH SECTION
-============================================ -->
-
-<section class="live-batch py-5">
-
-<div class="container">
-
-<div class="section-title">
-
-<span class="text-primary fw-bold">LIVE CLASSES</span>
-
-<h2>Join Our Premium Live Batches</h2>
-
-<p>
-Learn from Bangladesh's top mentors with live interactive classes.
-</p>
+    </div>
 
 </div>
 
-<div class="row g-4">
+<!-- ================= LOADING SPINNER ================= -->
 
-<!-- Card 1 -->
+<div
+id="loader"
+class="fixed inset-0 bg-slate-950 flex items-center justify-center z-[9999]">
 
-<div class="col-lg-4">
-
-<div class="course-card shadow">
-
-<div class="position-relative">
-
-<img src="assets/images/live1.jpg"
-class="img-fluid w-100">
-
-<span class="live position-absolute top-0 end-0 m-3">
-
-LIVE
-
-</span>
-
-</div>
-
-<div class="p-4">
-
-<h4>HSC 2027 Complete Batch</h4>
-
-<p>
-
-Physics • Chemistry • Math • ICT
-
-</p>
-
-<div class="d-flex justify-content-between">
-
-<span>
-
-<i class="fa-solid fa-users"></i>
-
-2500+ Students
-
-</span>
-
-<span class="price">
-
-৳1999
-
-</span>
-
-</div>
-
-<a href="#" class="btn btn-primary w-100 mt-4">
-
-Enroll Now
-
-</a>
+<div
+class="w-20 h-20 border-4 border-pink-500 border-t-transparent rounded-full animate-spin">
 
 </div>
 
 </div>
 
-</div>
+<!-- ================= BACK TO TOP ================= -->
 
-<!-- Card 2 -->
+<button
+id="backToTop"
+onclick="scrollToTop()"
+class="hidden fixed bottom-8 right-8 w-14 h-14 rounded-full bg-pink-600 hover:bg-pink-700 text-white shadow-xl z-40">
 
-<div class="col-lg-4">
+<i class="fas fa-arrow-up"></i>
 
-<div class="course-card shadow">
+</button>
 
-<div class="position-relative">
+<!-- ================= MOBILE MENU BUTTON ================= -->
 
-<img src="assets/images/live2.jpg"
-class="img-fluid w-100">
+<button
+id="mobileBtn"
+class="lg:hidden fixed top-5 right-5 bg-pink-600 p-3 rounded-lg z-50">
 
-<span class="live position-absolute top-0 end-0 m-3">
+<i class="fas fa-bars"></i>
 
-LIVE
+</button>
 
-</span>
+<!-- ================= MOBILE MENU ================= -->
 
-</div>
+<div
+id="mobileMenu"
+class="fixed top-0 left-[-100%] w-72 h-full bg-slate-900 transition-all duration-300 z-40">
 
-<div class="p-4">
+<div class="p-8">
 
-<h4>University Admission Batch</h4>
+<h2 class="text-3xl font-bold gradient-text mb-10">
 
-<p>
-
-Engineering • Medical • University
-
-</p>
-
-<div class="d-flex justify-content-between">
-
-<span>
-
-<i class="fa-solid fa-users"></i>
-
-1800+ Students
-
-</span>
-
-<span class="price">
-
-৳2499
-
-</span>
-
-</div>
-
-<a href="#" class="btn btn-primary w-100 mt-4">
-
-Enroll Now
-
-</a>
-
-</div>
-
-</div>
-
-</div>
-
-<!-- Card 3 -->
-
-<div class="col-lg-4">
-
-<div class="course-card shadow">
-
-<div class="position-relative">
-
-<img src="assets/images/live3.jpg"
-class="img-fluid w-100">
-
-<span class="live position-absolute top-0 end-0 m-3">
-
-LIVE
-
-</span>
-
-</div>
-
-<div class="p-4">
-
-<h4>Job Math Master Course</h4>
-
-<p>
-
-BCS • Bank • Primary • NTRCA
-
-</p>
-
-<div class="d-flex justify-content-between">
-
-<span>
-
-<i class="fa-solid fa-users"></i>
-
-3200+ Students
-
-</span>
-
-<span class="price">
-
-৳1499
-
-</span>
-
-</div>
-
-<a href="#" class="btn btn-primary w-100 mt-4">
-
-Enroll Now
-
-</a>
-
-</div>
-
-</div>
-
-</div>
-
-</div>
-
-</div>
-
-</section>
-
-<!-- ===========================================
-             SUCCESS SECTION
-============================================ -->
-
-<section class="counter">
-
-<div class="container">
-
-<div class="row text-center">
-
-<div class="col-lg-3">
-
-<i class="fa-solid fa-user-graduate fa-3x mb-3"></i>
-
-<h2>15,000+</h2>
-
-<p>Students</p>
-
-</div>
-
-<div class="col-lg-3">
-
-<i class="fa-solid fa-book-open fa-3x mb-3"></i>
-
-<h2>50+</h2>
-
-<p>Courses</p>
-
-</div>
-
-<div class="col-lg-3">
-
-<i class="fa-solid fa-chalkboard-user fa-3x mb-3"></i>
-
-<h2>20+</h2>
-
-<p>Expert Mentors</p>
-
-</div>
-
-<div class="col-lg-3">
-
-<i class="fa-solid fa-award fa-3x mb-3"></i>
-
-<h2>98%</h2>
-
-<p>Success Rate</p>
-
-</div>
-
-</div>
-
-</div>
-
-</section>
-
-<!-- ===========================================
-            DOWNLOAD APP SECTION
-============================================ -->
-
-<section class="py-5 bg-light">
-
-<div class="container">
-
-<div class="row align-items-center">
-
-<div class="col-lg-6">
-
-<img src="assets/images/mobile-app.png"
-class="img-fluid">
-
-</div>
-
-<div class="col-lg-6">
-
-<span class="text-primary fw-bold">
-
-LEARNING ANYTIME
-
-</span>
-
-<h2 class="display-5 fw-bold mt-3">
-
-Download Our Mobile App
+Learning Hub
 
 </h2>
 
-<p class="mt-4">
+<ul class="space-y-6 text-xl">
 
-Study anywhere, anytime. Watch live classes,
-download notes, practice quizzes and track your
-learning progress from your mobile phone.
+<li><a href="#">Home</a></li>
+
+<li><a href="#courses">Courses</a></li>
+
+<li><a href="#features">Features</a></li>
+
+<li><a href="#mentors">Mentors</a></li>
+
+<li><a href="#pricing">Pricing</a></li>
+
+<li><a href="#contact">Contact</a></li>
+
+</ul>
+
+</div>
+
+</div>
+
+<!-- ================= SCRIPT START ================= -->
+
+<script>
+
+const modal=document.getElementById("courseModal");
+
+const modalTitle=document.getElementById("modalTitle");
+
+const modalContent=document.getElementById("modalContent");
+
+// ================= COURSE DATA =================
+
+const courseData = {
+
+class6:{
+title:"৬ষ্ঠ শ্রেণি ব্যাচ ২০২৬",
+subjects:[
+{
+name:"গণিত",
+price:"৳500",
+duration:"৩ মাস",
+description:"সহজ ভাষায় সম্পূর্ণ গণিত কোর্স।",
+features:[
+"১০টি লাইভ ক্লাস",
+"PDF Notes",
+"MCQ Practice",
+"Recorded Class"
+]
+},
+{
+name:"বিজ্ঞান",
+price:"৳500",
+duration:"৩ মাস",
+description:"Physics, Chemistry, Biology Complete Course.",
+features:[
+"১০টি লাইভ ক্লাস",
+"Master Book",
+"Weekly Exam",
+"Recorded Video"
+]
+},
+{
+name:"ICT",
+price:"৳400",
+duration:"২ মাস",
+description:"ICT Complete Course.",
+features:[
+"৮টি ক্লাস",
+"লাইভ সাপোর্ট",
+"MCQ",
+"Assignment"
+]
+}
+]
+},
+
+class7:{
+title:"৭ম শ্রেণি ব্যাচ",
+subjects:[
+{
+name:"Math",
+price:"৳500",
+duration:"৩ মাস",
+description:"Complete Math Course.",
+features:[
+"১০টি লাইভ ক্লাস",
+"PDF",
+"Weekly Test",
+"Support"
+]
+}
+]
+},
+
+class8:{
+title:"৮ম শ্রেণি ব্যাচ",
+subjects:[
+{
+name:"Math",
+price:"৳500",
+duration:"৩ মাস",
+description:"Complete Math Preparation.",
+features:[
+"১০টি ক্লাস",
+"Notes",
+"Exam",
+"Support"
+]
+}
+]
+},
+
+ssc2026:{
+title:"SSC Final Batch",
+
+subjects:[
+
+{
+
+name:"Science Group",
+
+price:"৳4000",
+
+duration:"৫ মাস",
+
+description:"SSC Complete Science Batch.",
+
+features:[
+
+"৫০+ লাইভ ক্লাস",
+
+"Masterbook",
+
+"Mock Test",
+
+"২৪/৭ Support"
+
+]
+
+},
+
+{
+
+name:"Business Studies",
+
+price:"৳3500",
+
+duration:"৫ মাস",
+
+description:"SSC Business Preparation.",
+
+features:[
+
+"Live Class",
+
+"Recorded",
+
+"Notes",
+
+"Exam"
+
+]
+
+},
+
+{
+
+name:"Humanities",
+
+price:"৳3500",
+
+duration:"৫ মাস",
+
+description:"SSC Humanities Complete Batch.",
+
+features:[
+
+"Weekly Exam",
+
+"Live Class",
+
+"Notes",
+
+"Support"
+
+]
+
+}
+
+]
+
+},
+
+hsc2026:{
+
+title:"HSC Final Batch",
+
+subjects:[
+
+{
+
+name:"Science",
+
+price:"৳4500",
+
+duration:"৪ মাস",
+
+description:"Complete HSC Preparation.",
+
+features:[
+
+"৫০+ ক্লাস",
+
+"MCQ",
+
+"Model Test",
+
+"Support"
+
+]
+
+}
+
+]
+
+},
+
+varsity:{
+
+title:"University Admission",
+
+subjects:[
+
+{
+
+name:"Engineering",
+
+price:"৳3000",
+
+duration:"৮ মাস",
+
+description:"BUET, RUET, CUET Preparation.",
+
+features:[
+
+"Previous Questions",
+
+"লাইভ ক্লাস",
+
+"Mock Test",
+
+"Support"
+
+]
+
+}
+
+]
+
+}
+
+};
+
+//================ OPEN MODAL =================
+
+function openCourseModal(course){
+
+const data=courseData[course];
+
+if(!data) return;
+
+modalTitle.innerHTML=data.title;
+
+let html="";
+
+data.subjects.forEach(item=>{
+
+html+=`
+
+<div class="bg-slate-800 rounded-xl p-6 mb-6">
+
+<h3 class="text-3xl font-bold text-pink-500">
+
+${item.name}
+
+</h3>
+
+<p class="mt-4 text-gray-300">
+
+${item.description}
 
 </p>
 
-<div class="mt-4">
+<div class="grid md:grid-cols-2 gap-4 mt-6">
 
-<a href="#" class="btn btn-dark btn-lg me-3">
+<div>
 
-<i class="fab fa-google-play me-2"></i>
+<strong>Price :</strong>
 
-Google Play
+${item.price}
 
-</a>
+</div>
 
-<a href="#" class="btn btn-success btn-lg">
+<div>
 
-<i class="fab fa-apple me-2"></i>
+<strong>Duration :</strong>
 
-App Store
-
-</a>
+${item.duration}
 
 </div>
 
 </div>
 
-</div>
+<ul class="mt-6 space-y-2">
 
-</div>
+${item.features.map(f=>`<li>✅ ${f}</li>`).join("")}
 
-</section>
+</ul>
 
-<!-- ===========================================
-            BLOG SECTION
-============================================ -->
+<button
 
-<section class="py-5">
-
-<div class="container">
-
-<div class="section-title">
-
-<span class="text-primary fw-bold">
-
-LATEST ARTICLES
-
-</span>
-
-<h2>Learning Resources</h2>
-
-<p>
-
-Stay updated with educational news and tips.
-
-</p>
-
-</div>
-
-<div class="row g-4">
-
-<div class="col-lg-4">
-
-<div class="card">
-
-<img src="assets/images/blog1.jpg"
-class="card-img-top">
-
-<div class="card-body">
-
-<span class="badge bg-primary">
-
-Admission
-
-</span>
-
-<h4 class="mt-3">
-
-10 Tips to Crack University Admission
-
-</h4>
-
-<p>
-
-Learn smart strategies for admission preparation.
-
-</p>
-
-<a href="#">
-
-Read More →
-
-</a>
-
-</div>
-
-</div>
-
-</div>
-
-<div class="col-lg-4">
-
-<div class="card">
-
-<img src="assets/images/blog2.jpg"
-class="card-img-top">
-
-<div class="card-body">
-
-<span class="badge bg-success">
-
-HSC
-
-</span>
-
-<h4 class="mt-3">
-
-How to Score A+ in HSC Math
-
-</h4>
-
-<p>
-
-Daily routine and preparation strategy.
-
-</p>
-
-<a href="#">
-
-Read More →
-
-</a>
-
-</div>
-
-</div>
-
-</div>
-
-<div class="col-lg-4">
-
-<div class="card">
-
-<img src="assets/images/blog3.jpg"
-class="card-img-top">
-
-<div class="card-body">
-
-<span class="badge bg-danger">
-
-Job
-
-</span>
-
-<h4 class="mt-3">
-
-Top Job Math Shortcuts
-
-</h4>
-
-<p>
-
-Master the fastest techniques for competitive exams.
-
-</p>
-
-<a href="#">
-
-Read More →
-
-</a>
-
-</div>
-
-</div>
-
-</div>
-
-</div>
-
-</div>
-
-</section>
-
-<!-- ===========================================
-            CALL TO ACTION
-============================================ -->
-
-<section class="py-5 bg-primary text-white">
-
-<div class="container">
-
-<div class="row align-items-center">
-
-<div class="col-lg-8">
-
-<h2 class="fw-bold">
-
-Start Your Learning Journey Today!
-
-</h2>
-
-<p class="mt-3">
-
-Join thousands of successful students learning with Learning Hub Online School.
-
-</p>
-
-</div>
-
-<div class="col-lg-4 text-lg-end">
-
-<a href="#"
-class="btn btn-light btn-lg">
+class="mt-8 bg-pink-600 hover:bg-pink-700 px-8 py-3 rounded-lg">
 
 Enroll Now
 
-</a>
+</button>
 
 </div>
 
-</div>
-
-</div>
-
-</section>
-
-/* ======================================
-   Learning Hub Online School
-====================================== */
-
-// Navbar Scroll Effect
-
-const navbar = document.querySelector(".navbar");
-
-window.addEventListener("scroll", () => {
-
-    if(window.scrollY > 50){
-
-        navbar.classList.add("shadow");
-        navbar.style.background="#ffffff";
-
-    }else{
-
-        navbar.classList.remove("shadow");
-        navbar.style.background="transparent";
-
-    }
+`;
 
 });
 
+modalContent.innerHTML=html;
 
-// Counter Animation
+modal.classList.remove("hidden");
 
-const counters=document.querySelectorAll("h2");
+modal.classList.add("flex");
 
-counters.forEach(counter=>{
-
-let start=0;
-
-const end=parseInt(counter.innerText);
-
-if(isNaN(end)) return;
-
-const speed=40;
-
-const update=()=>{
-
-start++;
-
-counter.innerText=start+"+";
-
-if(start<end){
-
-requestAnimationFrame(update);
+document.body.style.overflow="hidden";
 
 }
 
+ // ================= CLOSE MODAL =================
+
+function closeCourseModal(){
+
+modal.classList.remove("flex");
+
+modal.classList.add("hidden");
+
+document.body.style.overflow="auto";
+
 }
 
-update();
+// Close when clicking outside
 
-});
+modal.addEventListener("click",function(e){
 
+if(e.target===modal){
 
-// Scroll Animation
-
-const observer=new IntersectionObserver(entries=>{
-
-entries.forEach(entry=>{
-
-if(entry.isIntersecting){
-
-entry.target.classList.add("show");
+closeCourseModal();
 
 }
 
 });
 
+// ================= MOBILE MENU =================
+
+const mobileBtn=document.getElementById("mobileBtn");
+
+const mobileMenu=document.getElementById("mobileMenu");
+
+let menuOpen=false;
+
+mobileBtn.addEventListener("click",()=>{
+
+menuOpen=!menuOpen;
+
+if(menuOpen){
+
+mobileMenu.style.left="0";
+
+mobileBtn.innerHTML='<i class="fas fa-times"></i>';
+
+}else{
+
+mobileMenu.style.left="-100%";
+
+mobileBtn.innerHTML='<i class="fas fa-bars"></i>';
+
+}
+
 });
 
-document.querySelectorAll(".card").forEach(el=>{
+// ================= BACK TO TOP =================
 
-observer.observe(el);
-
-});
-
-
-// Search
-
-const search=document.querySelector(".hero-search input");
-
-search.addEventListener("keyup",(e)=>{
-
-console.log("Searching : "+e.target.value);
-
-});
-
-
-// Back To Top
-
-const topBtn=document.createElement("button");
-
-topBtn.innerHTML="↑";
-
-topBtn.id="topBtn";
-
-document.body.appendChild(topBtn);
+const topBtn=document.getElementById("backToTop");
 
 window.addEventListener("scroll",()=>{
 
 if(window.scrollY>300){
 
-topBtn.style.display="block";
+topBtn.classList.remove("hidden");
 
 }else{
 
-topBtn.style.display="none";
+topBtn.classList.add("hidden");
 
 }
 
 });
 
-topBtn.onclick=()=>{
+function scrollToTop(){
 
 window.scrollTo({
 
@@ -2692,1901 +2080,130 @@ behavior:"smooth"
 });
 
 }
-<script src="assets/js/app.js"></script>
-.show{
 
-opacity:1!important;
+// ================= LOADER =================
 
-transform:translateY(0)!important;
+window.addEventListener("load",()=>{
 
-}
+setTimeout(()=>{
 
-.card{
+document.getElementById("loader").style.display="none";
 
-opacity:0;
+},700);
 
-transform:translateY(50px);
+});
 
-transition:.7s;
+// ================= COUNTER =================
 
-}
+const counters=document.querySelectorAll(".stats-card h2");
 
-#topBtn{
+const speed=80;
 
-position:fixed;
+counters.forEach(counter=>{
 
-right:30px;
+const update=()=>{
 
-bottom:30px;
+const target=parseInt(counter.innerText.replace(/\D/g,""));
 
-width:55px;
+let count=parseInt(counter.dataset.count)||0;
 
-height:55px;
+const increment=Math.ceil(target/speed);
 
-border:none;
+if(count<target){
 
-background:#2563eb;
+count+=increment;
 
-color:white;
+counter.dataset.count=count;
 
-font-size:22px;
+counter.innerText=count+"+";
 
-border-radius:50%;
+requestAnimationFrame(update);
 
-cursor:pointer;
+}else{
 
-display:none;
-
-box-shadow:0 10px 25px rgba(0,0,0,.3);
-
-z-index:9999;
-
-transition:.4s;
+counter.innerText=counter.innerText.includes("★")?"4.9★":target+"+";
 
 }
 
-#topBtn:hover{
+};
 
-transform:translateY(-8px);
+update();
 
-background:#1d4ed8;
+});
+
+// ================= SCROLL ANIMATION =================
+
+const observer=new IntersectionObserver((entries)=>{
+
+entries.forEach(entry=>{
+
+if(entry.isIntersecting){
+
+entry.target.classList.add("fade-up");
 
 }
 
-<!DOCTYPE html>
-<html lang="en">
+});
 
-<head>
+},
 
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+{
 
-<title>Courses | Learning Hub Online School</title>
+threshold:.15
 
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+});
 
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+document.querySelectorAll("section").forEach(sec=>{
 
-<link rel="stylesheet" href="assets/css/style.css">
+observer.observe(sec);
 
-</head>
+});
 
-<body>
+// ================= ACTIVE NAV =================
 
-<!-- Navbar -->
+const sections=document.querySelectorAll("section");
 
-<nav class="navbar navbar-expand-lg bg-white shadow-sm sticky-top">
+const navLinks=document.querySelectorAll("nav a");
 
-<div class="container">
+window.addEventListener("scroll",()=>{
 
-<a class="navbar-brand fw-bold text-primary" href="index.html">
+let current="";
 
-Learning Hub
+sections.forEach(section=>{
 
-</a>
+const sectionTop=section.offsetTop-120;
 
-<button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">
+if(pageYOffset>=sectionTop){
 
-<span class="navbar-toggler-icon"></span>
+current=section.getAttribute("id");
 
-</button>
+}
 
-<div class="collapse navbar-collapse" id="menu">
+});
 
-<ul class="navbar-nav ms-auto">
+navLinks.forEach(link=>{
 
-<li class="nav-item">
-<a class="nav-link" href="index.html">Home</a>
-</li>
+link.classList.remove("text-pink-500");
 
-<li class="nav-item">
-<a class="nav-link active" href="courses.html">Courses</a>
-</li>
+if(link.getAttribute("href")=="#"+current){
 
-<li class="nav-item">
-<a class="nav-link" href="#">Mentors</a>
-</li>
+link.classList.add("text-pink-500");
 
-<li class="nav-item">
-<a class="nav-link" href="#">Contact</a>
-</li>
+}
 
-</ul>
+});
 
-</div>
+});
 
-</div>
+// ================= YEAR =================
 
-</nav>
+const year=document.getElementById("year");
 
-<!-- Hero -->
+if(year){
 
-<section class="bg-primary text-white py-5">
+year.innerHTML=new Date().getFullYear();
 
-<div class="container text-center">
+}
 
-<h1 class="display-4 fw-bold">
-
-Explore Our Courses
-
-</h1>
-
-<p>
-
-Choose the perfect course for your future.
-
-</p>
-
-</div>
-
-</section>
-
-<!-- Search -->
-
-<section class="py-4 bg-light">
-
-<div class="container">
-
-<div class="row">
-
-<div class="col-lg-8">
-
-<input
-type="text"
-class="form-control form-control-lg"
-placeholder="Search Course...">
-
-</div>
-
-<div class="col-lg-4">
-
-<select class="form-select form-select-lg">
-
-<option>All Categories</option>
-
-<option>SSC</option>
-
-<option>HSC</option>
-
-<option>University Admission</option>
-
-<option>Job Math</option>
-
-</select>
-
-</div>
-
-</div>
-
-</div>
-
-</section>
-
-<!-- Courses -->
-
-<section class="py-5">
-
-<div class="container">
-
-<div class="row g-4">
-
-<!-- Course -->
-
-<div class="col-lg-4">
-
-<div class="card shadow">
-
-<img src="assets/images/course1.jpg" class="card-img-top">
-
-<div class="card-body">
-
-<span class="badge bg-primary">
-
-HSC
-
-</span>
-
-<h4 class="mt-3">
-
-HSC Complete Batch
-
-</h4>
-
-<p>
-
-Physics, Chemistry, Biology, ICT
-
-</p>
-
-<div class="d-flex justify-content-between">
-
-<h5 class="text-primary">
-
-৳1999
-
-</h5>
-
-<span>
-
-★★★★★
-
-</span>
-
-</div>
-
-<a href="#" class="btn btn-primary w-100 mt-3">
-
-View Details
-
-</a>
-
-</div>
-
-</div>
-
-</div>
-
-<!-- Course -->
-
-<div class="col-lg-4">
-
-<div class="card shadow">
-
-<img src="assets/images/course2.jpg" class="card-img-top">
-
-<div class="card-body">
-
-<span class="badge bg-success">
-
-Admission
-
-</span>
-
-<h4 class="mt-3">
-
-University Admission
-
-</h4>
-
-<p>
-
-Engineering | Medical | GST
-
-</p>
-
-<div class="d-flex justify-content-between">
-
-<h5 class="text-success">
-
-৳2499
-
-</h5>
-
-<span>
-
-★★★★★
-
-</span>
-
-</div>
-
-<a href="#" class="btn btn-success w-100 mt-3">
-
-View Details
-
-</a>
-
-</div>
-
-</div>
-
-</div>
-
-<!-- Course -->
-
-<div class="col-lg-4">
-
-<div class="card shadow">
-
-<img src="assets/images/course3.jpg" class="card-img-top">
-
-<div class="card-body">
-
-<span class="badge bg-danger">
-
-Job
-
-</span>
-
-<h4 class="mt-3">
-
-Job Math Complete
-
-</h4>
-
-<p>
-
-BCS | Bank | Primary | NTRCA
-
-</p>
-
-<div class="d-flex justify-content-between">
-
-<h5 class="text-danger">
-
-৳1499
-
-</h5>
-
-<span>
-
-★★★★★
-
-</span>
-
-</div>
-
-<a href="#" class="btn btn-danger w-100 mt-3">
-
-View Details
-
-</a>
-
-</div>
-
-</div>
-
-</div>
-
-</div>
-
-</div>
-
-</section>
-
-<!-- Pagination -->
-
-<section class="pb-5">
-
-<div class="container">
-
-<nav>
-
-<ul class="pagination justify-content-center">
-
-<li class="page-item">
-
-<a class="page-link" href="#">
-
-Previous
-
-</a>
-
-</li>
-
-<li class="page-item active">
-
-<a class="page-link" href="#">
-
-1
-
-</a>
-
-</li>
-
-<li class="page-item">
-
-<a class="page-link" href="#">
-
-2
-
-</a>
-
-</li>
-
-<li class="page-item">
-
-<a class="page-link" href="#">
-
-3
-
-</a>
-
-</li>
-
-<li class="page-item">
-
-<a class="page-link" href="#">
-
-Next
-
-</a>
-
-</li>
-
-</ul>
-
-</nav>
-
-</div>
-
-</section>
-
-<!-- Footer -->
-
-<footer class="bg-dark text-white py-5">
-
-<div class="container text-center">
-
-<h4>
-
-Learning Hub Online School
-
-</h4>
-
-<p>
-
-© 2026 All Rights Reserved
-
-</p>
-
-</div>
-
-</footer>
-
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-
-<script src="assets/js/app.js"></script>
-
-</body>
-
-</html>
-
-
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>Course Details | Learning Hub Online School</title>
-
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-
-<link rel="stylesheet"
-href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
-
-<link rel="stylesheet" href="assets/css/style.css">
-
-</head>
-
-<body>
-
-<!-- Navbar -->
-
-<nav class="navbar navbar-expand-lg bg-white shadow sticky-top">
-
-<div class="container">
-
-<a class="navbar-brand fw-bold text-primary"
-href="index.html">
-
-Learning Hub
-
-</a>
-
-</div>
-
-</nav>
-
-<!-- Hero -->
-
-<section class="bg-primary text-white py-5">
-
-<div class="container">
-
-<div class="row align-items-center">
-
-<div class="col-lg-7">
-
-<h1 class="display-4 fw-bold">
-
-HSC Complete Batch 2027
-
-</h1>
-
-<p class="mt-4">
-
-Complete preparation for Physics,
-Chemistry,
-Higher Math,
-Biology and ICT.
-
-</p>
-
-<div class="mt-4">
-
-<span class="badge bg-warning text-dark">
-
-★★★★★ 4.9
-
-</span>
-
-<span class="ms-3">
-
-12,500 Students
-
-</span>
-
-</div>
-
-</div>
-
-<div class="col-lg-5">
-
-<img src="assets/images/course1.jpg"
-class="img-fluid rounded">
-
-</div>
-
-</div>
-
-</div>
-
-</section>
-
-<!-- Content -->
-
-<section class="py-5">
-
-<div class="container">
-
-<div class="row">
-
-<!-- Left -->
-
-<div class="col-lg-8">
-
-<div class="card shadow mb-4">
-
-<div class="card-body">
-
-<h3>
-
-Course Overview
-
-</h3>
-
-<p>
-
-This batch includes live classes,
-recorded videos,
-practice sheets,
-model tests,
-PDF notes and mentor support.
-
-</p>
-
-</div>
-
-</div>
-
-<div class="card shadow">
-
-<div class="card-body">
-
-<h3>
-
-Course Curriculum
-
-</h3>
-
-<div class="accordion"
-id="curriculum">
-
-<div class="accordion-item">
-
-<h2 class="accordion-header">
-
-<button
-class="accordion-button"
-data-bs-toggle="collapse"
-data-bs-target="#module1">
-
-Module 1
-
-</button>
-
-</h2>
-
-<div id="module1"
-class="accordion-collapse collapse show">
-
-<div class="accordion-body">
-
-Introduction
-
-Basic Concepts
-
-Live Class
-
-Assignment
-
-Quiz
-
-</div>
-
-</div>
-
-</div>
-
-<div class="accordion-item">
-
-<h2 class="accordion-header">
-
-<button
-class="accordion-button collapsed"
-data-bs-toggle="collapse"
-data-bs-target="#module2">
-
-Module 2
-
-</button>
-
-</h2>
-
-<div id="module2"
-class="accordion-collapse collapse">
-
-<div class="accordion-body">
-
-Advanced Lessons
-
-Practice
-
-Exam
-
-</div>
-
-</div>
-
-</div>
-
-</div>
-
-</div>
-
-</div>
-
-<div class="card shadow mt-4">
-
-<div class="card-body">
-
-<h3>
-
-Meet Your Mentor
-
-</h3>
-
-<div class="d-flex align-items-center">
-
-<img
-src="assets/images/mentors/sonet.jpg"
-width="90"
-class="rounded-circle me-3">
-
-<div>
-
-<h4>
-
-Sonet Vhaiya
-
-</h4>
-
-<p>
-
-B.Sc EEE, BUET
-
-</p>
-
-</div>
-
-</div>
-
-</div>
-
-</div>
-
-</div>
-
-<!-- Right -->
-
-<div class="col-lg-4">
-
-<div class="card shadow position-sticky"
-style="top:100px;">
-
-<img src="assets/images/course1.jpg"
-class="card-img-top">
-
-<div class="card-body">
-
-<h2 class="text-primary">
-
-৳1999
-
-</h2>
-
-<ul class="list-group mb-4">
-
-<li class="list-group-item">
-
-✔ 120+ Videos
-
-</li>
-
-<li class="list-group-item">
-
-✔ Live Classes
-
-</li>
-
-<li class="list-group-item">
-
-✔ PDF Notes
-
-</li>
-
-<li class="list-group-item">
-
-✔ Assignments
-
-</li>
-
-<li class="list-group-item">
-
-✔ Certificate
-
-</li>
-
-</ul>
-
-<a href="#"
-class="btn btn-primary w-100">
-
-Enroll Now
-
-</a>
-
-</div>
-
-</div>
-
-</div>
-
-</div>
-
-</div>
-
-</section>
-
-<!-- Reviews -->
-
-<section class="py-5 bg-light">
-
-<div class="container">
-
-<h2 class="text-center mb-5">
-
-Student Reviews
-
-</h2>
-
-<div class="row">
-
-<div class="col-lg-4">
-
-<div class="card shadow">
-
-<div class="card-body">
-
-★★★★★
-
-<p class="mt-3">
-
-Amazing Course!
-
-</p>
-
-<h5>
-
-Rahim Ahmed
-
-</h5>
-
-</div>
-
-</div>
-
-</div>
-
-<div class="col-lg-4">
-
-<div class="card shadow">
-
-<div class="card-body">
-
-★★★★★
-
-<p class="mt-3">
-
-Best online platform.
-
-</p>
-
-<h5>
-
-Nusrat Jahan
-
-</h5>
-
-</div>
-
-</div>
-
-</div>
-
-<div class="col-lg-4">
-
-<div class="card shadow">
-
-<div class="card-body">
-
-★★★★★
-
-<p class="mt-3">
-
-Highly Recommended.
-
-</p>
-
-<h5>
-
-Arif Hasan
-
-</h5>
-
-</div>
-
-</div>
-
-</div>
-
-</div>
-
-</div>
-
-</section>
-
-<footer class="bg-dark text-white py-5">
-
-<div class="container text-center">
-
-<h4>
-
-Learning Hub Online School
-
-</h4>
-
-<p>
-
-© 2026 All Rights Reserved
-
-</p>
-
-</div>
-
-</footer>
-
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-
-<script src="assets/js/app.js"></script>
-
-</body>
-
-</html>
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>Login | Learning Hub Online School</title>
-
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-
-<link rel="stylesheet"
-href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
-
-<link rel="stylesheet" href="assets/css/style.css">
-
-</head>
-
-<body>
-
-<section class="min-vh-100 d-flex align-items-center bg-light">
-
-<div class="container">
-
-<div class="row justify-content-center">
-
-<div class="col-lg-5">
-
-<div class="card shadow-lg border-0 p-4">
-
-<div class="text-center mb-4">
-
-<img src="assets/images/logo.png"
-width="90">
-
-<h2 class="fw-bold mt-3">
-
-Welcome Back
-
-</h2>
-
-<p class="text-muted">
-
-Login to your student account
-
-</p>
-
-</div>
-
-<form>
-
-<div class="mb-3">
-
-<label>Email</label>
-
-<input
-type="email"
-class="form-control"
-placeholder="Enter Email">
-
-</div>
-
-<div class="mb-3">
-
-<label>Password</label>
-
-<input
-type="password"
-class="form-control"
-placeholder="Password">
-
-</div>
-
-<div class="d-flex justify-content-between mb-3">
-
-<div>
-
-<input type="checkbox">
-
-Remember Me
-
-</div>
-
-<a href="#">
-
-Forgot Password?
-
-</a>
-
-</div>
-
-<button
-class="btn btn-primary w-100">
-
-Login
-
-</button>
-
-<hr>
-
-<a href="register.html"
-class="btn btn-outline-primary w-100">
-
-Create New Account
-
-</a>
-
-</form>
-
-</div>
-
-</div>
-
-</div>
-
-</div>
-
-</section>
-
-</body>
-
-</html>
-
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-
-<meta charset="UTF-8">
-
-<meta name="viewport"
-content="width=device-width,initial-scale=1.0">
-
-<title>
-
-Register
-
-</title>
-
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
-rel="stylesheet">
-
-<link rel="stylesheet"
-href="assets/css/style.css">
-
-</head>
-
-<body>
-
-<section class="min-vh-100 d-flex align-items-center">
-
-<div class="container">
-
-<div class="row justify-content-center">
-
-<div class="col-lg-6">
-
-<div class="card shadow-lg p-5">
-
-<h2 class="text-center mb-4">
-
-Student Registration
-
-</h2>
-
-<form>
-
-<input
-class="form-control mb-3"
-placeholder="Full Name">
-
-<input
-class="form-control mb-3"
-placeholder="Phone">
-
-<input
-class="form-control mb-3"
-placeholder="Email">
-
-<input
-type="password"
-class="form-control mb-3"
-placeholder="Password">
-
-<select
-class="form-select mb-4">
-
-<option>
-
-Select Course
-
-</option>
-
-<option>
-
-HSC
-
-</option>
-
-<option>
-
-Admission
-
-</option>
-
-<option>
-
-Job Math
-
-</option>
-
-</select>
-
-<button
-class="btn btn-primary w-100">
-
-Create Account
-
-</button>
-
-</form>
-
-</div>
-
-</div>
-
-</div>
-
-</div>
-
-</section>
-
-</body>
-
-</html>
-
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>Student Dashboard | Learning Hub Online School</title>
-
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-
-<link rel="stylesheet"
-href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
-
-<link rel="stylesheet"
-href="assets/css/style.css">
-
-</head>
-
-<body>
-
-<!-- Navbar -->
-
-<nav class="navbar navbar-expand-lg bg-white shadow-sm">
-
-<div class="container">
-
-<a class="navbar-brand fw-bold text-primary"
-href="index.html">
-
-Learning Hub
-
-</a>
-
-<div class="ms-auto">
-
-<img src="assets/images/student.png"
-width="45"
-class="rounded-circle">
-
-</div>
-
-</div>
-
-</nav>
-
-<!-- Dashboard -->
-
-<section class="py-5">
-
-<div class="container">
-
-<div class="row">
-
-<!-- Sidebar -->
-
-<div class="col-lg-3">
-
-<div class="card shadow">
-
-<div class="card-body">
-
-<img src="assets/images/student.png"
-width="120"
-class="rounded-circle d-block mx-auto">
-
-<h4 class="text-center mt-3">
-
-Sk Shifat
-
-</h4>
-
-<p class="text-center text-muted">
-
-Student
-
-</p>
-
-<hr>
-
-<div class="list-group">
-
-<a href="#"
-class="list-group-item list-group-item-action active">
-
-<i class="fa-solid fa-house me-2"></i>
-
-Dashboard
-
-</a>
-
-<a href="#"
-class="list-group-item list-group-item-action">
-
-<i class="fa-solid fa-book me-2"></i>
-
-My Courses
-
-</a>
-
-<a href="#"
-class="list-group-item list-group-item-action">
-
-<i class="fa-solid fa-certificate me-2"></i>
-
-Certificates
-
-</a>
-
-<a href="#"
-class="list-group-item list-group-item-action">
-
-<i class="fa-solid fa-heart me-2"></i>
-
-Wishlist
-
-</a>
-
-<a href="#"
-class="list-group-item list-group-item-action">
-
-<i class="fa-solid fa-user me-2"></i>
-
-Profile
-
-</a>
-
-<a href="#"
-class="list-group-item list-group-item-action text-danger">
-
-<i class="fa-solid fa-right-from-bracket me-2"></i>
-
-Logout
-
-</a>
-
-</div>
-
-</div>
-
-</div>
-
-</div>
-
-<!-- Main -->
-
-<div class="col-lg-9">
-
-<div class="row">
-
-<div class="col-md-4">
-
-<div class="card shadow text-center p-4">
-
-<h2>6</h2>
-
-<p>Enrolled Courses</p>
-
-</div>
-
-</div>
-
-<div class="col-md-4">
-
-<div class="card shadow text-center p-4">
-
-<h2>3</h2>
-
-<p>Completed</p>
-
-</div>
-
-</div>
-
-<div class="col-md-4">
-
-<div class="card shadow text-center p-4">
-
-<h2>95%</h2>
-
-<p>Attendance</p>
-
-</div>
-
-</div>
-
-</div>
-
-<!-- Continue Learning -->
-
-<div class="card shadow mt-4">
-
-<div class="card-body">
-
-<h3 class="mb-4">
-
-Continue Learning
-
-</h3>
-
-<div class="progress mb-3"
-style="height:12px;">
-
-<div class="progress-bar bg-success"
-style="width:75%;">
-
-</div>
-
-</div>
-
-<p>
-
-HSC Complete Batch
-
-</p>
-
-<a href="#"
-class="btn btn-primary">
-
-Continue Course
-
-</a>
-
-</div>
-
-</div>
-
-<!-- Recent Classes -->
-
-<div class="card shadow mt-4">
-
-<div class="card-body">
-
-<h3>
-
-Upcoming Live Classes
-
-</h3>
-
-<table class="table">
-
-<thead>
-
-<tr>
-
-<th>Course</th>
-
-<th>Date</th>
-
-<th>Time</th>
-
-<th>Status</th>
-
-</tr>
-
-</thead>
-
-<tbody>
-
-<tr>
-
-<td>Physics</td>
-
-<td>20 July</td>
-
-<td>7 PM</td>
-
-<td>
-
-<span class="badge bg-success">
-
-Upcoming
-
-</span>
-
-</td>
-
-</tr>
-
-<tr>
-
-<td>Chemistry</td>
-
-<td>22 July</td>
-
-<td>8 PM</td>
-
-<td>
-
-<span class="badge bg-warning">
-
-Scheduled
-
-</span>
-
-</td>
-
-</tr>
-
-<tr>
-
-<td>Math</td>
-
-<td>25 July</td>
-
-<td>6 PM</td>
-
-<td>
-
-<span class="badge bg-primary">
-
-Live
-
-</span>
-
-</td>
-
-</tr>
-
-</tbody>
-
-</table>
-
-</div>
-
-</div>
-
-</div>
-
-</div>
-
-</div>
-
-</section>
-
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-
-</body>
-
-</html>
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>Admin Dashboard | Learning Hub Online School</title>
-
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-
-<link rel="stylesheet"
-href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
-
-<link rel="stylesheet"
-href="assets/css/style.css">
-
-</head>
-
-<body class="bg-light">
-
-<!-- Sidebar -->
-
-<div class="d-flex">
-
-<div class="bg-dark text-white p-4 vh-100" style="width:260px;">
-
-<h3 class="mb-5">
-
-Learning Hub
-
-</h3>
-
-<ul class="nav flex-column">
-
-<li class="nav-item mb-3">
-<a class="nav-link text-white" href="#">
-<i class="fa fa-chart-line me-2"></i>
-Dashboard
-</a>
-</li>
-
-<li class="nav-item mb-3">
-<a class="nav-link text-white" href="#">
-<i class="fa fa-book me-2"></i>
-Courses
-</a>
-</li>
-
-<li class="nav-item mb-3">
-<a class="nav-link text-white" href="#">
-<i class="fa fa-users me-2"></i>
-Students
-</a>
-</li>
-
-<li class="nav-item mb-3">
-<a class="nav-link text-white" href="#">
-<i class="fa fa-user-tie me-2"></i>
-Mentors
-</a>
-</li>
-
-<li class="nav-item mb-3">
-<a class="nav-link text-white" href="#">
-<i class="fa fa-credit-card me-2"></i>
-Payments
-</a>
-</li>
-
-<li class="nav-item mb-3">
-<a class="nav-link text-white" href="#">
-<i class="fa fa-cog me-2"></i>
-Settings
-</a>
-</li>
-
-</ul>
-
-</div>
-
-<!-- Content -->
-
-<div class="flex-grow-1">
-
-<nav class="navbar bg-white shadow-sm px-4">
-
-<h4>
-
-Admin Dashboard
-
-</h4>
-
-<div>
-
-<img src="assets/images/admin.png"
-
-width="45"
-
-class="rounded-circle">
-
-</div>
-
-</nav>
-
-<div class="container-fluid p-4">
-
-<div class="row">
-
-<div class="col-lg-3">
-
-<div class="card shadow text-center p-4">
-
-<h2>2,350</h2>
-
-<p>Total Students</p>
-
-</div>
-
-</div>
-
-<div class="col-lg-3">
-
-<div class="card shadow text-center p-4">
-
-<h2>32</h2>
-
-<p>Courses</p>
-
-</div>
-
-</div>
-
-<div class="col-lg-3">
-
-<div class="card shadow text-center p-4">
-
-<h2>12</h2>
-
-<p>Mentors</p>
-
-</div>
-
-</div>
-
-<div class="col-lg-3">
-
-<div class="card shadow text-center p-4">
-
-<h2>৳5.2L</h2>
-
-<p>Total Revenue</p>
-
-</div>
-
-</div>
-
-</div>
-
-<!-- Students -->
-
-<div class="card shadow mt-4">
-
-<div class="card-header">
-
-<h4>
-
-Recent Students
-
-</h4>
-
-</div>
-
-<div class="card-body">
-
-<table class="table table-hover">
-
-<thead>
-
-<tr>
-
-<th>Name</th>
-
-<th>Course</th>
-
-<th>Status</th>
-
-<th>Action</th>
-
-</tr>
-
-</thead>
-
-<tbody>
-
-<tr>
-
-<td>Rahim Ahmed</td>
-
-<td>HSC Batch</td>
-
-<td>
-
-<span class="badge bg-success">
-
-Active
-
-</span>
-
-</td>
-
-<td>
-
-<button class="btn btn-sm btn-primary">
-
-View
-
-</button>
-
-</td>
-
-</tr>
-
-<tr>
-
-<td>Nusrat Jahan</td>
-
-<td>Admission</td>
-
-<td>
-
-<span class="badge bg-warning">
-
-Pending
-
-</span>
-
-</td>
-
-<td>
-
-<button class="btn btn-sm btn-success">
-
-Approve
-
-</button>
-
-</td>
-
-</tr>
-
-<tr>
-
-<td>Arif Hasan</td>
-
-<td>Job Math</td>
-
-<td>
-
-<span class="badge bg-danger">
-
-Inactive
-
-</span>
-
-</td>
-
-<td>
-
-<button class="btn btn-sm btn-danger">
-
-Delete
-
-</button>
-
-</td>
-
-</tr>
-
-</tbody>
-
-</table>
-
-</div>
-
-</div>
-
-<!-- Recent Payments -->
-
-<div class="card shadow mt-4">
-
-<div class="card-header">
-
-<h4>
-
-Recent Payments
-
-</h4>
-
-</div>
-
-<div class="card-body">
-
-<table class="table">
-
-<tr>
-
-<th>Student</th>
-
-<th>Method</th>
-
-<th>Amount</th>
-
-<th>Status</th>
-
-</tr>
-
-<tr>
-
-<td>Rahim</td>
-
-<td>bKash</td>
-
-<td>৳1999</td>
-
-<td>
-
-<span class="badge bg-success">
-
-Paid
-
-</span>
-
-</td>
-
-</tr>
-
-<tr>
-
-<td>Nusrat</td>
-
-<td>Nagad</td>
-
-<td>৳2499</td>
-
-<td>
-
-<span class="badge bg-warning">
-
-Pending
-
-</span>
-
-</td>
-
-</tr>
-
-<tr>
-
-<td>Arif</td>
-
-<td>Rocket</td>
-
-<td>৳1499</td>
-
-<td>
-
-<span class="badge bg-danger">
-
-Failed
-
-</span>
-
-</td>
-
-</tr>
-
-</table>
-
-</div>
-
-</div>
-
-</div>
-
-</div>
-
-</div>
-
-</body>
-
-</html>
-
-
+console.log("Learning Hub Loaded Successfully 🚀");
+ 
