@@ -1,2209 +1,537 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Learning Hub Online School - SSC, HSC, Admission & Job Preparation">
-    <meta name="keywords" content="SSC,HSC,Admission,Learning Hub,Bangladesh">
-    <meta name="author" content="Learning Hub">
-
-    <title>Learning Hub Online School</title>
-
-    <!-- Tailwind -->
-    <script src="https://cdn.tailwindcss.com"></script>
-
-    <!-- Font Awesome -->
-    <link rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
-
-    <!-- Google Font -->
-    <link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300;400;500;600;700&display=swap"
-        rel="stylesheet">
-
-    <style>
-
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-    font-family:'Hind Siliguri',sans-serif;
-}
-
-html{
-    scroll-behavior:smooth;
-}
-
-body{
-    background:#0f172a;
-    color:#fff;
-    overflow-x:hidden;
-}
-
-section{
-    padding:80px 20px;
-}
-
-.container{
-    max-width:1280px;
-    margin:auto;
-}
-
-.gradient-text{
-    background:linear-gradient(90deg,#ff4d6d,#ffb703);
-    -webkit-background-clip:text;
-    -webkit-text-fill-color:transparent;
-}
-
-.card-hover{
-    transition:.35s;
-}
-
-.card-hover:hover{
-    transform:translateY(-10px);
-    box-shadow:0 20px 40px rgba(0,0,0,.35);
-}
-
-@keyframes fadeUp{
-    from{
-        opacity:0;
-        transform:translateY(40px);
-    }
-    to{
-        opacity:1;
-        transform:translateY(0);
-    }
-}
-
-.fade-up{
-    animation:fadeUp .8s ease;
-}
-
-.nav-link:hover{
-    color:#ec4899;
-}
-
-.hero-bg{
-    background:
-    radial-gradient(circle at top left,#db2777 0%,transparent 30%),
-    radial-gradient(circle at bottom right,#7c3aed 0%,transparent 30%),
-    #0f172a;
-}
-
-.btn{
-    padding:14px 30px;
-    border-radius:10px;
-    transition:.3s;
-    font-weight:bold;
-}
-
-.btn-primary{
-    background:#db2777;
-}
-
-.btn-primary:hover{
-    background:#be185d;
-}
-
-.btn-outline{
-    border:2px solid #fff;
-}
-
-.btn-outline:hover{
-    background:#fff;
-    color:#000;
-}
-
-.stats-card{
-    background:#1e293b;
-    border-radius:20px;
-    padding:30px;
-    text-align:center;
-}
-
-.course-card{
-    background:#1e293b;
-    border-radius:20px;
-    overflow:hidden;
-}
-
-.course-card img{
-    width:100%;
-    height:220px;
-    object-fit:cover;
-}
-
-.badge{
-    background:#db2777;
-    padding:5px 12px;
-    border-radius:20px;
-    font-size:13px;
-}
-
-    </style>
-</head>
-
-<body>
-
-<!-- ================= NAVBAR ================= -->
-
-<header class="fixed top-0 left-0 w-full bg-slate-900/90 backdrop-blur-lg z-50 shadow-lg">
-
-<div class="container flex items-center justify-between py-5">
-
-<h2 class="text-3xl font-bold gradient-text">
+learninghubonlineschool
+<title>Learning Hub Online School</title> <script src="https://cdn.tailwindcss.com"></script> <style> @keyframes fadeInUp { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: translateY(0); } } @keyframes pulse-glow { 0%, 100% { box-shadow: 0 0 20px rgba(219, 39, 119, 0.5); } 50% { box-shadow: 0 0 40px rgba(219, 39, 119, 0.8); } } .animate-fade-in-up { animation: fadeInUp 0.8s ease-out forwards; } .animate-pulse-glow { animation: pulse-glow 2s ease-in-out infinite; } .delay-100 { animation-delay: 0.1s; } .delay-200 { animation-delay: 0.2s; } .delay-300 { animation-delay: 0.3s; } .delay-400 { animation-delay: 0.4s; } .card-hover { transition: transform 0.3s, box-shadow 0.3s; } .card-hover:hover { transform: translateY(-8px); box-shadow: 0 20px 40px rgba(0,0,0,0.4); } .gradient-text { background: linear-gradient(90deg, #ff6b6b, #feca57); -webkit-background-clip: text; -webkit-text-fill-color: transparent; } .modal { display: none; } .modal.active { display: flex; } .hidden { display: none; } .modal.active .bg-gray-800 { animation: fadeInUp 0.3s ease-out; } </style>
 Learning Hub
-</h2>
+Courses Features Mentors Enroll Now
+শেখা হোক আনন্দে!
+Think Smart | SSC • HSC • Admission • Job Prep
 
-<nav class="hidden lg:flex items-center gap-8">
-
-<a href="#" class="nav-link">Home</a>
-
-<a href="#courses" class="nav-link">Courses</a>
-
-<a href="#features" class="nav-link">Features</a>
-
-<a href="#mentors" class="nav-link">Mentors</a>
-
-<a href="#pricing" class="nav-link">Pricing</a>
-
-<a href="#contact" class="nav-link">Contact</a>
-
-</nav>
-
-<div class="flex gap-3">
-
-<a href="#enroll"
-class="btn btn-primary">
-Enroll Now
-</a>
-
-</div>
-
-</div>
-
-</header>
-
-<!-- HERO -->
-
-<section class="hero-bg min-h-screen flex items-center">
-
-<div class="container grid lg:grid-cols-2 gap-12 items-center">
-
-<div class="fade-up">
-
-<span class="badge">
-বাংলাদেশের অন্যতম সেরা অনলাইন স্কুল
-</span>
-
-<h1 class="text-6xl font-bold mt-6 leading-tight">
-
-শেখা হোক <span class="gradient-text">আনন্দে</span>
-
-</h1>
-
-<p class="text-gray-300 mt-8 text-xl">
-
-SSC • HSC • Admission • Job Preparation
-
-একটি প্ল্যাটফর্মেই সকল কোর্স।
-
-</p>
-
-<div class="flex gap-5 mt-10">
-
-<a href="#courses" class="btn btn-primary">
-
-Start Learning
-
-</a>
-
-<a href="#contact" class="btn btn-outline">
-
-Free Class
-
-</a>
-
-</div>
-
-<div class="grid grid-cols-2 lg:grid-cols-4 gap-5 mt-16">
-
-<div class="stats-card">
-
-<h2 class="text-4xl font-bold text-pink-500">
+Start Learning Free Class
 30K+
-</h2>
 
-<p>Students</p>
+Students
 
-</div>
-
-<div class="stats-card">
-
-<h2 class="text-4xl font-bold text-pink-500">
 50+
-</h2>
 
-<p>Courses</p>
+Courses
 
-</div>
-
-<div class="stats-card">
-
-<h2 class="text-4xl font-bold text-pink-500">
 10+
-</h2>
 
-<p>Mentors</p>
+Mentors
 
-</div>
+4.5+
 
-<div class="stats-card">
-
-<h2 class="text-4xl font-bold text-pink-500">
-4.9★
-</h2>
-
-<p>Rating</p>
-
-</div>
-
-</div>
-
-</div>
-
-<div>
-
-<img src="assets/images/hero.png"
-alt="Learning Hub"
-class="w-full">
-
-</div>
-
-</div>
-
-</section>
-
-<!-- ================= FEATURES ================= -->
-
-<section id="features" class="bg-slate-900">
-
-<div class="container">
-
-<div class="text-center mb-16">
-
-<h2 class="text-5xl font-bold mb-4">
+Rating
 
 🎯 একাডেমিক ব্যাচের শিক্ষার্থীরা পাচ্ছে
-
-</h2>
-
-<p class="text-gray-400 text-lg">
-
-Live Classes, Masterbook, Recorded Videos & Unlimited Practice
-
-</p>
-
-</div>
-
-<div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-
-<div class="bg-slate-800 rounded-2xl p-8 text-center card-hover">
-
-<div class="text-6xl mb-5">
 📺
-</div>
-
-<h3 class="text-2xl font-bold mb-3">
-
 ১০টি সাপ্তাহিক লাইভ ক্লাস
+শিক্ষকদের সাথে সরাসরি ক্লাস
 
-</h3>
-
-<p class="text-gray-400">
-
-শিক্ষকদের সাথে সরাসরি ইন্টারঅ্যাক্টিভ ক্লাস।
-
-</p>
-
-</div>
-
-<div class="bg-slate-800 rounded-2xl p-8 text-center card-hover">
-
-<div class="text-6xl mb-5">
 📚
-</div>
-
-<h3 class="text-2xl font-bold mb-3">
-
 প্রিন্টেড মাস্টারবুক
+ফ্রি মাস্টারবুক ও নোটস
 
-</h3>
-
-<p class="text-gray-400">
-
-Premium Printed Book & Notes.
-
-</p>
-
-</div>
-
-<div class="bg-slate-800 rounded-2xl p-8 text-center card-hover">
-
-<div class="text-6xl mb-5">
 ✅
-</div>
+আনলিমিটেড MCQ
+অসংখ্য প্র্যাকটিস প্রশ্ন
 
-<h3 class="text-2xl font-bold mb-3">
-
-Unlimited MCQ
-
-</h3>
-
-<p class="text-gray-400">
-
-অসংখ্য Practice Question ও Model Test.
-
-</p>
-
-</div>
-
-<div class="bg-slate-800 rounded-2xl p-8 text-center card-hover">
-
-<div class="text-6xl mb-5">
 🎬
-</div>
-
-<h3 class="text-2xl font-bold mb-3">
-
-Recorded Class
-
-</h3>
-
-<p class="text-gray-400">
-
-যেকোনো সময় ক্লাস দেখার সুবিধা।
-
-</p>
-
-</div>
-
-</div>
-
-</div>
-
-</section>
-
-<!-- ================= COURSES ================= -->
-
-<section id="courses">
-
-<div class="container">
-
-<div class="text-center mb-16">
-
-<h2 class="text-5xl font-bold">
-
-📚 আমাদের জনপ্রিয় কোর্সসমূহ
-
-</h2>
-
-<p class="text-gray-400 mt-4">
-
-স্কুল, কলেজ, ভর্তি ও চাকরির পূর্ণাঙ্গ প্রস্তুতি
-
-</p>
-
-</div>
-
-<div class="grid lg:grid-cols-3 gap-8">
-
-<!-- Card -->
-
-<div class="course-card card-hover">
-
-<img src="assets/images/class6.jpg" alt="Class 6">
-
-<div class="p-6">
-
-<span class="badge">
-
-২০২৬
-
-</span>
-
-<h3 class="text-3xl font-bold mt-4">
-
-৬ষ্ঠ শ্রেণি
-
-</h3>
-
-<p class="text-gray-400 mt-3">
-
-Math • Science • ICT • English • Bangla
-
-</p>
-
-<div class="flex justify-between items-center mt-6">
-
-<span class="text-pink-500 text-2xl font-bold">
-
-৳500
-
-</span>
-
-<button
-onclick="openCourseModal('class6')"
-class="btn btn-primary">
-
-View Details
-
-</button>
-
-</div>
-
-</div>
-
-</div>
-
-<!-- Card -->
-
-<div class="course-card card-hover">
-
-<img src="assets/images/class7.jpg" alt="Class 7">
-
-<div class="p-6">
-
-<span class="badge">
-
-২০২৬
-
-</span>
-
-<h3 class="text-3xl font-bold mt-4">
-
-৭ম শ্রেণি
-
-</h3>
-
-<p class="text-gray-400 mt-3">
-
-Math • Science • ICT • English • Bangla
-
-</p>
-
-<div class="flex justify-between items-center mt-6">
-
-<span class="text-pink-500 text-2xl font-bold">
-
-৳500
-
-</span>
-
-<button
-onclick="openCourseModal('class7')"
-class="btn btn-primary">
-
-View Details
-
-</button>
-
-</div>
-
-</div>
-
-</div>
-
-<!-- Card -->
-
-<div class="course-card card-hover">
-
-<img src="assets/images/class8.jpg" alt="Class 8">
-
-<div class="p-6">
-
-<span class="badge">
-
-২০২৬
-
-</span>
-
-<h3 class="text-3xl font-bold mt-4">
-
-৮ম শ্রেণি
-
-</h3>
-
-<p class="text-gray-400 mt-3">
-
-Math • Science • ICT • English • Bangla
-
-</p>
-
-<div class="flex justify-between items-center mt-6">
-
-<span class="text-pink-500 text-2xl font-bold">
-
-৳500
-
-</span>
-
-<button
-onclick="openCourseModal('class8')"
-class="btn btn-primary">
-
-View Details
-
-</button>
+রেকর্ডেড ক্লাস
+যেকোনো সময় দেখার সুযোগ
+
+📚 এক জায়গায় স্কুল ও কলেজের সম্পূর্ণ প্রস্তুতি!
+দেশসেরা সকল অনলাইন ব্যাচ
+
+<div class="max-w-7xl mx-auto space-y-12">
+  
+  <!-- Class 6-8 -->
+  <div>
+    <h3 class="text-2xl font-bold mb-6 flex items-center gap-2">
+      <span class="bg-pink-600 px-3 py-1 rounded-lg text-sm">২০২৬</span>
+      ক্লাস ৬-৮ অনলাইন ব্যাচ
+    </h3>
+    <div class="grid md:grid-cols-3 gap-6">
+      <div class="bg-gray-800 p-6 rounded-xl card-hover cursor-pointer" onclick="openCourseModal('class6')">
+        <h4 class="text-xl font-bold mb-3">৬ষ্ঠ শ্রেণি</h4>
+        <p class="text-gray-400 mb-4">Math • Science • ICT • English • Bangla</p>
+        <span class="inline-block bg-pink-600 px-4 py-2 rounded-lg hover:bg-pink-500">View Details</span>
+      </div>
+      <div class="bg-gray-800 p-6 rounded-xl card-hover cursor-pointer" onclick="openCourseModal('class7')">
+        <h4 class="text-xl font-bold mb-3">৭ম শ্রেণি</h4>
+        <p class="text-gray-400 mb-4">Math • Science • ICT • English • Bangla</p>
+        <span class="inline-block bg-pink-600 px-4 py-2 rounded-lg hover:bg-pink-500">View Details</span>
+      </div>
+      <div class="bg-gray-800 p-6 rounded-xl card-hover cursor-pointer" onclick="openCourseModal('class8')">
+        <h4 class="text-xl font-bold mb-3">৮ম শ্রেণি</h4>
+        <p class="text-gray-400 mb-4">Math • Science • ICT • English • Bangla</p>
+        <span class="inline-block bg-pink-600 px-4 py-2 rounded-lg hover:bg-pink-500">View Details</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- SSC 2026, 2027, 2028 -->
+  <div>
+    <h3 class="text-2xl font-bold mb-6">📝 এসএসসি অনলাইন ব্যাচ</h3>
+    <div class="grid md:grid-cols-3 gap-6">
+      <!-- SSC 2028 -->
+      <div class="bg-gray-800 p-6 rounded-xl card-hover cursor-pointer" onclick="openCourseModal('ssc2028')">
+        <span class="bg-green-600 px-2 py-1 rounded text-xs">নতুন</span>
+        <h4 class="text-xl font-bold mb-3 mt-2">নবম শ্রেণি (SSC ২০২৮)</h4>
+        <ul class="text-gray-400 text-sm space-y-1 mb-4">
+          <li>• বিজ্ঞান বান্ডেল</li>
+          <li>• ব্যবসায় শিক্ষা বান্ডেল</li>
+          <li>• মানবিক বান্ডেল</li>
+        </ul>
+        <span class="inline-block bg-pink-600 px-4 py-2 rounded-lg hover:bg-pink-500">View Details</span>
+      </div>
+      <!-- SSC 2027 -->
+      <div class="bg-gray-800 p-6 rounded-xl card-hover cursor-pointer" onclick="openCourseModal('ssc2027')">
+        <h4 class="text-xl font-bold mb-3">দশম শ্রেণি (SSC ২০২৭)</h4>
+        <ul class="text-gray-400 text-sm space-y-1 mb-4">
+          <li>• বিজ্ঞান বান্ডেল</li>
+          <li>• বাংলা, ইংরেজি, ICT</li>
+          <li>• সাপ্তাহিক টেস্ট</li>
+        </ul>
+        <span class="inline-block bg-pink-600 px-4 py-2 rounded-lg hover:bg-pink-500">View Details</span>
+      </div>
+      <!-- SSC 2026 -->
+      <div class="bg-gray-800 p-6 rounded-xl card-hover cursor-pointer border-2 border-yellow-500" onclick="openCourseModal('ssc2026')">
+        <span class="bg-yellow-500 text-black px-2 py-1 rounded text-xs font-bold">ফাইনাল</span>
+        <h4 class="text-xl font-bold mb-3 mt-2">শেষ মুহূর্তের প্রস্তুতি (SSC ২০২৬)</h4>
+        <ul class="text-gray-400 text-sm space-y-1 mb-4">
+          <li>• বিজ্ঞান গ্রুপ</li>
+          <li>• ব্যবসায় শিক্ষা</li>
+          <li>• মানবিক গ্রুপ</li>
+        </ul>
+        <span class="inline-block bg-pink-600 px-4 py-2 rounded-lg hover:bg-pink-500">View Details</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- HSC 2026, 2027 -->
+  <div>
+    <h3 class="text-2xl font-bold mb-6">🎓 এইচএসসি অনলাইন ব্যাচ</h3>
+    <div class="grid md:grid-cols-3 gap-6">
+      <!-- HSC 2027 -->
+      <div class="bg-gray-800 p-6 rounded-xl card-hover cursor-pointer" onclick="openCourseModal('hsc2027')">
+        <span class="bg-green-600 px-2 py-1 rounded text-xs">নতুন</span>
+        <h4 class="text-xl font-bold mb-3 mt-2">এইচএসসি ২০২৭</h4>
+        <ul class="text-gray-400 text-sm space-y-1 mb-4">
+          <li>• বিজ্ঞান বান্ডেল</li>
+          <li>• ব্যবসায় শিক্ষা বান্ডেল</li>
+          <li>• মানবিক বান্ডেল</li>
+        </ul>
+        <span class="inline-block bg-pink-600 px-4 py-2 rounded-lg hover:bg-pink-500">View Details</span>
+      </div>
+      <!-- HSC 2026 -->
+      <div class="bg-gray-800 p-6 rounded-xl card-hover cursor-pointer border-2 border-yellow-500" onclick="openCourseModal('hsc2026')">
+        <span class="bg-yellow-500 text-black px-2 py-1 rounded text-xs font-bold">ফাইনাল</span>
+        <h4 class="text-xl font-bold mb-3 mt-2">এইচএসসি ২০২৬</h4>
+        <ul class="text-gray-400 text-sm space-y-1 mb-4">
+          <li>• বিজ্ঞান গ্রুপ</li>
+          <li>• ব্যবসায় শিক্ষা</li>
+          <li>• শেষ মুহূর্তের প্রস্তুতি</li>
+        </ul>
+        <span class="inline-block bg-pink-600 px-4 py-2 rounded-lg hover:bg-pink-500">View Details</span>
+      </div>
+      <!-- Varsity -->
+      <div class="bg-gray-800 p-6 rounded-xl card-hover cursor-pointer" onclick="openCourseModal('varsity')">
+        <h4 class="text-xl font-bold mb-3">ভর্তি পরীক্ষা ২০২৬</h4>
+        <ul class="text-gray-400 text-sm space-y-1 mb-4">
+          <li>• A ইউনিট</li>
+          <li>• B ইউনিট</li>
+          <li>• C ইউনিট</li>
+        </ul>
+        <span class="inline-block bg-pink-600 px-4 py-2 rounded-lg hover:bg-pink-500">View Details</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Special Courses -->
+  <div>
+    <h3 class="text-2xl font-bold mb-6">🎯 বিশেষ কোর্স</h3>
+    <div class="grid md:grid-cols-4 gap-6">
+      <div class="bg-gray-800 p-6 rounded-xl card-hover cursor-pointer" onclick="openCourseModal('cadet')">
+        <h4 class="text-lg font-bold mb-3">🎖️ Cadet / BUP</h4>
+        <ul class="text-gray-400 text-sm space-y-1 mb-4">
+          <li>• Military Math</li>
+          <li>• Intelligence Test</li>
+          <li>• Interview Prep</li>
+        </ul>
+        <span class="inline-block bg-pink-600 px-4 py-2 rounded-lg text-sm hover:bg-pink-500">View Details</span>
+      </div>
+      <div class="bg-gray-800 p-6 rounded-xl card-hover cursor-pointer" onclick="openCourseModal('jobprep')">
+        <h4 class="text-lg font-bold mb-3">💼 Job Preparation</h4>
+        <ul class="text-gray-400 text-sm space-y-1 mb-4">
+          <li>• Bank Job Math</li>
+          <li>• BCS Preparation</li>
+          <li>• NTRCA</li>
+        </ul>
+        <span class="inline-block bg-pink-600 px-4 py-2 rounded-lg text-sm hover:bg-pink-500">View Details</span>
+      </div>
+      <div class="bg-gray-800 p-6 rounded-xl card-hover cursor-pointer" onclick="openSpokenEnglishDetail()">
+        <h4 class="text-lg font-bold mb-3">🇬🇧 Spoken English</h4>
+        <ul class="text-gray-400 text-sm space-y-1 mb-4">
+          <li>• Conversation</li>
+          <li>• Pronunciation</li>
+          <li>• Fluency</li>
+        </ul>
+        <span class="inline-block bg-pink-600 px-4 py-2 rounded-lg text-sm hover:bg-pink-500">View Details</span>
+      </div>
+      <div class="bg-gray-800 p-6 rounded-xl card-hover cursor-pointer" onclick="openCourseModal('ielts')">
+        <h4 class="text-lg font-bold mb-3">📊 IELTS Prep</h4>
+        <ul class="text-gray-400 text-sm space-y-1 mb-4">
+          <li>• Reading</li>
+          <li>• Writing</li>
+          <li>• Speaking</li>
+        </ul>
+        <span class="inline-block bg-pink-600 px-4 py-2 rounded-lg text-sm hover:bg-pink-500">View Details</span>
+      </div>
+    </div>
+  </div>
 
 </div>
-
-</div>
-
-</div>
-
-<!-- SSC -->
-
-<div class="course-card card-hover">
-
-<img src="assets/images/ssc.jpg">
-
-<div class="p-6">
-
-<span class="badge bg-green-600">
-
-SSC 2026
-
-</span>
-
-<h3 class="text-3xl font-bold mt-4">
-
-SSC Final Batch
-
-</h3>
-
-<p class="text-gray-400 mt-3">
-
-Science • Business • Humanities
-
-</p>
-
-<div class="flex justify-between items-center mt-6">
-
-<span class="text-pink-500 text-2xl font-bold">
-
-৳4000
-
-</span>
-
-<button
-onclick="openCourseModal('ssc2026')"
-class="btn btn-primary">
-
-View Details
-
-</button>
-
-</div>
-
-</div>
-
-</div>
-
-<!-- HSC -->
-
-<div class="course-card card-hover">
-
-<img src="assets/images/hsc.jpg">
-
-<div class="p-6">
-
-<span class="badge">
-
-HSC 2026
-
-</span>
-
-<h3 class="text-3xl font-bold mt-4">
-
-HSC Final
-
-</h3>
-
-<p class="text-gray-400 mt-3">
-
-Science • Business • Humanities
-
-</p>
-
-<div class="flex justify-between items-center mt-6">
-
-<span class="text-pink-500 text-2xl font-bold">
-
-৳4500
-
-</span>
-
-<button
-onclick="openCourseModal('hsc2026')"
-class="btn btn-primary">
-
-View Details
-
-</button>
-
-</div>
-
-</div>
-
-</div>
-
-<!-- Admission -->
-
-<div class="course-card card-hover">
-
-<img src="assets/images/admission.jpg">
-
-<div class="p-6">
-
-<span class="badge">
-
-Admission
-
-</span>
-
-<h3 class="text-3xl font-bold mt-4">
-
-University Admission
-
-</h3>
-
-<p class="text-gray-400 mt-3">
-
-Engineering • Medical • University
-
-</p>
-
-<div class="flex justify-between items-center mt-6">
-
-<span class="text-pink-500 text-2xl font-bold">
-
-৳3000
-
-</span>
-
-<button
-onclick="openCourseModal('varsity')"
-class="btn btn-primary">
-
-View Details
-
-</button>
-
-</div>
-
-</div>
-
-</div>
-
-</div>
-
-</div>
-
-</section>
-
-<!-- ================= MENTORS ================= -->
-
-<section id="mentors" class="bg-slate-900 py-20">
-
-<div class="container">
-
-<div class="text-center mb-16">
-
-<h2 class="text-5xl font-bold">
-
-👨‍🏫 দেশসেরা শিক্ষক প্যানেল
-
-</h2>
-
-<p class="text-gray-400 mt-4">
-
-Experienced Teachers From Top Universities
-
-</p>
-
-</div>
-
-<div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-
-<!-- Mentor -->
-
-<div class="bg-slate-800 rounded-2xl p-8 text-center card-hover">
-
-<img src="assets/images/sonet.jpg"
-class="w-36 h-36 rounded-full mx-auto object-cover border-4 border-pink-500">
-
-<h3 class="text-2xl font-bold mt-6">
-
-Sonet Vhaiya
-
-</h3>
-
-<p class="text-pink-500">
-
-B.Sc EEE — BUET
-
-</p>
-
-<p class="text-gray-400 mt-4">
-
-Expert Mathematics & Physics Instructor
-
-</p>
-
-</div>
-
-<!-- Mentor -->
-
-<div class="bg-slate-800 rounded-2xl p-8 text-center card-hover">
-
-<img src="assets/images/tusar.jpg"
-class="w-36 h-36 rounded-full mx-auto object-cover border-4 border-pink-500">
-
-<h3 class="text-2xl font-bold mt-6">
-
-Tusar Vhaiya
-
-</h3>
-
-<p class="text-pink-500">
-
-M.Sc Applied Chemistry — RU
-
-</p>
-
-<p class="text-gray-400 mt-4">
-
-Chemistry Specialist
-
-</p>
-
-</div>
-
-<!-- Mentor -->
-
-<div class="bg-slate-800 rounded-2xl p-8 text-center card-hover">
-
-<img src="assets/images/jihad.jpg"
-class="w-36 h-36 rounded-full mx-auto object-cover border-4 border-pink-500">
-
-<h3 class="text-2xl font-bold mt-6">
-
-Jihad Vhaiya
-
-</h3>
-
-<p class="text-pink-500">
-
-B.Sc Mechanical — RUET
-
-</p>
-
-<p class="text-gray-400 mt-4">
-
-Physics & Engineering Mentor
-
-</p>
-
-</div>
-
-<!-- Mentor -->
-
-<div class="bg-slate-800 rounded-2xl p-8 text-center card-hover">
-
-<img src="assets/images/sujon.jpg"
-class="w-36 h-36 rounded-full mx-auto object-cover border-4 border-pink-500">
-
-<h3 class="text-2xl font-bold mt-6">
-
-Sujon Vhaiya
-
-</h3>
-
-<p class="text-pink-500">
-
-M.A English — RU
-
-</p>
-
-<p class="text-gray-400 mt-4">
-
-English Language Instructor
-
-</p>
-
-</div>
-
-<!-- Mentor -->
-
-<div class="bg-slate-800 rounded-2xl p-8 text-center card-hover">
-
-<img src="assets/images/musa.jpg"
-class="w-36 h-36 rounded-full mx-auto object-cover border-4 border-pink-500">
-
-<h3 class="text-2xl font-bold mt-6">
-
-Musa Vhaiya
-
-</h3>
-
-<p class="text-pink-500">
-
-M.Sc Mathematics — RU & NU
-
-</p>
-
-<p class="text-gray-400 mt-4">
-
-Higher Mathematics Expert
-
-</p>
-
-</div>
-
-<!-- Mentor -->
-
-<div class="bg-slate-800 rounded-2xl p-8 text-center card-hover">
-
-<img src="assets/images/sifat.jpg"
-class="w-36 h-36 rounded-full mx-auto object-cover border-4 border-pink-500">
-
-<h3 class="text-2xl font-bold mt-6">
-
-Sifat Vhaiya
-
-</h3>
-
-<p class="text-pink-500">
-
-B.Sc Software Engineering — DIU
-
-</p>
-
-<p class="text-gray-400 mt-4">
-
-ICT & Programming Mentor
-
-</p>
-
-</div>
-
-</div>
-
-</div>
-
-</section>
-
-<!-- ================= PRICING ================= -->
-
-<section id="pricing" class="py-20">
-
-<div class="container">
-
-<div class="text-center mb-16">
-
-<h2 class="text-5xl font-bold">
-
 💰 Pricing Plans
-
-</h2>
-
-<p class="text-gray-400 mt-4">
-
-Choose Your Perfect Learning Package
-
-</p>
-
-</div>
-
-<div class="grid lg:grid-cols-3 gap-8">
-
-<!-- Basic -->
-
-<div class="bg-slate-800 rounded-3xl p-10 card-hover">
-
-<h3 class="text-3xl font-bold">
-
 Basic
+৳2,000/month
 
-</h3>
-
-<h2 class="text-5xl text-pink-500 font-bold my-6">
-
-৳2000
-
-</h2>
-
-<ul class="space-y-4 text-gray-300">
-
-<li>✔ 2 Courses</li>
-
-<li>✔ Weekly Live Class</li>
-
-<li>✔ Recorded Video</li>
-
-<li>✔ Notes</li>
-
-<li>✔ Certificate</li>
-
-</ul>
-
-<button class="btn btn-primary w-full mt-10">
-
+✓ 2 Courses
+✓ Weekly Live Classes
+✓ Certificate
 Buy Now
-
-</button>
-
-</div>
-
-<!-- PRO -->
-
-<div class="bg-gradient-to-b from-pink-600 to-purple-700 rounded-3xl p-10 scale-105 shadow-2xl">
-
-<div class="text-center">
-
-<span class="bg-yellow-400 text-black px-4 py-2 rounded-full font-bold">
-
-POPULAR
-
-</span>
-
-</div>
-
-<h3 class="text-3xl font-bold mt-6">
-
+Popular
 Pro
+৳4,500/month
 
-</h3>
-
-<h2 class="text-5xl font-bold my-6">
-
-৳4500
-
-</h2>
-
-<ul class="space-y-4">
-
-<li>✔ Unlimited Courses</li>
-
-<li>✔ Daily Live Class</li>
-
-<li>✔ Masterbook</li>
-
-<li>✔ Personal Mentor</li>
-
-<li>✔ Premium Support</li>
-
-<li>✔ Certificate</li>
-
-</ul>
-
-<button class="bg-white text-pink-600 w-full py-4 rounded-xl mt-10 font-bold">
-
+✓ All Courses
+✓ Daily Live Classes
+✓ 1-on-1 Mentorship
+✓ Certificate & Portfolio
 Buy Now
-
-</button>
-
-</div>
-
-<!-- Premium -->
-
-<div class="bg-slate-800 rounded-3xl p-10 card-hover">
-
-<h3 class="text-3xl font-bold">
-
 Premium
+৳8,000/month
 
-</h3>
-
-<h2 class="text-5xl text-pink-500 font-bold my-6">
-
-৳8000
-
-</h2>
-
-<ul class="space-y-4 text-gray-300">
-
-<li>✔ Everything in Pro</li>
-
-<li>✔ Lifetime Access</li>
-
-<li>✔ Interview Preparation</li>
-
-<li>✔ Job Placement Support</li>
-
-<li>✔ VIP Community</li>
-
-</ul>
-
-<button class="btn btn-primary w-full mt-10">
-
+✓ Everything in Pro
+✓ Job Placement
+✓ Interview Prep
+✓ Lifetime Access
 Buy Now
+👨‍🏫 দেশসেরা শিক্ষক প্যানেল
+👨‍🎓
+Sonet Vhaiya
+B.Sc EEE - BUET
 
-</button>
+👨‍🔬
+Tusar Vhaiya
+M.Sc Chemistry - RU
 
+👨‍🏭
+Jihad Vhaiya
+B.Sc Mechanical - RUET
+
+👨‍🏫
+Sujon Vhaiya
+M.A English - RU
+
+🧑‍🎓
+Musa Vhaiya
+M.Sc Math - RU & NU
+
+👨‍💻
+Sifat Vhaiya
+B.Sc SE - DIU
+
+💬 কেন আমরাই শিক্ষার্থীদের প্রথম পছন্দ?
+র
+  </div>
+  <div class="bg-gray-800 p-6 rounded-xl card-hover">
+    <div class="flex items-center gap-4 mb-4">
+      <div class="w-12 h-12 bg-pink-600 rounded-full flex items-center justify-center">পূ</div>
+      <div>
+        <h4 class="font-bold">পূজা রানী দাস</h4>
+        <p class="text-gray-400 text-sm">The Roses Collectorate School</p>
+      </div>
+    </div>
+    <p class="text-gray-300">"অনেক অভিজ্ঞ শিক্ষকদের স্টাডি ম্যাটেরিয়াল আমার রেজাল্ট অনেক ভালো করেছে।"</p>
+  </div>
+  <div class="bg-gray-800 p-6 rounded-xl card-hover">
+    <div class="flex items-center gap-4 mb-4">
+      <div class="w-12 h-12 bg-pink-600 rounded-full flex items-center justify-center">তা</div>
+      <div>
+        <h4 class="font-bold">তাওহিদুল রাহমান</h4>
+        <p class="text-gray-400 text-sm">জামশেদ আহমেদ হাই স্কুল</p>
+      </div>
+    </div>
+    <p class="text-gray-300">"আমি ৬ষ্ঠ শ্রেণি থেকে লার্নিং হাবের সাথে আছি। কোনো কোচিং করিনি।"</p>
+  </div>
 </div>
+🚀 ভর্তি চলছে ২০২৬
+Start your learning journey today
 
+<div class="max-w-4xl mx-auto grid md:grid-cols-2 gap-8">
+  <!-- Contact Info -->
+  <div class="bg-white/10 backdrop-blur-sm rounded-2xl p-8">
+    <h3 class="text-2xl font-bold mb-4">📞 যোগাযোগ</h3>
+    <p class="text-2xl font-semibold mb-4">01864-000208</p>
+    <p class="mb-2">📧 learninghubinfo65@gmail.com</p>
+    <p>📍 Motihar, Rajshahi</p>
+  </div>
+
+  <!-- bKash Payment -->
+  <div class="bg-white/10 backdrop-blur-sm rounded-2xl p-8">
+    <h3 class="text-2xl font-bold mb-4">💳 Payment via bKash</h3>
+    <p class="text-3xl font-bold text-yellow-400 mb-4">01864-000208</p>
+    <p class="text-sm mb-4">Send payment and send screenshot on WhatsApp</p>
+    <a href="https://wa.me/8801864000208" target="_blank" class="inline-block bg-green-500 px-6 py-3 rounded-lg font-semibold hover:bg-green-400">
+      📱 Send Screenshot
+    </a>
+  </div>
 </div>
-
-</div>
-
-</section>
-
-<!-- ================= WHY CHOOSE US ================= -->
-
-<section class="bg-slate-900 py-20">
-
-<div class="container">
-
-<div class="grid lg:grid-cols-4 gap-8">
-
-<div class="bg-slate-800 rounded-2xl p-8 text-center">
-
-<div class="text-6xl mb-5">
-
-🎓
-
-</div>
-
-<h3 class="text-2xl font-bold">
-
-Expert Teachers
-
-</h3>
-
-</div>
-
-<div class="bg-slate-800 rounded-2xl p-8 text-center">
-
-<div class="text-6xl mb-5">
-
-📚
-
-</div>
-
-<h3 class="text-2xl font-bold">
-
-Premium Notes
-
-</h3>
-
-</div>
-
-<div class="bg-slate-800 rounded-2xl p-8 text-center">
-
-<div class="text-6xl mb-5">
-
-📺
-
-</div>
-
-<h3 class="text-2xl font-bold">
-
-Live Classes
-
-</h3>
-
-</div>
-
-<div class="bg-slate-800 rounded-2xl p-8 text-center">
-
-<div class="text-6xl mb-5">
-
-🏆
-
-</div>
-
-<h3 class="text-2xl font-bold">
-
-Best Results
-
-</h3>
-
-</div>
-
-</div>
-
-</div>
-
-</section>
-<!-- ================= TESTIMONIALS ================= -->
-
-<section class="py-20 bg-slate-800">
-
-<div class="container">
-
-<div class="text-center mb-16">
-
-<h2 class="text-5xl font-bold">
-
-⭐ শিক্ষার্থীরা যা বলছে
-
-</h2>
-
-<p class="text-gray-400 mt-4">
-
-আমাদের সফল শিক্ষার্থীদের অভিজ্ঞতা
-
-</p>
-
-</div>
-
-<div class="grid lg:grid-cols-3 gap-8">
-
-<!-- Review -->
-
-<div class="bg-slate-900 rounded-2xl p-8 card-hover">
-
-<div class="flex items-center mb-5">
-
-<img src="assets/images/student1.jpg"
-class="w-16 h-16 rounded-full object-cover">
-
-<div class="ml-4">
-
-<h3 class="font-bold text-xl">
-
-পূজা রানী দাস
-
-</h3>
-
-<p class="text-gray-400">
-
-The Roses Collectorate School
-
-</p>
-
-</div>
-
-</div>
-
-<div class="text-yellow-400 text-xl mb-4">
-
-★★★★★
-
-</div>
-
-<p class="text-gray-300">
-
-অনেক অভিজ্ঞ শিক্ষকদের কারণে আমার পরীক্ষার ফলাফল অনেক ভালো হয়েছে।
-
-</p>
-
-</div>
-
-<!-- Review -->
-
-<div class="bg-slate-900 rounded-2xl p-8 card-hover">
-
-<div class="flex items-center mb-5">
-
-<img src="assets/images/student2.jpg"
-class="w-16 h-16 rounded-full object-cover">
-
-<div class="ml-4">
-
-<h3 class="font-bold text-xl">
-
-তাওহিদুল রহমান
-
-</h3>
-
-<p class="text-gray-400">
-
-High School Student
-
-</p>
-
-</div>
-
-</div>
-
-<div class="text-yellow-400 text-xl mb-4">
-
-★★★★★
-
-</div>
-
-<p class="text-gray-300">
-
-আমি ৬ষ্ঠ শ্রেণি থেকে Learning Hub-এর সাথে আছি। এখানকার লাইভ ক্লাস অসাধারণ।
-
-</p>
-
-</div>
-
-<!-- Review -->
-
-<div class="bg-slate-900 rounded-2xl p-8 card-hover">
-
-<div class="flex items-center mb-5">
-
-<img src="assets/images/student3.jpg"
-class="w-16 h-16 rounded-full object-cover">
-
-<div class="ml-4">
-
-<h3 class="font-bold text-xl">
-
-নাসওয়ান
-
-</h3>
-
-<p class="text-gray-400">
-
-SSC Candidate
-
-</p>
-
-</div>
-
-</div>
-
-<div class="text-yellow-400 text-xl mb-4">
-
-★★★★★
-
-</div>
-
-<p class="text-gray-300">
-
-Recorded Class আর Premium Notes আমার প্রস্তুতিকে আরও সহজ করেছে।
-
-</p>
-
-</div>
-
-</div>
-
-</div>
-
-</section>
-
-<!-- ================= FAQ ================= -->
-
-<section class="py-20">
-
-<div class="container">
-
-<div class="text-center mb-16">
-
-<h2 class="text-5xl font-bold">
-
-❓ সচরাচর জিজ্ঞাসা
-
-</h2>
-
-</div>
-
-<div class="space-y-6">
-
-<div class="bg-slate-800 rounded-xl p-6">
-
-<h3 class="text-2xl font-semibold">
-
-এই কোর্স কাদের জন্য?
-
-</h3>
-
-<p class="text-gray-400 mt-3">
-
-৫ম থেকে এইচএসসি, ভর্তি এবং চাকরি প্রস্তুতির শিক্ষার্থীদের জন্য।
-
-</p>
-
-</div>
-
-<div class="bg-slate-800 rounded-xl p-6">
-
-<h3 class="text-2xl font-semibold">
-
-লাইভ ক্লাস হবে?
-
-</h3>
-
-<p class="text-gray-400 mt-3">
-
-হ্যাঁ, প্রতি সপ্তাহে নির্ধারিত সময়ে লাইভ ক্লাস নেওয়া হবে।
-
-</p>
-
-</div>
-
-<div class="bg-slate-800 rounded-xl p-6">
-
-<h3 class="text-2xl font-semibold">
-
-রেকর্ডেড ক্লাস থাকবে?
-
-</h3>
-
-<p class="text-gray-400 mt-3">
-
-হ্যাঁ, প্রতিটি লাইভ ক্লাসের রেকর্ডিং দেওয়া হবে।
-
-</p>
-
-</div>
-
-<div class="bg-slate-800 rounded-xl p-6">
-
-<h3 class="text-2xl font-semibold">
-
-সার্টিফিকেট পাবো?
-
-</h3>
-
-<p class="text-gray-400 mt-3">
-
-সফলভাবে কোর্স সম্পন্ন করলে সার্টিফিকেট প্রদান করা হবে।
-
-</p>
-
-</div>
-
-</div>
-
-</div>
-
-</section>
-
-<!-- ================= CONTACT ================= -->
-
-<section id="contact" class="py-20 bg-gradient-to-r from-pink-600 to-purple-700">
-
-<div class="container grid lg:grid-cols-2 gap-10">
-
-<div>
-
-<h2 class="text-5xl font-bold mb-8">
-
-📞 যোগাযোগ করুন
-
-</h2>
-
-<p class="text-xl">
-
-📱 01864-000208
-
-</p>
-
-<p class="text-xl mt-4">
-
-📧 learninghubinfo65@gmail.com
-
-</p>
-
-<p class="text-xl mt-4">
-
-📍 Motihar, Rajshahi
-
-</p>
-
-<div class="mt-10">
-
-<a href="https://wa.me/8801864000208"
-
-class="bg-green-500 px-8 py-4 rounded-xl inline-block font-bold hover:bg-green-600">
-
-WhatsApp Now
-
-</a>
-
-</div>
-
-</div>
-
-<div class="bg-white/10 backdrop-blur-lg rounded-2xl p-10">
-
-<h3 class="text-3xl font-bold mb-6">
-
-💳 bKash Payment
-
-</h3>
-
-<h2 class="text-5xl font-bold text-yellow-300">
-
-01864-000208
-
-</h2>
-
-<p class="mt-6">
-
-Payment করার পরে WhatsApp-এ Screenshot পাঠিয়ে দিন।
-
-</p>
-
-<a href="https://wa.me/8801864000208"
-
-class="bg-green-500 mt-8 inline-block px-8 py-4 rounded-xl font-bold">
-
-Send Screenshot
-
-</a>
-
-</div>
-
-</div>
-
-</section>
-
-<!-- ================= FOOTER ================= -->
-
-<footer class="bg-slate-950 py-12">
-
-<div class="container">
-
-<div class="grid lg:grid-cols-4 gap-10">
-
-<div>
-
-<h2 class="text-3xl font-bold gradient-text">
-
 Learning Hub
-
-</h2>
-
-<p class="text-gray-400 mt-4">
+দেশের সেরা অনলাইন স্কুল
 
 Think Smart | SSC • HSC • Admission • Job Prep
 
-</p>
+কোম্পানি
+Career
+শিক্ষক হিসেবে যোগ দিন
+Privacy Policy
+অন্যান্য
+ফ্রি নোটস
+চাকরি প্রস্তুতি
+সার্টিফিকেট যাচাই
+যোগাযোগ মাধ্যম
+📞 01864-000208
 
-</div>
+📧 learninghubinfo65@gmail.com
 
-<div>
+📘 📸 ▶️
+© 2026 Learning Hub Online School. All rights reserved.
+×
+Best Seller
+Spoken English Junior
+ক্লাস ৬-১০-এর শিক্ষার্থীদের জন্য সম্পূর্ণ স্পোকেন ইংলিশ প্রোগ্রাম
 
-<h3 class="text-2xl font-bold mb-4">
+📅 ১২ মাসের প্রোগ্রাম
+🎯 ৩টি লেভেল
+🏆 British Council সার্টিফিকেট
+Enroll Now Free Class
+Course Price
 
-Quick Links
+৳4,999
 
-</h3>
+৳8,000
 
-<ul class="space-y-3 text-gray-400">
+38% OFF
+✓ ৫০+ লাইভ ক্লাস
 
-<li><a href="#">Home</a></li>
+✓ ১:১ সেশন
 
-<li><a href="#courses">Courses</a></li>
+✓ মাসিক প্রোগ্রেস রিপোর্ট
 
-<li><a href="#pricing">Pricing</a></li>
+✓ British Council সার্টিফিকেট
 
-<li><a href="#contact">Contact</a></li>
-
-</ul>
-
-</div>
-
-<div>
-
-<h3 class="text-2xl font-bold mb-4">
-
-Contact
-
-</h3>
-
-<p class="text-gray-400">
-
-01864-000208
-
-</p>
-
-<p class="text-gray-400 mt-2">
-
-learninghubinfo65@gmail.com
-
-</p>
-
-</div>
-
-<div>
-
-<h3 class="text-2xl font-bold mb-4">
-
-Follow Us
-
-</h3>
-
-<div class="flex gap-5 text-3xl">
-
-<a href="#"><i class="fab fa-facebook"></i></a>
-
-<a href="#"><i class="fab fa-youtube"></i></a>
-
-<a href="#"><i class="fab fa-instagram"></i></a>
-
-<a href="#"><i class="fab fa-linkedin"></i></a>
-
-</div>
-
-</div>
-
-</div>
-
-<hr class="border-slate-700 my-10">
-
-<p class="text-center text-gray-500">
-
-© 2026 Learning Hub Online School. All Rights Reserved.
-
-</p>
-
-</div>
-
-</footer>
-<!-- ================= COURSE MODAL ================= -->
-
-<div id="courseModal"
-     class="fixed inset-0 bg-black/70 hidden items-center justify-center z-50">
-
-    <div class="bg-slate-900 w-11/12 max-w-5xl rounded-2xl overflow-hidden shadow-2xl relative">
-
-        <!-- Close Button -->
-
-        <button
-            onclick="closeCourseModal()"
-            class="absolute right-5 top-5 text-white text-3xl hover:text-pink-500">
-
-            &times;
-
-        </button>
-
-        <!-- Header -->
-
-        <div class="bg-gradient-to-r from-pink-600 to-purple-700 p-8">
-
-            <h2 id="modalTitle"
-                class="text-4xl font-bold">
-
-                Course Details
-
-            </h2>
-
-            <p class="text-white/80 mt-2">
-
-                ভর্তি হওয়ার আগে বিস্তারিত দেখে নিন
-
-            </p>
-
-        </div>
-
-        <!-- Body -->
-
-        <div
-            id="modalContent"
-            class="p-8 max-h-[70vh] overflow-y-auto">
-
-        </div>
-
+<!-- Course Highlights -->
+<div class="py-16 px-6 bg-gray-900">
+  <div class="max-w-6xl mx-auto">
+    <h2 class="text-3xl font-bold text-center mb-12">এই কোর্সে যা থাকছে</h2>
+    <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+      <div class="bg-gray-800 p-6 rounded-xl text-center card-hover">
+        <div class="text-4xl mb-4">📺</div>
+        <h3 class="text-xl font-bold mb-2">৫০+ লাইভ ক্লাস</h3>
+        <p class="text-gray-400 text-sm">প্রতি সপ্তাহে ২টি ইন্টারেক্টিভ ক্লাস</p>
+      </div>
+      <div class="bg-gray-800 p-6 rounded-xl text-center card-hover">
+        <div class="text-4xl mb-4">📚</div>
+        <h3 class="text-xl font-bold mb-2">ফ্রি স্টোরি বুক</h3>
+        <p class="text-gray-400 text-sm">প্রতি লেভেলে ফ্রি স্টোরি অ্যান্ড অ্যাক্টিভিটি বুক</p>
+      </div>
+      <div class="bg-gray-800 p-6 rounded-xl text-center card-hover">
+        <div class="text-4xl mb-4">📊</div>
+        <h3 class="text-xl font-bold mb-2">মাসিক প্রোগ্রেস</h3>
+        <p class="text-gray-400 text-sm">নিয়মিত প্রোগ্রেস রিপোর্ট ও প্যারেন্ট-টিচার মিটিং</p>
+      </div>
+      <div class="bg-gray-800 p-6 rounded-xl text-center card-hover">
+        <div class="text-4xl mb-4">🏆</div>
+        <h3 class="text-xl font-bold mb-2">আন্তর্জাতিক সার্টিফিকেট</h3>
+        <p class="text-gray-400 text-sm">British Council থেকে সার্টিফিকেট</p>
+      </div>
     </div>
-
+  </div>
 </div>
 
-<!-- ================= LOADING SPINNER ================= -->
-
-<div
-id="loader"
-class="fixed inset-0 bg-slate-950 flex items-center justify-center z-[9999]">
-
-<div
-class="w-20 h-20 border-4 border-pink-500 border-t-transparent rounded-full animate-spin">
-
+<!-- Course Features -->
+<div class="py-16 px-6">
+  <div class="max-w-6xl mx-auto">
+    <h2 class="text-3xl font-bold text-center mb-12">কোর্স এক্সক্লুসিভ ফিচার</h2>
+    <div class="grid md:grid-cols-3 gap-8">
+      <div class="bg-gray-800 p-8 rounded-2xl card-hover">
+        <div class="text-5xl mb-4">🎓</div>
+        <h3 class="text-xl font-bold mb-3">Scientifically Developed Curriculum</h3>
+        <p class="text-gray-400">আমাদের কারিকুলাম বৈজ্ঞানিক পদ্ধতিতে তৈরি, যা শিক্ষার্থীদের Reading Habit, Creativity এবং Critical Thinking বাড়ায়।</p>
+      </div>
+      <div class="bg-gray-800 p-8 rounded-2xl card-hover">
+        <div class="text-5xl mb-4">🎭</div>
+        <h3 class="text-xl font-bold mb-3">Learning by Doing</h3>
+        <p class="text-gray-400">Group Work, Role Play, Real-life Scenarios এবং Hands-on Activities-এর মাধ্যমে শিখবে ইংরেজি।</p>
+      </div>
+      <div class="bg-gray-800 p-8 rounded-2xl card-hover">
+        <div class="text-5xl mb-4">📹</div>
+        <h3 class="text-xl font-bold mb-3">Home Task & Video Assignments</h3>
+        <p class="text-gray-400">শিক্ষার্থীরা Home task হিসেবে Video তৈরি করবে, যেখানে তারা ইংরেজিতে কথা বলবে।</p>
+      </div>
+      <div class="bg-gray-800 p-8 rounded-2xl card-hover">
+        <div class="text-5xl mb-4">👨‍🏫</div>
+        <h3 class="text-xl font-bold mb-3">Expert Teachers</h3>
+        <p class="text-gray-400">আমাদের শিক্ষকরা Interactive ক্লাস পরিচালনায় প্রশিক্ষিত এবং দক্ষ। তারা Mentor হিসেবে কাজ করেন।</p>
+      </div>
+      <div class="bg-gray-800 p-8 rounded-2xl card-hover">
+        <div class="text-5xl mb-4">👨‍👩‍👧</div>
+        <h3 class="text-xl font-bold mb-3">Parent Tracking</h3>
+        <p class="text-gray-400">মাসিক প্রোগ্রেস রিপোর্ট ও নিয়মিত প্যারেন্টস-টিচার মিটিং।</p>
+      </div>
+      <div class="bg-gray-800 p-8 rounded-2xl card-hover">
+        <div class="text-5xl mb-4">🗣️</div>
+        <h3 class="text-xl font-bold mb-3">Language Club</h3>
+        <p class="text-gray-400">Debate, Role-play ও Presentationের মাধ্যমে রিয়েল লাইফ স্পিকিং প্র্যাকটিস।</p>
+      </div>
+    </div>
+  </div>
 </div>
 
+<!-- Who is this for -->
+<div class="py-16 px-6 bg-gray-900">
+  <div class="max-w-4xl mx-auto">
+    <h2 class="text-3xl font-bold text-center mb-8">এই কোর্সটি কাদের জন্য?</h2>
+    <div class="bg-gray-800 p-8 rounded-2xl">
+      <div class="space-y-4">
+        <div class="flex items-start gap-4">
+          <span class="text-green-500 text-2xl">✓</span>
+          <p class="text-lg">ক্লাসে Presentation বা Group Discussion-এ অংশ নিতে জড়তা অনুভব করে</p>
+        </div>
+        <div class="flex items-start gap-4">
+          <span class="text-green-500 text-2xl">✓</span>
+          <p class="text-lg">ইংরেজি Grammar জানে কিন্তু Real-life Conversation-এ ব্যবহার করতে পারে না</p>
+        </div>
+        <div class="flex items-start gap-4">
+          <span class="text-green-500 text-2xl">✓</span>
+          <p class="text-lg">ভবিষ্যতে Higher Studies, University Life বা Global Career-এর জন্য নিজেকে তৈরি করতে চায়</p>
+        </div>
+        <div class="flex items-start gap-4">
+          <span class="text-green-500 text-2xl">✓</span>
+          <p class="text-lg">আত্মবিশ্বাসের সাথে ইংরেজিতে কথা বলতে শিখতে চায়</p>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>
 
-<!-- ================= BACK TO TOP ================= -->
-
-<button
-id="backToTop"
-onclick="scrollToTop()"
-class="hidden fixed bottom-8 right-8 w-14 h-14 rounded-full bg-pink-600 hover:bg-pink-700 text-white shadow-xl z-40">
-
-<i class="fas fa-arrow-up"></i>
-
-</button>
-
-<!-- ================= MOBILE MENU BUTTON ================= -->
-
-<button
-id="mobileBtn"
-class="lg:hidden fixed top-5 right-5 bg-pink-600 p-3 rounded-lg z-50">
-
-<i class="fas fa-bars"></i>
-
-</button>
-
-<!-- ================= MOBILE MENU ================= -->
-
-<div
-id="mobileMenu"
-class="fixed top-0 left-[-100%] w-72 h-full bg-slate-900 transition-all duration-300 z-40">
-
-<div class="p-8">
-
-<h2 class="text-3xl font-bold gradient-text mb-10">
-
-Learning Hub
-
-</h2>
-
-<ul class="space-y-6 text-xl">
-
-<li><a href="#">Home</a></li>
-
-<li><a href="#courses">Courses</a></li>
-
-<li><a href="#features">Features</a></li>
-
-<li><a href="#mentors">Mentors</a></li>
-
-<li><a href="#pricing">Pricing</a></li>
-
-<li><a href="#contact">Contact</a></li>
-
-</ul>
-
+<!-- Testimonials -->
+<div class="py-16 px-6">
+  <div class="max-w-6xl mx-auto">
+    <h2 class="text-3xl font-bold text-center mb-12">শিক্ষার্থীরা যা বলছে</h2>
+    <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+      <div class="bg-gray-800 p-6 rounded-xl card-hover">
+        <div class="flex items-center gap-3 mb-4">
+          <div class="w-12 h-12 bg-pink-600 rounded-full flex items-center justify-center">র</div>
+          <div>
+            <h4 class="font-bold">রেশাদ</h4>
+            <p class="text-gray-400 text-sm">Class 8</p>
+          </div>
+        </div>
+        <p class="text-gray-300">"Learning Hub-এর সাথে ইংরেজি শেখা অনেক মজাদার হয়ে গেছে। এখন ক্লাসে সাহসের সাথে কথা বলি।"</p>
+      </div>
+      <div class="bg-gray-800 p-6 rounded-xl card-hover">
+        <div class="flex items-center gap-3 mb-4">
+          <div class="w-12 h-12 bg-pink-600 rounded-full flex items-center justify-center">শা</div>
+          <div>
+            <h4 class="font-bold">শাইরা আফরিন</h4>
+            <p class="text-gray-400 text-sm">Class 7</p>
+          </div>
+        </div>
+        <p class="text-gray-300">"টিচাররা অনেক ভালো। প্রতিটি ক্লাসে আমাদের কথা বলার সুযোগ দেয়।"</p>
+      </div>
+      <div class="bg-gray-800 p-6 rounded-xl card-hover">
+        <div class="flex items-center gap-3 mb-4">
+          <div class="w-12 h-12 bg-pink-600 rounded-full flex items-center justify-center">হু</div>
+          <div>
+            <h4 class="font-bold">হুমায়রা</h4>
+            <p class="text-gray-400 text-sm">Class 9</p>
+          </div>
+        </div>
+        <p class="text-gray-300">"আগে ইংরেজি বলতে ভয় লাগত। এখন ফ্রেন্ডলি ফিল করি। ধন্যবাদ Learning Hub!"</p>
+      </div>
+      <div class="bg-gray-800 p-6 rounded-xl card-hover">
+        <div class="flex items-center gap-3 mb-4">
+          <div class="w-12 h-12 bg-pink-600 rounded-full flex items-center justify-center">না</div>
+          <div>
+            <h4 class="font-bold">নাসওয়ান</h4>
+            <p class="text-gray-400 text-sm">Class 10</p>
+          </div>
+        </div>
+        <p class="text-gray-300">"British Council সার্টিফিকেট পাওয়ার আশা রাখি। এই কোর্স আমাকে অনেক সাহায্য করেছে।"</p>
+      </div>
+    </div>
+  </div>
 </div>
 
+<!-- FAQ -->
+<div class="py-16 px-6 bg-gray-900">
+  <div class="max-w-4xl mx-auto">
+    <h2 class="text-3xl font-bold text-center mb-12">সচরাচর জিজ্ঞাসা</h2>
+    <div class="space-y-4">
+      <div class="bg-gray-800 p-6 rounded-xl">
+        <h3 class="text-lg font-bold mb-2">এই প্রোগ্রামটি কাদের জন্য উপযুক্ত?</h3>
+        <p class="text-gray-400">এই প্রোগ্রামটি ক্লাস ৬ থেকে ১০-এর শিক্ষার্থীদের জন্য, যারা ইংরেজিতে আত্মবিশ্বাসের সাথে কথা বলতে শিখতে চায়।</p>
+      </div>
+      <div class="bg-gray-800 p-6 rounded-xl">
+        <h3 class="text-lg font-bold mb-2">প্রোগ্রামটির মেয়াদ কত?</h3>
+        <p class="text-gray-400">এটি একটি ১২ মাসের প্রোগ্রাম যেখানে ৩টি লেভেল রয়েছে।</p>
+      </div>
+      <div class="bg-gray-800 p-6 rounded-xl">
+        <h3 class="text-lg font-bold mb-2">প্রতি সপ্তাহে কয়টি ক্লাস হবে?</h3>
+        <p class="text-gray-400">প্রতি সপ্তাহে ২টি ইন্টারেক্টিভ লাইভ ক্লাস হবে।</p>
+      </div>
+      <div class="bg-gray-800 p-6 rounded-xl">
+        <h3 class="text-lg font-bold mb-2">ভর্তি হওয়ার আগে কি কোনো পরীক্ষা দিতে হবে?</h3>
+        <p class="text-gray-400">না, কোনো প্রবেশ পরীক্ষা নেই। যেকোনো শিক্ষার্থী ভর্তি হতে পারবে।</p>
+      </div>
+    </div>
+  </div>
 </div>
 
-<!-- ================= SCRIPT START ================= -->
-
-<script>
-
-const modal=document.getElementById("courseModal");
-
-const modalTitle=document.getElementById("modalTitle");
-
-const modalContent=document.getElementById("modalContent");
-
-// ================= COURSE DATA =================
-
-const courseData = {
-
-class6:{
-title:"৬ষ্ঠ শ্রেণি ব্যাচ ২০২৬",
-subjects:[
-{
-name:"গণিত",
-price:"৳500",
-duration:"৩ মাস",
-description:"সহজ ভাষায় সম্পূর্ণ গণিত কোর্স।",
-features:[
-"১০টি লাইভ ক্লাস",
-"PDF Notes",
-"MCQ Practice",
-"Recorded Class"
-]
-},
-{
-name:"বিজ্ঞান",
-price:"৳500",
-duration:"৩ মাস",
-description:"Physics, Chemistry, Biology Complete Course.",
-features:[
-"১০টি লাইভ ক্লাস",
-"Master Book",
-"Weekly Exam",
-"Recorded Video"
-]
-},
-{
-name:"ICT",
-price:"৳400",
-duration:"২ মাস",
-description:"ICT Complete Course.",
-features:[
-"৮টি ক্লাস",
-"লাইভ সাপোর্ট",
-"MCQ",
-"Assignment"
-]
-}
-]
-},
-
-class7:{
-title:"৭ম শ্রেণি ব্যাচ",
-subjects:[
-{
-name:"Math",
-price:"৳500",
-duration:"৩ মাস",
-description:"Complete Math Course.",
-features:[
-"১০টি লাইভ ক্লাস",
-"PDF",
-"Weekly Test",
-"Support"
-]
-}
-]
-},
-
-class8:{
-title:"৮ম শ্রেণি ব্যাচ",
-subjects:[
-{
-name:"Math",
-price:"৳500",
-duration:"৩ মাস",
-description:"Complete Math Preparation.",
-features:[
-"১০টি ক্লাস",
-"Notes",
-"Exam",
-"Support"
-]
-}
-]
-},
-
-ssc2026:{
-title:"SSC Final Batch",
-
-subjects:[
-
-{
-
-name:"Science Group",
-
-price:"৳4000",
-
-duration:"৫ মাস",
-
-description:"SSC Complete Science Batch.",
-
-features:[
-
-"৫০+ লাইভ ক্লাস",
-
-"Masterbook",
-
-"Mock Test",
-
-"২৪/৭ Support"
-
-]
-
-},
-
-{
-
-name:"Business Studies",
-
-price:"৳3500",
-
-duration:"৫ মাস",
-
-description:"SSC Business Preparation.",
-
-features:[
-
-"Live Class",
-
-"Recorded",
-
-"Notes",
-
-"Exam"
-
-]
-
-},
-
-{
-
-name:"Humanities",
-
-price:"৳3500",
-
-duration:"৫ মাস",
-
-description:"SSC Humanities Complete Batch.",
-
-features:[
-
-"Weekly Exam",
-
-"Live Class",
-
-"Notes",
-
-"Support"
-
-]
-
-}
-
-]
-
-},
-
-hsc2026:{
-
-title:"HSC Final Batch",
-
-subjects:[
-
-{
-
-name:"Science",
-
-price:"৳4500",
-
-duration:"৪ মাস",
-
-description:"Complete HSC Preparation.",
-
-features:[
-
-"৫০+ ক্লাস",
-
-"MCQ",
-
-"Model Test",
-
-"Support"
-
-]
-
-}
-
-]
-
-},
-
-varsity:{
-
-title:"University Admission",
-
-subjects:[
-
-{
-
-name:"Engineering",
-
-price:"৳3000",
-
-duration:"৮ মাস",
-
-description:"BUET, RUET, CUET Preparation.",
-
-features:[
-
-"Previous Questions",
-
-"লাইভ ক্লাস",
-
-"Mock Test",
-
-"Support"
-
-]
-
-}
-
-]
-
-}
-
-};
-
-//================ OPEN MODAL =================
-
-function openCourseModal(course){
-
-const data=courseData[course];
-
-if(!data) return;
-
-modalTitle.innerHTML=data.title;
-
-let html="";
-
-data.subjects.forEach(item=>{
-
-html+=`
-
-<div class="bg-slate-800 rounded-xl p-6 mb-6">
-
-<h3 class="text-3xl font-bold text-pink-500">
-
-${item.name}
-
-</h3>
-
-<p class="mt-4 text-gray-300">
-
-${item.description}
-
-</p>
-
-<div class="grid md:grid-cols-2 gap-4 mt-6">
-
-<div>
-
-<strong>Price :</strong>
-
-${item.price}
-
+<!-- CTA -->
+<div class="py-16 px-6 bg-gradient-to-r from-pink-600 to-purple-700 text-center">
+  <div class="max-w-4xl mx-auto">
+    <h2 class="text-4xl font-bold mb-4">তোমার স্পোকেন ইংলিশ প্র্যাকটিস শুরু করো আজই!</h2>
+    <p class="text-xl mb-8">এক্সপার্ট টিচারের সাথে রিয়েল লাইফ কনভারসেশনের মাধ্যমে English Speaking Practice শুরু করতে এখনই ক্লিক করো!</p>
+    <a href="#enroll" class="inline-block bg-white text-pink-600 px-8 py-4 rounded-xl text-lg font-bold hover:bg-gray-100">Start Now</a>
+  </div>
 </div>
 
-<div>
+<!-- Close Button -->
+<button onclick="closeSpokenEnglishDetail()" class="fixed top-6 right-6 bg-gray-800 text-white w-12 h-12 rounded-full text-2xl hover:bg-gray-700 z-50">&times;</button>
+<script> const courseData = { class6: { title: "৬ষ্ঠ শ্রেণি ব্যাচ ২০২৬", subjects: [ { name: "গণিত", price: "৳500", duration: "৩ মাস", description: "সহজ ভাষায় গণিতের মূল ধারণা। প্রতিটি অধ্যায়ের উপর বিস্তারিত আলোচনা ও সমাধান।", video: "📺 Demo Video", features: ["১০টি লাইভ ক্লাস", "PDF নোটস", "MCQ প্র্যাকটিস", "রেকর্ডেড ক্লাস"] }, { name: "বিজ্ঞান", price: "৳500", duration: "৩ মাস", description: "Physics, Chemistry, Biology - তিনটি বিষয়ই একসাথে। পরীক্ষায় ভালো করার জন্য সম্পূর্ণ গাইড।", video: "📺 Demo Video", features: ["১০টি লাইভ ক্লাস", "PDF নোটস", "MCQ প্র্যাকটিস", "রেকর্ডেড ক্লাস"] }, { name: "ICT", price: "৳400", duration: "২ মাস", description: "কম্পিউটারের মৌলিক ধারণা ও প্রোগ্রামিং। সহজ ভাষায় শেখানো হয়।", video: "📺 Demo Video", features: ["৮টি লাইভ ক্লাস", "PDF নোটস", "MCQ প্র্যাকটিস", "রেকর্ডেড ক্লাস"] }, { name: "ইংরেজি", price: "৳400", duration: "২ মাস", description: "গ্রামার ও ভোকাবুলারি উভয়ই। রাইটিং ও স্পোকেন ইংরেজির উপর বিশেষ মনোযোগ।", video: "📺 Demo Video", features: ["৮টি লাইভ ক্লাস", "PDF নোটস", "MCQ প্র্যাকটিস", "রেকর্ডেড ক্লাস"] }, { name: "বাংলা", price: "৳400", duration: "২ মাস", description: "ব্যাকরণ ও সাহিত্য - দুটোই। প্রতিযোগিতামূলক পরীক্ষার জন্য প্রস্তুতি।", video: "📺 Demo Video", features: ["৮টি লাইভ ক্লাস", "PDF নোটস", "MCQ প্র্যাকটিস", "রেকর্ডেড ক্লাস"] } ] }, class7: { title: "৭ম শ্রেণি ব্যাচ ২০২৬", subjects: [ { name: "গণিত", price: "৳500", duration: "৩ মাস", description: "সহজ ভাষায় গণিতের মূল ধারণা। প্রতিটি অধ্যায়ের উপর বিস্তারিত আলোচনা ও সমাধান।", video: "📺 Demo Video", features: ["১০টি লাইভ ক্লাস", "PDF নোটস", "MCQ প্র্যাকটিস", "রেকর্ডেড ক্লাস"] }, { name: "বিজ্ঞান", price: "৳500", duration: "৩ মাস", description: "Physics, Chemistry, Biology - তিনটি বিষয়ই একসাথে। পরীক্ষায় ভালো করার জন্য সম্পূর্ণ গাইড।", video: "📺 Demo Video", features: ["১০টি লাইভ ক্লাস", "PDF নোটস", "MCQ প্র্যাকটিস", "রেকর্ডেড ক্লাস"] }, { name: "ICT", price: "৳400", duration: "২ মাস", description: "কম্পিউটারের মৌলিক ধারণা ও প্রোগ্রামিং। সহজ ভাষায় শেখানো হয়।", video: "📺 Demo Video", features: ["৮টি লাইভ ক্লাস", "PDF নোটস", "MCQ প্র্যাকটিস", "রেকর্ডেড ক্লাস"] }, { name: "ইংরেজি", price: "৳400", duration: "২ মাস", description: "গ্রামার ও ভোকাবুলারি উভয়ই। রাইটিং ও স্পোকেন ইংরেজির উপর বিশেষ মনোযোগ।", video: "📺 Demo Video", features: ["৮টি লাইভ ক্লাস", "PDF নোটস", "MCQ প্র্যাকটিস", "রেকর্ডেড ক্লাস"] }, { name: "বাংলা", price: "৳400", duration: "২ মাস", description: "ব্যাকরণ ও সাহিত্য - দুটোই। প্রতিযোগিতামূলক পরীক্ষার জন্য প্রস্তুতি।", video: "📺 Demo Video", features: ["৮টি লাইভ ক্লাস", "PDF নোটস", "MCQ প্র্যাকটিস", "রেকর্ডেড ক্লাস"] } ] }, class8: { title: "৮ম শ্রেণি ব্যাচ ২০২৬", subjects: [ { name: "গণিত", price: "৳500", duration: "৩ মাস", description: "সহজ ভাষায় গণিতের মূল ধারণা। প্রতিটি অধ্যায়ের উপর বিস্তারিত আলোচনা ও সমাধান।", video: "📺 Demo Video", features: ["১০টি লাইভ ক্লাস", "PDF নোটস", "MCQ প্র্যাকটিস", "রেকর্ডেড ক্লাস"] }, { name: "বিজ্ঞান", price: "৳500", duration: "৩ মাস", description: "Physics, Chemistry, Biology - তিনটি বিষয়ই একসাথে। পরীক্ষায় ভালো করার জন্য সম্পূর্ণ গাইড।", video: "📺 Demo Video", features: ["১০টি লাইভ ক্লাস", "PDF নোটস", "MCQ প্র্যাকটিস", "রেকর্ডেড ক্লাস"] }, { name: "ICT", price: "৳400", duration: "২ মাস", description: "কম্পিউটারের মৌলিক ধারণা ও প্রোগ্রামিং। সহজ ভাষায় শেখানো হয়।", video: "📺 Demo Video", features: ["৮টি লাইভ ক্লাস", "PDF নোটস", "MCQ প্র্যাকটিস", "রেকর্ডেড ক্লাস"] }, { name: "ইংরেজি", price: "৳400", duration: "২ মাস", description: "গ্রামার ও ভোকাবুলারি উভয়ই। রাইটিং ও স্পোকেন ইংরেজির উপর বিশেষ মনোযোগ।", video: "📺 Demo Video", features: ["৮টি লাইভ ক্লাস", "PDF নোটস", "MCQ প্র্যাকটিস", "রেকর্ডেড ক্লাস"] }, { name: "বাংলা", price: "৳400", duration: "২ মাস", description: "ব্যাকরণ ও সাহিত্য - দুটোই। প্রতিযোগিতামূলক পরীক্ষার জন্য প্রস্তুতি।", video: "📺 Demo Video", features: ["৮টি লাইভ ক্লাস", "PDF নোটস", "MCQ প্র্যাকটিস", "রেকর্ডেড ক্লাস"] } ] }, ssc2028: { title: "SSC ২০২৮ (নবম শ্রেণি)", subjects: [ { name: "বিজ্ঞান বান্ডেল", price: "৳1,200", duration: "৬ মাস", description: "Physics, Chemistry, Biology - সম্পূর্ণ সিলেবাস কভার। প্রতিটি টপিক বিস্তারিত আলোচনা।", video: "📺 Demo Video", features: ["২০টি লাইভ ক্লাস", "Masterbook", "MCQ Bank", "রেকর্ডেড ক্লাস"] }, { name: "ব্যবসায় শিক্ষা বান্ডেল", price: "৳1,000", duration: "৬ মাস", description: "Accounting, Finance, Marketing - তিনটি বিষয়ের সম্পূর্ণ প্রস্তুতি।", video: "📺 Demo Video", features: ["২০টি লাইভ ক্লাস", "Masterbook", "MCQ Bank", "রেকর্ডেড ক্লাস"] }, { name: "মানবিক বান্ডেল", price: "৳1,000", duration: "৬ মাস", description: "History, Civics, Economics - সম্পূর্ণ সিলেবাস ও রিভিশন।", video: "📺 Demo Video", features: ["২০টি লাইভ ক্লাস", "Masterbook", "MCQ Bank", "রেকর্ডেড ক্লাস"] } ] }, ssc2027: { title: "SSC ২০২৭ (দশম শ্রেণি)", subjects: [ { name: "বিজ্ঞান বান্ডেল", price: "৳2,500", duration: "১০ মাস", description: "পূর্ণাঙ্গ বিজ্ঞান প্রস্তুতি। প্রতিটি অধ্যায়ের গভীর বিশ্লেষণ ও মক টেস্ট।", video: "📺 Demo Video", features: ["৪০টি লাইভ ক্লাস", "Masterbook", "Full Mock Test", "Priority Support"] }, { name: "বাংলা + ইংরেজি + ICT", price: "৳1,500", duration: "১০ মাস", description: "তিনটি ভাষা বিষয়ের সম্পূর্ণ প্রস্তুতি। রাইটিং ও স্পোকেনে বিশেষ মনোযোগ।", video: "📺 Demo Video", features: ["৩০টি লাইভ ক্লাস", "Grammar & Composition", "MCQ Practice", "রেকর্ডেড ক্লাস"] }, { name: "সাপ্তাহিক টেস্ট প্যাকেজ", price: "৳800", duration: "১০ মাস", description: "নিয়মিত মূল্যায়ন ও র‍্যাংক বিশ্লেষণ। দুর্বল জায়গা চিহ্নিতকরণ।", video: "📺 Demo Video", features: ["৫০টি অনলাইন টেস্ট", "Detailed Solution", "Rank Analysis", "Performance Report"] } ] }, ssc2026: { title: "SSC ২০২৬ ফাইনাল ব্যাচ", subjects: [ { name: "বিজ্ঞান গ্রুপ (ফুল)", price: "৳4,000", duration: "৫ মাস", description: "সম্পূর্ণ বিজ্ঞান গ্রুপ প্রস্তুতি। লাস্ট মিনট রিভিশন ও ক্র্যাশ কোর্স।", video: "📺 Demo Video", features: ["সব সাবজেক্ট", "৫০+ মক টেস্ট", "লাস্ট মিনট রিভিশন", "Priority Support"] }, { name: "ব্যবসায় শিক্ষা গ্রুপ", price: "৳3,500", duration: "৫ মাস", description: "ব্যবসায় শিক্ষার সম্পূর্ণ প্রস্তুতি। অ্যাকাউন্টিং ও ফাইন্যান্সে বিশেষ মনোযোগ।", video: "📺 Demo Video", features: ["সব সাবজেক্ট", "৫০+ মক টেস্ট", "লাস্ট মিনট রিভিশন", "Priority Support"] }, { name: "মানবিক গ্রুপ", price: "৳3,500", duration: "৫ মাস", description: "মানবিক গ্রুপের সম্পূর্ণ প্রস্তুতি। ইতিহাস ও সমাজবিদ্যায় দক্ষতা।", video: "📺 Demo Video", features: ["সব সাবজেক্ট", "৫০+ মক টেস্ট", "লাস্ট মিনট রিভিশন", "Priority Support"] } ] }, hsc2027: { title: "এইচএসসি ২০২৭ ব্যাচ", subjects: [ { name: "বিজ্ঞান বান্ডেল", price: "৳2,000", duration: "৬ মাস", description: "Physics, Chemistry, Math/Bio - সম্পূর্ণ প্রস্তুতি। ভর্তি পরীক্ষার জন্য ভিত্তি।", video: "📺 Demo Video", features: ["২০টি লাইভ ক্লাস", "Masterbook", "MCQ Bank", "রেকর্ডেড ক্লাস"] }, { name: "ব্যবসায় শিক্ষা বান্ডেল", price: "৳1,800", duration: "৬ মাস", description: "Accounting, Finance, Marketing - ব্যবসায় শিক্ষার সম্পূর্ণ গাইড।", video: "📺 Demo Video", features: ["২০টি লাইভ ক্লাস", "Masterbook", "MCQ Bank", "রেকর্ডেড ক্লাস"] }, { name: "মানবিক বান্ডেল", price: "৳1,800", duration: "৬ মাস", description: "History, Civics, Logic - মানবিক বিষয়ের সম্পূর্ণ প্রস্তুতি।", video: "📺 Demo Video", features: ["২০টি লাইভ ক্লাস", "Masterbook", "MCQ Bank", "রেকর্ডেড ক্লাস"] } ] }, hsc2026: { title: "এইচএসসি ২০২৬ ফাইনাল", subjects: [ { name: "বিজ্ঞান গ্রুপ (ফুল)", price: "৳4,500", duration: "৪ মাস", description: "এইচএসসি ফাইনাল ব্যাচ। লাস্ট মিনট রিভিশন ও মক টেস্ট।", video: "📺 Demo Video", features: ["সব সাবজেক্ট", "৫০+ মক টেস্ট", "লাস্ট মিনট রিভিশন", "Priority Support"] }, { name: "ব্যবসায় শিক্ষা গ্রুপ", price: "৳4,000", duration: "৪ মাস", description: "ব্যবসায় শিক্ষা ফাইনাল প্রস্তুতি। সম্পূর্ণ সিলেবাস রিভিউ।", video: "📺 Demo Video", features: ["সব সাবজেক্ট", "৫০+ মক টেস্ট", "লাস্ট মিনট রিভিশন", "Priority Support"] }, { name: "শেষ মুহূর্তের প্রস্তুতি", price: "৳2,500", duration: "২ মাস", description: "ক্র্যাশ কোর্স। দ্রুত রিভিশন ও মক টেস্ট।", video: "📺 Demo Video", features: ["১০টি ক্র্যাশ কোর্স", "২০টি মক টেস্ট", "২৪/৭ সাপোর্ট", "Last Minute Tips"] } ] }, varsity: { title: "ভর্তি পরীক্ষা ২০২৬", subjects: [ { name: "A ইউনিট (Engineering)", price: "৳3,000", duration: "৮ মাস", description: "Engineering ভর্তির জন্য সম্পূর্ণ প্রস্তুতি। Math, Physics, Chemistry।", video: "📺 Demo Video", features: ["৩০টি লাইভ ক্লাস", "অ্যাডমিশন মক টেস্ট", "Previous Year Solutions", "Strategy Session"] }, { name: "B ইউনিট (Science)", price: "৳2,500", duration: "৮ মাস", description: "Medical ও Science ভর্তির জন্য। Biology, Chemistry বিশেষ।", video: "📺 Demo Video", features: ["২৫টি লাইভ ক্লাস", "অ্যাডমিশন মক টেস্ট", "Previous Year Solutions", "Strategy Session"] }, { name: "C ইউনিট (Business)", price: "৳2,500", duration: "৮ মাস", description: "Business School ভর্তির জন্য। Math, English, GK।", video: "📺 Demo Video", features: ["২৫টি লাইভ ক্লাস", "অ্যাডমিশন মক টেস্ট", "Previous Year Solutions", "Strategy Session"] } ] }, cadet: { title: "Cadet / BUP প্রস্তুতি", subjects: [ { name: "Military Math", price: "৳1,500", duration: "৩ মাস", description: "Military Math - বিশেষ ট্রিকস ও শর্টকাট। পরীক্ষায় দ্রুত সমাধান।", video: "📺 Demo Video", features: ["১৫টি লাইভ ক্লাস", "Special Math Tricks", "Previous Year Questions", "Mock Test"] }, { name: "Intelligence Test", price: "৳1,200", duration: "২ মাস", description: "IQ ও মানসিক দক্ষতা বৃদ্ধি। প্যাটার্ন রিকগনিশন।", video: "📺 Demo Video", features: ["১০টি লাইভ ক্লাস", "IQ Building", "Pattern Recognition", "Practice Sets"] }, { name: "Interview Prep", price: "৳800", duration: "১ মাস", description: "সামরিক সাক্ষাৎকারের জন্য প্রস্তুতি। মক ইন্টারভিউ।", video: "📺 Demo Video", features: ["৫টি লাইভ ক্লাস", "Mock Interview", "GD Practice", "Personality Development"] } ] }, jobprep: { title: "চাকরি প্রস্তুতি", subjects: [ { name: "Bank Job Math", price: "২,000৳", duration: "৪ মাস", description: "Bank Job গণিতের সম্পূর্ণ প্রস্তুতি। Speed Math Tricks।", video: "📺 Demo Video", features: ["২০টি লাইভ ক্লাস", "Speed Math Tricks", "Previous Year Solutions", "Mock Tests"] }, { name: "BCS Preparation", price: "৳3,500", duration: "১২ মাস", description: "BCS প্রস্তুতির সম্পূর্ণ গাইড। সব টপিক কভার।", video: "📺 Demo Video", features: ["৫০টি লাইভ ক্লাস", "Full Syllabus", "Model Tests", "Current Affairs"] }, { name: "NTRCA", price: "৳2,500", duration: "৬ মাস", description: "শিক্ষক নিয়োগ পরীক্ষার প্রস্তুতি। সাবজেক্ট ভিত্তিক।", video: "📺 Demo Video", features: ["৩০টি লাইভ ক্লাস", "Subject-wise Prep", "MCQ Bank", "Interview Guidance"] } ] }, spoken: { title: "Spoken English", subjects: [ { name: "Basic Conversation", price: "৳1,000", duration: "২ মাস", description: "দৈনন্দিন কথোপকথন শেখা। সহজ ভাষায় ও উচ্চারণ।", video: "📺 Demo Video", features: ["১০টি লাইভ ক্লাস", "Daily Phrases", "Role Play", "Pronunciation"] }, { name: "Intermediate Fluency", price: "৳1,500", duration: "৩ মাস", description: "ফ্লুয়েন্সি বৃদ্ধি। ডিবেট ও ডিসকাশনে দক্ষতা।", video: "📺 Demo Video", features: ["১৫টি লাইভ ক্লাস", "Debate & Discussion", "Presentation", "Accent Training"] }, { name: "Advanced English", price: "৳2,000", duration: "৪ মাস", description: "বিজনেস ইংরেজি ও ইন্টারভিউ প্রস্তুতি।", video: "📺 Demo Video", features: ["২০টি লাইভ ক্লাস", "Business English", "Interview Prep", "Public Speaking"] } ] }, ielts: { title: "IELTS প্রস্তুতি", subjects: [ { name: "IELTS Reading", price: "৳1,200", duration: "২ মাস", description: "Reading-এ Band 7+ এর কৌশল। স্কিমিং ও স্ক্যানিং।", video: "📺 Demo Video", features: ["১০টি লাইভ ক্লাস", "Skimming & Scanning", "Practice Tests", "Strategy Guide"] }, { name: "IELTS Writing", price: "৳1,500", duration: "২ মাস", description: "Task 1 ও Task 2 - উভয়ের জন্য সম্পূর্ণ গাইড।", video: "📺 Demo Video", features: ["১২টি লাইভ ক্লাস", "Task 1 & 2", "Sample Essays", "Feedback"] }, { name: "IELTS Speaking", price: "৳1,200", duration: "২ মাস", description: "Speaking-এ ফ্লুয়েন্সি ও আত্মবিশ্বাস বৃদ্ধি।", video: "📺 Demo Video", features: ["১০টি লাইভ ক্লাস", "Mock Interview", "Topic Practice", "Fluency Building"] }, { name: "Full IELTS Course", price: "৳3,500", duration: "৬ মাস", description: "সম্পূর্ণ IELTS কোর্স। চারটি মডিউলই।", video: "📺 Demo Video", features: ["All Modules", "৪০+ Practice Tests", "Band 7+ Strategy", "Lifetime Access"] } ] } }; function openCourseModal(classKey) { const data = courseData[classKey]; if (!data) return; document.getElementById('modalTitle').textContent = data.title; let contentHtml = ''; data.subjects.forEach(subject => { contentHtml += `
+${subject.name}
+${subject.description}
+
+${subject.price}
+
+⏱️ ${subject.duration}
+
+${subject.features.map(f => `
+• ${f}
+`).join('')}
+Enroll Now ${subject.video}
+`; }); document.getElementById('modalContent').innerHTML = contentHtml; document.getElementById('courseModal').classList.add('active'); document.body.style.overflow = 'hidden'; } function closeCourseModal(event) { if (event && event.target !== event.currentTarget) return; document.getElementById('courseModal').classList.remove('active'); document.body.style.overflow = 'auto'; } function openSpokenEnglishDetail() { document.getElementById('spokenEnglishDetail').classList.remove('hidden'); document.body.style.overflow = 'hidden'; } function closeSpokenEnglishDetail() { document.getElementById('spokenEnglishDetail').classList.add('hidden'); document.body.style.overflow = 'auto'; } </script> git init git add. git commit -m "initial commit" https://github.com/Rahamanshifat/lms/blob/main/learning%20hub git branch -M main git push -u origin main
+Releases
+No releases published
+Create a new release
+Deployments
+4
+ github-pages last week
++ 3 deployments
+Packages
+No packages published
+Publish your first package
 
-<strong>Duration :</strong>
-
-${item.duration}
-
-</div>
-
-</div>
-
-<ul class="mt-6 space-y-2">
-
-${item.features.map(f=>`<li>✅ ${f}</li>`).join("")}
-
-</ul>
-
-<button
-
-class="mt-8 bg-pink-600 hover:bg-pink-700 px-8 py-3 rounded-lg">
-
-Enroll Now
-
-</button>
-
-</div>
-
-`;
-
-});
-
-modalContent.innerHTML=html;
-
-modal.classList.remove("hidden");
-
-modal.classList.add("flex");
-
-document.body.style.overflow="hidden";
-
-}
-
- // ================= CLOSE MODAL =================
-
-function closeCourseModal(){
-
-modal.classList.remove("flex");
-
-modal.classList.add("hidden");
-
-document.body.style.overflow="auto";
-
-}
-
-// Close when clicking outside
-
-modal.addEventListener("click",function(e){
-
-if(e.target===modal){
-
-closeCourseModal();
-
-}
-
-});
-
-// ================= MOBILE MENU =================
-
-const mobileBtn=document.getElementById("mobileBtn");
-
-const mobileMenu=document.getElementById("mobileMenu");
-
-let menuOpen=false;
-
-mobileBtn.addEventListener("click",()=>{
-
-menuOpen=!menuOpen;
-
-if(menuOpen){
-
-mobileMenu.style.left="0";
-
-mobileBtn.innerHTML='<i class="fas fa-times"></i>';
-
-}else{
-
-mobileMenu.style.left="-100%";
-
-mobileBtn.innerHTML='<i class="fas fa-bars"></i>';
-
-}
-
-});
-
-// ================= BACK TO TOP =================
-
-const topBtn=document.getElementById("backToTop");
-
-window.addEventListener("scroll",()=>{
-
-if(window.scrollY>300){
-
-topBtn.classList.remove("hidden");
-
-}else{
-
-topBtn.classList.add("hidden");
-
-}
-
-});
-
-function scrollToTop(){
-
-window.scrollTo({
-
-top:0,
-
-behavior:"smooth"
-
-});
-
-}
-
-// ================= LOADER =================
-
-window.addEventListener("load",()=>{
-
-setTimeout(()=>{
-
-document.getElementById("loader").style.display="none";
-
-},700);
-
-});
-
-// ================= COUNTER =================
-
-const counters=document.querySelectorAll(".stats-card h2");
-
-const speed=80;
-
-counters.forEach(counter=>{
-
-const update=()=>{
-
-const target=parseInt(counter.innerText.replace(/\D/g,""));
-
-let count=parseInt(counter.dataset.count)||0;
-
-const increment=Math.ceil(target/speed);
-
-if(count<target){
-
-count+=increment;
-
-counter.dataset.count=count;
-
-counter.innerText=count+"+";
-
-requestAnimationFrame(update);
-
-}else{
-
-counter.innerText=counter.innerText.includes("★")?"4.9★":target+"+";
-
-}
-
-};
-
-update();
-
-});
-
-// ================= SCROLL ANIMATION =================
-
-const observer=new IntersectionObserver((entries)=>{
-
-entries.forEach(entry=>{
-
-if(entry.isIntersecting){
-
-entry.target.classList.add("fade-up");
-
-}
-
-});
-
-},
-
-{
-
-threshold:.15
-
-});
-
-document.querySelectorAll("section").forEach(sec=>{
-
-observer.observe(sec);
-
-});
-
-// ================= ACTIVE NAV =================
-
-const sections=document.querySelectorAll("section");
-
-const navLinks=document.querySelectorAll("nav a");
-
-window.addEventListener("scroll",()=>{
-
-let current="";
-
-sections.forEach(section=>{
-
-const sectionTop=section.offsetTop-120;
-
-if(pageYOffset>=sectionTop){
-
-current=section.getAttribute("id");
-
-}
-
-});
-
-navLinks.forEach(link=>{
-
-link.classList.remove("text-pink-500");
-
-if(link.getAttribute("href")=="#"+current){
-
-link.classList.add("text-pink-500");
-
-}
-
-});
-
-});
-
-// ================= YEAR =================
-
-const year=document.getElementById("year");
-
-if(year){
-
-year.innerHTML=new Date().getFullYear();
-
-}
-
-console.log("Learning Hub Loaded Successfully 🚀");
- 
