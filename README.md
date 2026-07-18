@@ -1,840 +1,1004 @@
-<!-- ================= ABOUT ================= -->
-
-<section class="about" id="about">
-
-<div class="container">
-
-<div class="section-title">
-
-<h2>About Learning Hub</h2>
-
-<p>Learn Today. Lead Tomorrow.</p>
-
-</div>
-
-<div class="about-grid">
-
-<div class="about-text">
-
-<h3>Why Choose Learning Hub?</h3>
-
-<p>
-
-Learning Hub Online School is one of the trusted educational
-platforms in Rajshahi. We provide quality education for
-students from Class 5 to 12, University Admission and Job
-Preparation with experienced mentors from BUET, RUET,
-Rajshahi University and DIU.
-
-</p>
-
-<div class="features">
-
-<div class="feature">
-
-<i class="fas fa-check-circle"></i>
-
-<span>Experienced Mentors</span>
-
-</div>
-
-<div class="feature">
-
-<i class="fas fa-check-circle"></i>
-
-<span>Weekly Live Classes</span>
-
-</div>
-
-<div class="feature">
-
-<i class="fas fa-check-circle"></i>
-
-<span>Printed Notes</span>
-
-</div>
-
-<div class="feature">
-
-<i class="fas fa-check-circle"></i>
-
-<span>Recorded Classes</span>
-
-</div>
-
-<div class="feature">
-
-<i class="fas fa-check-circle"></i>
-
-<span>Weekly Exams</span>
-
-</div>
-
-<div class="feature">
-
-<i class="fas fa-check-circle"></i>
-
-<span>24/7 Student Support</span>
-
-</div>
-
-</div>
-
-</div>
-
-<div class="about-image">
-
-<img src="assets/about.png" alt="Learning Hub">
-
-</div>
-
-</div>
-
-</div>
-
-</section>
-
-<!-- ================= STATISTICS ================= -->
-
-<section class="statistics">
-
-<div class="container">
-
-<div class="stats-grid">
-
-<div class="stat-card">
-
-<h2 class="counter" data-target="30000">0</h2>
-
-<p>Students</p>
-
-</div>
-
-<div class="stat-card">
-
-<h2 class="counter" data-target="50">0</h2>
-
-<p>Courses</p>
-
-</div>
-
-<div class="stat-card">
-
-<h2 class="counter" data-target="6">0</h2>
-
-<p>Expert Mentors</p>
-
-</div>
-
-<div class="stat-card">
-
-<h2 class="counter" data-target="98">0</h2>
-
-<p>Success Rate %</p>
-
-</div>
-
-</div>
-
-</div>
-
-</section> 
-<!-- ================= COURSES ================= -->
-
-<section class="courses" id="courses">
-
-<div class="container">
-
-<div class="section-title">
-
-<h2>Our Popular Courses</h2>
-
-<p>Choose the right course for your future.</p>
-
-</div>
-
-<div class="course-grid">
-
-<!-- Card 1 -->
-
-<div class="course-card">
-
-<div class="course-icon">
-
-<i class="fas fa-school"></i>
-
-</div>
-
-<h3>Class 5–8</h3>
-
-<p>
-
-Complete preparation for Mathematics, Science,
-ICT, English & Bangla.
-
-</p>
-
-<ul>
-
-<li>✔ Weekly Live Class</li>
-
-<li>✔ Printed Notes</li>
-
-<li>✔ Recorded Class</li>
-
-<li>✔ Weekly Exam</li>
-
-</ul>
-
-<a href="#contact" class="course-btn">
-
-Enroll Now
-
-</a>
-
-</div>
-
-<!-- Card 2 -->
-
-<div class="course-card featured">
-
-<span class="badge">
-
-Most Popular
-
-</span>
-
-<div class="course-icon">
-
-<i class="fas fa-user-graduate"></i>
-
-</div>
-
-<h3>SSC 2026</h3>
-
-<p>
-
-Science, Business Studies &
-Humanities Complete Batch.
-
-</p>
-
-<ul>
-
-<li>✔ Full Syllabus</li>
-
-<li>✔ Model Test</li>
-
-<li>✔ Question Bank</li>
-
-<li>✔ Mentor Support</li>
-
-</ul>
-
-<a href="#contact" class="course-btn">
-
-Enroll Now
-
-</a>
-
-</div>
-
-<!-- Card 3 -->
-
-<div class="course-card">
-
-<div class="course-icon">
-
-<i class="fas fa-graduation-cap"></i>
-
-</div>
-
-<h3>HSC 2026</h3>
-
-<p>
-
-Complete Academic &
-Board Exam Preparation.
-
-</p>
-
-<ul>
-
-<li>✔ Weekly Class</li>
-
-<li>✔ CQ & MCQ Practice</li>
-
-<li>✔ Recorded Videos</li>
-
-<li>✔ Live Exam</li>
-
-</ul>
-
-<a href="#contact" class="course-btn">
-
-Enroll Now
-
-</a>
-
-</div>
-
-<!-- Card 4 -->
-
-<div class="course-card">
-
-<div class="course-icon">
-
-<i class="fas fa-university"></i>
-
-</div>
-
-<h3>University Admission</h3>
-
-<p>
-
-Engineering, GST,
-Medical & University Admission.
-
-</p>
-
-<ul>
-
-<li>✔ DU</li>
-
-<li>✔ RU</li>
-
-<li>✔ GST</li>
-
-<li>✔ Engineering</li>
-
-</ul>
-
-<a href="#contact" class="course-btn">
-
-Enroll Now
-
-</a>
-
-</div>
-
-<!-- Card 5 -->
-
-<div class="course-card">
-
-<div class="course-icon">
-
-<i class="fas fa-calculator"></i>
-
-</div>
-
-<h3>Job Math</h3>
-
-<p>
-
-BCS, Bank, Primary,
-NTRCA & Govt Job Preparation.
-
-</p>
-
-<ul>
-
-<li>✔ Shortcut Tricks</li>
-
-<li>✔ Daily Practice</li>
-
-<li>✔ Mock Test</li>
-
-<li>✔ PDF Notes</li>
-
-</ul>
-
-<a href="#contact" class="course-btn">
-
-Enroll Now
-
-</a>
-
-</div>
-
-<!-- Card 6 -->
-
-<div class="course-card">
-
-<div class="course-icon">
-
-<i class="fas fa-language"></i>
-
-</div>
-
-<h3>Spoken English</h3>
-
-<p>
-
-Improve Speaking,
-Grammar & IELTS Foundation.
-
-</p>
-
-<ul>
-
-<li>✔ Conversation</li>
-
-<li>✔ Grammar</li>
-
-<li>✔ Presentation</li>
-
-<li>✔ Interview</li>
-
-</ul>
-
-<a href="#contact" class="course-btn">
-
-Enroll Now
-
-</a>
-
-</div>
-
-</div>
-
-</div>
-
-</section>
-<!-- ================= MENTORS ================= -->
-
-<section class="mentors" id="mentors">
-
-<div class="container">
-
-<div class="section-title">
-
-<h2>Meet Our Expert Mentors</h2>
-
-<p>Learn from experienced teachers from the country's top universities.</p>
-
-</div>
-
-<div class="mentor-grid">
-
-<!-- Mentor -->
-
-<div class="mentor-card">
-
-<div class="mentor-img">
-<img src="assets/mentors/sonet.jpg" alt="Sonet Vhaiya">
-</div>
-
-<div class="mentor-info">
-
-<h3>Sonet Vhaiya</h3>
-
-<span>B.Sc EEE • BUET</span>
-
-<p>Mathematics & Engineering Admission Expert</p>
-
-<div class="mentor-social">
-
-<a href="#"><i class="fab fa-facebook-f"></i></a>
-
-<a href="#"><i class="fab fa-linkedin-in"></i></a>
-
-<a href="#"><i class="fas fa-envelope"></i></a>
-
-</div>
-
-</div>
-
-</div>
-
-<!-- Mentor -->
-
-<div class="mentor-card">
-
-<div class="mentor-img">
-<img src="assets/mentors/tusar.jpg" alt="">
-</div>
-
-<div class="mentor-info">
-
-<h3>Tusar Vhaiya</h3>
-
-<span>M.Sc Applied Chemistry • RU</span>
-
-<p>Chemistry Mentor</p>
-
-<div class="mentor-social">
-
-<a href="#"><i class="fab fa-facebook-f"></i></a>
-
-<a href="#"><i class="fab fa-linkedin-in"></i></a>
-
-<a href="#"><i class="fas fa-envelope"></i></a>
-
-</div>
-
-</div>
-
-</div>
-
-<!-- Mentor -->
-
-<div class="mentor-card">
-
-<div class="mentor-img">
-<img src="assets/mentors/jihad.jpg" alt="">
-</div>
-
-<div class="mentor-info">
-
-<h3>Jihad Vhaiya</h3>
-
-<span>B.Sc Mechanical • RUET</span>
-
-<p>Physics & Engineering Mentor</p>
-
-<div class="mentor-social">
-
-<a href="#"><i class="fab fa-facebook-f"></i></a>
-
-<a href="#"><i class="fab fa-linkedin-in"></i></a>
-
-<a href="#"><i class="fas fa-envelope"></i></a>
-
-</div>
-
-</div>
-
-</div>
-
-<!-- Mentor -->
-
-<div class="mentor-card">
-
-<div class="mentor-img">
-<img src="assets/mentors/sujon.jpg" alt="">
-</div>
-
-<div class="mentor-info">
-
-<h3>Sujon Vhaiya</h3>
-
-<span>M.A English • RU</span>
-
-<p>English Language Mentor</p>
-
-<div class="mentor-social">
-
-<a href="#"><i class="fab fa-facebook-f"></i></a>
-
-<a href="#"><i class="fab fa-linkedin-in"></i></a>
-
-<a href="#"><i class="fas fa-envelope"></i></a>
-
-</div>
-
-</div>
-
-</div>
-
-<!-- Mentor -->
-
-<div class="mentor-card">
-
-<div class="mentor-img">
-<img src="assets/mentors/musa.jpg" alt="">
-</div>
-
-<div class="mentor-info">
-
-<h3>Musa Vhaiya</h3>
-
-<span>M.Sc Mathematics • RU & NU</span>
-
-<p>Advanced Mathematics Mentor</p>
-
-<div class="mentor-social">
-
-<a href="#"><i class="fab fa-facebook-f"></i></a>
-
-<a href="#"><i class="fab fa-linkedin-in"></i></a>
-
-<a href="#"><i class="fas fa-envelope"></i></a>
-
-</div>
-
-</div>
-
-</div>
-
-<!-- Mentor -->
-
-<div class="mentor-card">
-
-<div class="mentor-img">
-<img src="assets/mentors/sifat.jpg" alt="">
-</div>
-
-<div class="mentor-info">
-
-<h3>Sifat Vhaiya</h3>
-
-<span>B.Sc Software Engineering • DIU</span>
-
-<p>ICT & Programming Mentor</p>
-
-<div class="mentor-social">
-
-<a href="#"><i class="fab fa-facebook-f"></i></a>
-
-<a href="#"><i class="fab fa-linkedin-in"></i></a>
-
-<a href="#"><i class="fas fa-envelope"></i></a>
-
-</div>
-
-</div>
-
-</div>
-
-</div>
-
-</div>
-
-</section>
-<!-- ================= CONTACT ================= -->
-
-<section class="contact" id="contact">
-
-<div class="container">
-
-<div class="section-title">
-
-<h2>Contact Us</h2>
-
-<p>We're always ready to help you.</p>
-
-</div>
-
-<div class="contact-grid">
-
-<div class="contact-info">
-
-<div class="contact-card">
-
-<i class="fas fa-phone"></i>
-
-<div>
-
-<h3>Hotline</h3>
-
-<p>01864-000208</p>
-
-</div>
-
-</div>
-
-<div class="contact-card">
-
-<i class="fas fa-envelope"></i>
-
-<div>
-
-<h3>Email</h3>
-
-<p>learninghubinfo65@gmail.com</p>
-
-</div>
-
-</div>
-
-<div class="contact-card">
-
-<i class="fas fa-location-dot"></i>
-
-<div>
-
-<h3>Address</h3>
-
-<p>Motihar, Rajshahi</p>
-
-</div>
-
-</div>
-
-</div>
-
-<div class="contact-map">
-
-<iframe
-
-src="https://www.google.com/maps?q=Motihar,Rajshahi&output=embed"
-
-allowfullscreen>
-
-</iframe>
-
-</div>
-
-</div>
-
-</div>
-
-</section>
-
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Learning Hub Online School | Rajshahi</title>
+<meta name="description" content="Learning Hub Online School - Quality education for Class 5-12, University Admission and Job Preparation in Rajshahi.">
+
+<!-- Font Awesome -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<!-- Google Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+<style>
+
+/* ============ RESET & BASE ============ */
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+:root{
+  --primary:#1565c0;
+  --primary-dark:#0d47a1;
+  --primary-light:#42a5f5;
+  --text-dark:#1a1a2e;
+  --text-muted:#5c6270;
+  --bg-light:#f5f8fc;
+  --white:#ffffff;
+  --radius:14px;
+}
+
+html{
+  scroll-behavior:smooth;
+}
+
+body{
+  font-family:'Poppins',sans-serif;
+  color:var(--text-dark);
+  line-height:1.6;
+  background:var(--white);
+}
+
+.container{
+  width:100%;
+  max-width:1180px;
+  margin:0 auto;
+  padding:0 20px;
+}
+
+img{
+  max-width:100%;
+  display:block;
+}
+
+a{
+  text-decoration:none;
+  color:inherit;
+}
+
+ul{
+  list-style:none;
+}
+
+/* ============ LOADER ============ */
+#loader{
+  position:fixed;
+  inset:0;
+  background:var(--white);
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  font-size:32px;
+  font-weight:700;
+  color:var(--primary);
+  z-index:99999;
+  transition:opacity .4s ease;
+}
+
+/* ============ SECTION TITLE ============ */
+.section-title{
+  text-align:center;
+  max-width:600px;
+  margin:0 auto 50px;
+}
+
+.section-title h2{
+  font-size:clamp(28px,4vw,36px);
+  font-weight:800;
+  color:var(--text-dark);
+}
+
+.section-title p{
+  color:var(--text-muted);
+  margin-top:8px;
+  font-size:16px;
+}
+
+.divider{
+  width:70px;
+  height:5px;
+  margin:16px auto 0;
+  border-radius:20px;
+  background:var(--primary);
+}
+
+section{
+  padding:90px 0;
+}
+
+/* ============ NAVBAR ============ */
+.navbar{
+  position:sticky;
+  top:0;
+  z-index:1000;
+  background:rgba(255,255,255,.9);
+  backdrop-filter:blur(10px);
+  box-shadow:0 2px 12px rgba(0,0,0,.06);
+}
+
+.nav-container{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  padding:16px 20px;
+  max-width:1180px;
+  margin:0 auto;
+}
+
+.logo{
+  font-size:22px;
+  font-weight:800;
+  color:var(--primary);
+}
+
+.nav-links{
+  display:flex;
+  gap:32px;
+  font-weight:500;
+}
+
+.nav-links a{
+  transition:.25s;
+}
+
+.nav-links a:hover{
+  color:var(--primary);
+}
+
+.menu{
+  display:none;
+  font-size:24px;
+  cursor:pointer;
+  color:var(--primary);
+  background:none;
+  border:none;
+}
+
+/* ============ HERO ============ */
 .hero{
-
-background:linear-gradient(-45deg,#1565c0,#1e88e5,#0d47a1,#42a5f5);
-
-background-size:400% 400%;
-
-animation:gradient 12s ease infinite;
-
+  background:linear-gradient(-45deg,#1565c0,#1e88e5,#0d47a1,#42a5f5);
+  background-size:400% 400%;
+  animation:gradient 12s ease infinite;
+  color:var(--white);
+  padding:110px 0;
+  overflow:hidden;
 }
 
 @keyframes gradient{
-
-0%{
-
-background-position:0% 50%;
-
+  0%{ background-position:0% 50%; }
+  50%{ background-position:100% 50%; }
+  100%{ background-position:0% 50%; }
 }
 
-50%{
-
-background-position:100% 50%;
-
+.hero-grid{
+  display:grid;
+  grid-template-columns:1.1fr .9fr;
+  align-items:center;
+  gap:40px;
 }
 
-100%{
-
-background-position:0% 50%;
-
+.hero-text h1{
+  font-size:clamp(32px,5vw,48px);
+  font-weight:800;
+  line-height:1.2;
 }
 
+.hero-text p{
+  margin:18px 0 28px;
+  font-size:17px;
+  opacity:.92;
+  max-width:480px;
 }
 
-.glass{
-
-background:rgba(255,255,255,.15);
-
-backdrop-filter:blur(15px);
-
-border:1px solid rgba(255,255,255,.2);
-
-}
-.course-card,
-.mentor-card,
-.stat-card{
-
-transition:.35s;
-
-}
-
-.course-card:hover,
-.mentor-card:hover,
-.stat-card:hover{
-
-transform:translateY(-12px);
-
-box-shadow:0 25px 45px rgba(0,0,0,.18);
-
-}
-<div class="divider"></div>
-
-.divider{
-
-width:120px;
-
-height:5px;
-
-margin:20px auto;
-
-border-radius:20px;
-
-background:#1565c0;
-
-}
-button,
-.course-btn{
-
-background:#1565c0;
-
-transition:.3s;
-
-}
-
-button:hover{
-
-background:#0d47a1;
-
-transform:scale(1.05);
-
-}
-const menu=document.querySelector(".menu");
-
-const nav=document.querySelector(".nav-links");
-
-menu.onclick=()=>{
-
-nav.classList.toggle("show");
-
+.hero-buttons{
+  display:flex;
+  gap:16px;
+  flex-wrap:wrap;
 }
 
 .hero img{
-
-animation:float 4s ease-in-out infinite;
-
+  animation:float 4s ease-in-out infinite;
+  border-radius:var(--radius);
 }
 
 @keyframes float{
-
-0%{
-
-transform:translateY(0);
-
+  0%{ transform:translateY(0); }
+  50%{ transform:translateY(-20px); }
+  100%{ transform:translateY(0); }
 }
 
-50%{
-
-transform:translateY(-20px);
-
+.glass{
+  background:rgba(255,255,255,.15);
+  backdrop-filter:blur(15px);
+  border:1px solid rgba(255,255,255,.2);
+  border-radius:var(--radius);
 }
 
-100%{
-
-transform:translateY(0);
-
+/* ============ BUTTONS ============ */
+button,
+.btn,
+.course-btn{
+  display:inline-block;
+  background:var(--primary);
+  color:var(--white);
+  border:none;
+  padding:13px 28px;
+  border-radius:8px;
+  font-weight:600;
+  font-size:15px;
+  cursor:pointer;
+  transition:.3s;
 }
 
+.btn-outline{
+  background:transparent;
+  border:2px solid var(--white);
 }
 
-<div id="loader">
-
-<h2>Learning Hub</h2>
-
-</div>
-
-#loader{
-
-position:fixed;
-
-inset:0;
-
-background:white;
-
-display:flex;
-
-justify-content:center;
-
-align-items:center;
-
-font-size:40px;
-
-z-index:99999;
-
+button:hover,
+.btn:hover,
+.course-btn:hover{
+  background:var(--primary-dark);
+  transform:scale(1.05);
 }
-window.onload=()=>{
 
-loader.style.display="none";
-
+.btn-outline:hover{
+  background:rgba(255,255,255,.15);
 }
+
+/* ============ ABOUT ============ */
+.about{
+  background:var(--bg-light);
+}
+
+.about-grid{
+  display:grid;
+  grid-template-columns:1.1fr .9fr;
+  gap:50px;
+  align-items:center;
+}
+
+.about-text h3{
+  font-size:24px;
+  font-weight:700;
+  margin-bottom:14px;
+  color:var(--primary-dark);
+}
+
+.about-text > p{
+  color:var(--text-muted);
+  margin-bottom:24px;
+}
+
+.features{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:16px;
+}
+
+.feature{
+  display:flex;
+  align-items:center;
+  gap:10px;
+  font-weight:500;
+}
+
+.feature i{
+  color:var(--primary);
+  font-size:18px;
+}
+
+.about-image img{
+  border-radius:var(--radius);
+  box-shadow:0 20px 40px rgba(21,101,192,.18);
+}
+
+/* ============ STATISTICS ============ */
+.statistics{
+  background:var(--primary);
+  padding:60px 0;
+}
+
+.stats-grid{
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
+  gap:24px;
+  text-align:center;
+  color:var(--white);
+}
+
+.stat-card{
+  padding:20px;
+  border-radius:var(--radius);
+  transition:.35s;
+}
+
+.stat-card:hover{
+  transform:translateY(-12px);
+  box-shadow:0 25px 45px rgba(0,0,0,.18);
+  background:rgba(255,255,255,.08);
+}
+
+.stat-card h2.counter{
+  font-size:38px;
+  font-weight:800;
+}
+
+.stat-card p{
+  margin-top:6px;
+  opacity:.9;
+  font-weight:500;
+}
+
+/* ============ COURSES ============ */
+.course-grid{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:28px;
+}
+
+.course-card{
+  position:relative;
+  background:var(--white);
+  border:1px solid #e8edf5;
+  border-radius:var(--radius);
+  padding:32px 28px;
+  transition:.35s;
+}
+
+.course-card:hover{
+  transform:translateY(-12px);
+  box-shadow:0 25px 45px rgba(0,0,0,.12);
+}
+
+.course-card.featured{
+  border:2px solid var(--primary);
+}
+
+.badge{
+  position:absolute;
+  top:-14px;
+  right:24px;
+  background:var(--primary);
+  color:var(--white);
+  font-size:12px;
+  font-weight:600;
+  padding:6px 14px;
+  border-radius:20px;
+}
+
+.course-icon{
+  width:56px;
+  height:56px;
+  border-radius:12px;
+  background:rgba(21,101,192,.1);
+  color:var(--primary);
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  font-size:24px;
+  margin-bottom:18px;
+}
+
+.course-card h3{
+  font-size:20px;
+  font-weight:700;
+  margin-bottom:10px;
+}
+
+.course-card > p{
+  color:var(--text-muted);
+  font-size:14px;
+  margin-bottom:16px;
+}
+
+.course-card ul{
+  margin-bottom:22px;
+}
+
+.course-card ul li{
+  font-size:14px;
+  color:var(--text-dark);
+  margin-bottom:8px;
+}
+
+/* ============ MENTORS ============ */
+.mentors{
+  background:var(--bg-light);
+}
+
+.mentor-grid{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:28px;
+}
+
+.mentor-card{
+  background:var(--white);
+  border-radius:var(--radius);
+  overflow:hidden;
+  transition:.35s;
+  box-shadow:0 6px 20px rgba(0,0,0,.05);
+}
+
+.mentor-card:hover{
+  transform:translateY(-12px);
+  box-shadow:0 25px 45px rgba(0,0,0,.15);
+}
+
+.mentor-img{
+  width:100%;
+  aspect-ratio:1/1;
+  overflow:hidden;
+  background:#dbe6f5;
+}
+
+.mentor-img img{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+}
+
+.mentor-info{
+  padding:20px;
+  text-align:center;
+}
+
+.mentor-info h3{
+  font-size:18px;
+  font-weight:700;
+}
+
+.mentor-info span{
+  display:block;
+  color:var(--primary);
+  font-size:13px;
+  font-weight:600;
+  margin:6px 0;
+}
+
+.mentor-info p{
+  color:var(--text-muted);
+  font-size:14px;
+  margin-bottom:14px;
+}
+
+.mentor-social{
+  display:flex;
+  justify-content:center;
+  gap:12px;
+}
+
+.mentor-social a{
+  width:34px;
+  height:34px;
+  border-radius:50%;
+  background:rgba(21,101,192,.1);
+  color:var(--primary);
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  transition:.25s;
+}
+
+.mentor-social a:hover{
+  background:var(--primary);
+  color:var(--white);
+}
+
+/* ============ CONTACT ============ */
+.contact-grid{
+  display:grid;
+  grid-template-columns:.9fr 1.1fr;
+  gap:36px;
+}
+
+.contact-info{
+  display:flex;
+  flex-direction:column;
+  gap:20px;
+}
+
+.contact-card{
+  display:flex;
+  align-items:flex-start;
+  gap:16px;
+  background:var(--bg-light);
+  padding:20px;
+  border-radius:var(--radius);
+}
+
+.contact-card i{
+  font-size:20px;
+  color:var(--white);
+  background:var(--primary);
+  width:44px;
+  height:44px;
+  min-width:44px;
+  border-radius:10px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+}
+
+.contact-card h3{
+  font-size:16px;
+  font-weight:700;
+  margin-bottom:4px;
+}
+
+.contact-card p{
+  color:var(--text-muted);
+  font-size:14px;
+}
+
+.contact-map{
+  border-radius:var(--radius);
+  overflow:hidden;
+  min-height:320px;
+}
+
+.contact-map iframe{
+  width:100%;
+  height:100%;
+  min-height:320px;
+  border:0;
+}
+
+/* ============ FOOTER ============ */
+footer{
+  background:var(--text-dark);
+  color:rgba(255,255,255,.7);
+  text-align:center;
+  padding:26px 0;
+  font-size:14px;
+}
+
+/* ============ RESPONSIVE ============ */
+@media(max-width:900px){
+  .hero-grid,
+  .about-grid,
+  .contact-grid{
+    grid-template-columns:1fr;
+  }
+
+  .course-grid,
+  .mentor-grid{
+    grid-template-columns:repeat(2,1fr);
+  }
+
+  .stats-grid{
+    grid-template-columns:repeat(2,1fr);
+  }
+}
+
+@media(max-width:640px){
+  .nav-links{
+    position:absolute;
+    top:100%;
+    left:0;
+    right:0;
+    background:var(--white);
+    flex-direction:column;
+    padding:20px;
+    gap:18px;
+    box-shadow:0 10px 20px rgba(0,0,0,.08);
+    display:none;
+  }
+
+  .nav-links.show{
+    display:flex;
+  }
+
+  .menu{
+    display:block;
+  }
+
+  .course-grid,
+  .mentor-grid{
+    grid-template-columns:1fr;
+  }
+
+  .features{
+    grid-template-columns:1fr;
+  }
+
+  section{
+    padding:60px 0;
+  }
+}
+
+@media(prefers-reduced-motion:reduce){
+  .hero,
+  .hero img{
+    animation:none;
+  }
+}
+</style>
+</head>
+<body>
+
+<div id="loader"><h2>Learning Hub</h2></div>
+
+<!-- ================= NAVBAR ================= -->
+<header class="navbar">
+  <div class="nav-container">
+    <div class="logo">Learning Hub</div>
+    <nav class="nav-links">
+      <a href="#about">About</a>
+      <a href="#courses">Courses</a>
+      <a href="#mentors">Mentors</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <button class="menu" aria-label="Toggle menu"><i class="fas fa-bars"></i></button>
+  </div>
+</header>
+
+<!-- ================= HERO ================= -->
+<section class="hero">
+  <div class="container hero-grid">
+    <div class="hero-text">
+      <h1>Learn Today. Lead Tomorrow.</h1>
+      <p>Learning Hub Online School is one of the trusted educational platforms in Rajshahi, guiding students from Class 5 to 12, University Admission and Job Preparation with experienced mentors.</p>
+      <div class="hero-buttons">
+        <a href="#courses" class="btn">Explore Courses</a>
+        <a href="#contact" class="btn btn-outline">Contact Us</a>
+      </div>
+    </div>
+    <div class="glass" style="padding:20px;">
+      <img src="assets/about.png" alt="Learning Hub students">
+    </div>
+  </div>
+</section>
+
+<!-- ================= ABOUT ================= -->
+<section class="about" id="about">
+  <div class="container">
+    <div class="section-title">
+      <h2>About Learning Hub</h2>
+      <p>Learn Today. Lead Tomorrow.</p>
+      <div class="divider"></div>
+    </div>
+
+    <div class="about-grid">
+      <div class="about-text">
+        <h3>Why Choose Learning Hub?</h3>
+        <p>
+          Learning Hub Online School is one of the trusted educational
+          platforms in Rajshahi. We provide quality education for
+          students from Class 5 to 12, University Admission and Job
+          Preparation with experienced mentors from BUET, RUET,
+          Rajshahi University and DIU.
+        </p>
+
+        <div class="features">
+          <div class="feature"><i class="fas fa-check-circle"></i><span>Experienced Mentors</span></div>
+          <div class="feature"><i class="fas fa-check-circle"></i><span>Weekly Live Classes</span></div>
+          <div class="feature"><i class="fas fa-check-circle"></i><span>Printed Notes</span></div>
+          <div class="feature"><i class="fas fa-check-circle"></i><span>Recorded Classes</span></div>
+          <div class="feature"><i class="fas fa-check-circle"></i><span>Weekly Exams</span></div>
+          <div class="feature"><i class="fas fa-check-circle"></i><span>24/7 Student Support</span></div>
+        </div>
+      </div>
+
+      <div class="about-image">
+        <img src="assets/about.png" alt="Learning Hub">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= STATISTICS ================= -->
+<section class="statistics">
+  <div class="container">
+    <div class="stats-grid">
+      <div class="stat-card">
+        <h2 class="counter" data-target="30000">0</h2>
+        <p>Students</p>
+      </div>
+      <div class="stat-card">
+        <h2 class="counter" data-target="50">0</h2>
+        <p>Courses</p>
+      </div>
+      <div class="stat-card">
+        <h2 class="counter" data-target="6">0</h2>
+        <p>Expert Mentors</p>
+      </div>
+      <div class="stat-card">
+        <h2 class="counter" data-target="98">0</h2>
+        <p>Success Rate %</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= COURSES ================= -->
+<section class="courses" id="courses">
+  <div class="container">
+    <div class="section-title">
+      <h2>Our Popular Courses</h2>
+      <p>Choose the right course for your future.</p>
+      <div class="divider"></div>
+    </div>
+
+    <div class="course-grid">
+      <!-- Card 1 -->
+      <div class="course-card">
+        <div class="course-icon"><i class="fas fa-school"></i></div>
+        <h3>Class 5–8</h3>
+        <p>Complete preparation for Mathematics, Science, ICT, English & Bangla.</p>
+        <ul>
+          <li>✔ Weekly Live Class</li>
+          <li>✔ Printed Notes</li>
+          <li>✔ Recorded Class</li>
+          <li>✔ Weekly Exam</li>
+        </ul>
+        <a href="#contact" class="course-btn">Enroll Now</a>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="course-card featured">
+        <span class="badge">Most Popular</span>
+        <div class="course-icon"><i class="fas fa-user-graduate"></i></div>
+        <h3>SSC 2026</h3>
+        <p>Science, Business Studies & Humanities Complete Batch.</p>
+        <ul>
+          <li>✔ Full Syllabus</li>
+          <li>✔ Model Test</li>
+          <li>✔ Question Bank</li>
+          <li>✔ Mentor Support</li>
+        </ul>
+        <a href="#contact" class="course-btn">Enroll Now</a>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="course-card">
+        <div class="course-icon"><i class="fas fa-graduation-cap"></i></div>
+        <h3>HSC 2026</h3>
+        <p>Complete Academic & Board Exam Preparation.</p>
+        <ul>
+          <li>✔ Weekly Class</li>
+          <li>✔ CQ & MCQ Practice</li>
+          <li>✔ Recorded Videos</li>
+          <li>✔ Live Exam</li>
+        </ul>
+        <a href="#contact" class="course-btn">Enroll Now</a>
+      </div>
+
+      <!-- Card 4 -->
+      <div class="course-card">
+        <div class="course-icon"><i class="fas fa-university"></i></div>
+        <h3>University Admission</h3>
+        <p>Engineering, GST, Medical & University Admission.</p>
+        <ul>
+          <li>✔ DU</li>
+          <li>✔ RU</li>
+          <li>✔ GST</li>
+          <li>✔ Engineering</li>
+        </ul>
+        <a href="#contact" class="course-btn">Enroll Now</a>
+      </div>
+
+      <!-- Card 5 -->
+      <div class="course-card">
+        <div class="course-icon"><i class="fas fa-calculator"></i></div>
+        <h3>Job Math</h3>
+        <p>BCS, Bank, Primary, NTRCA & Govt Job Preparation.</p>
+        <ul>
+          <li>✔ Shortcut Tricks</li>
+          <li>✔ Daily Practice</li>
+          <li>✔ Mock Test</li>
+          <li>✔ PDF Notes</li>
+        </ul>
+        <a href="#contact" class="course-btn">Enroll Now</a>
+      </div>
+
+      <!-- Card 6 -->
+      <div class="course-card">
+        <div class="course-icon"><i class="fas fa-language"></i></div>
+        <h3>Spoken English</h3>
+        <p>Improve Speaking, Grammar & IELTS Foundation.</p>
+        <ul>
+          <li>✔ Conversation</li>
+          <li>✔ Grammar</li>
+          <li>✔ Presentation</li>
+          <li>✔ Interview</li>
+        </ul>
+        <a href="#contact" class="course-btn">Enroll Now</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= MENTORS ================= -->
+<section class="mentors" id="mentors">
+  <div class="container">
+    <div class="section-title">
+      <h2>Meet Our Expert Mentors</h2>
+      <p>Learn from experienced teachers from the country's top universities.</p>
+      <div class="divider"></div>
+    </div>
+
+    <div class="mentor-grid">
+      <div class="mentor-card">
+        <div class="mentor-img"><img src="assets/mentors/sonet.jpg" alt="Sonet Vhaiya"></div>
+        <div class="mentor-info">
+          <h3>Sonet Vhaiya</h3>
+          <span>B.Sc EEE • BUET</span>
+          <p>Mathematics & Engineering Admission Expert</p>
+          <div class="mentor-social">
+            <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#" aria-label="Email"><i class="fas fa-envelope"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="mentor-card">
+        <div class="mentor-img"><img src="assets/mentors/tusar.jpg" alt="Tusar Vhaiya"></div>
+        <div class="mentor-info">
+          <h3>Tusar Vhaiya</h3>
+          <span>M.Sc Applied Chemistry • RU</span>
+          <p>Chemistry Mentor</p>
+          <div class="mentor-social">
+            <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#" aria-label="Email"><i class="fas fa-envelope"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="mentor-card">
+        <div class="mentor-img"><img src="assets/mentors/jihad.jpg" alt="Jihad Vhaiya"></div>
+        <div class="mentor-info">
+          <h3>Jihad Vhaiya</h3>
+          <span>B.Sc Mechanical • RUET</span>
+          <p>Physics & Engineering Mentor</p>
+          <div class="mentor-social">
+            <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#" aria-label="Email"><i class="fas fa-envelope"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="mentor-card">
+        <div class="mentor-img"><img src="assets/mentors/sujon.jpg" alt="Sujon Vhaiya"></div>
+        <div class="mentor-info">
+          <h3>Sujon Vhaiya</h3>
+          <span>M.A English • RU</span>
+          <p>English Language Mentor</p>
+          <div class="mentor-social">
+            <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#" aria-label="Email"><i class="fas fa-envelope"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="mentor-card">
+        <div class="mentor-img"><img src="assets/mentors/musa.jpg" alt="Musa Vhaiya"></div>
+        <div class="mentor-info">
+          <h3>Musa Vhaiya</h3>
+          <span>M.Sc Mathematics • RU & NU</span>
+          <p>Advanced Mathematics Mentor</p>
+          <div class="mentor-social">
+            <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#" aria-label="Email"><i class="fas fa-envelope"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="mentor-card">
+        <div class="mentor-img"><img src="assets/mentors/sifat.jpg" alt="Sifat Vhaiya"></div>
+        <div class="mentor-info">
+          <h3>Sifat Vhaiya</h3>
+          <span>B.Sc Software Engineering • DIU</span>
+          <p>ICT & Programming Mentor</p>
+          <div class="mentor-social">
+            <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#" aria-label="Email"><i class="fas fa-envelope"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= CONTACT ================= -->
+<section class="contact" id="contact">
+  <div class="container">
+    <div class="section-title">
+      <h2>Contact Us</h2>
+      <p>We're always ready to help you.</p>
+      <div class="divider"></div>
+    </div>
+
+    <div class="contact-grid">
+      <div class="contact-info">
+        <div class="contact-card">
+          <i class="fas fa-phone"></i>
+          <div><h3>Hotline</h3><p>01864-000208</p></div>
+        </div>
+        <div class="contact-card">
+          <i class="fas fa-envelope"></i>
+          <div><h3>Email</h3><p>learninghubinfo65@gmail.com</p></div>
+        </div>
+        <div class="contact-card">
+          <i class="fas fa-location-dot"></i>
+          <div><h3>Address</h3><p>Motihar, Rajshahi</p></div>
+        </div>
+      </div>
+
+      <div class="contact-map">
+        <iframe
+          src="https://www.google.com/maps?q=Motihar,Rajshahi&output=embed"
+          allowfullscreen
+          loading="lazy"
+          title="Learning Hub location map">
+        </iframe>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= FOOTER ================= -->
+<footer>
+  <div class="container">
+    <p>&copy; <span id="year"></span> Learning Hub Online School, Rajshahi. All rights reserved.</p>
+  </div>
+</footer>
+
+<script>
+// Hide loader once page is ready
+window.addEventListener('load', () => {
+  const loader = document.getElementById('loader');
+  if (loader) loader.style.display = 'none';
+});
+
+// Mobile nav toggle
+const menu = document.querySelector('.menu');
+const nav = document.querySelector('.nav-links');
+if (menu && nav) {
+  menu.addEventListener('click', () => nav.classList.toggle('show'));
+}
+
+// Animated counters for statistics
+const counters = document.querySelectorAll('.counter');
+const animateCounter = (el) => {
+  const target = +el.dataset.target;
+  const duration = 1500;
+  const startTime = performance.now();
+
+  const step = (now) => {
+    const progress = Math.min((now - startTime) / duration, 1);
+    el.textContent = Math.floor(progress * target).toLocaleString();
+    if (progress < 1) requestAnimationFrame(step);
+    else el.textContent = target.toLocaleString();
+  };
+  requestAnimationFrame(step);
+};
+
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      animateCounter(entry.target);
+      observer.unobserve(entry.target);
+    }
+  });
+}, { threshold: 0.5 });
+
+counters.forEach(counter => observer.observe(counter));
+
+// Footer year
+document.getElementById('year').textContent = new Date().getFullYear();
+</script>
+
+</body>
+</html>
